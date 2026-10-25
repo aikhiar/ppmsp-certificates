@@ -1,0 +1,20 @@
+# results of a campaign (distributed separately) and of the tiny run
+results/
+results_quick/
+results_*/
+theory/results/
+smoke_results/
+smoke_cache/
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+*.nbi
+*.nbc
+.pytest_cache/
+
+# editors and systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
