@@ -235,6 +235,16 @@ def p10_clean(before):
     record("P10", "no results folder created in the code folders", not new, new)
 
 
+def guarded(phase, fn, *args):
+    """Runs one phase. A phase that raises (e.g. on the missing output of an earlier failed phase) is recorded
+    as failed and the protocol goes on, so the scorecard is always written."""
+    t = time.time()
+    try:
+        fn(*args)
+    except Exception as ex:
+        record(phase, f"{fn.__name__} stopped with an error", False, f"{type(ex).__name__}: {ex}", time.time() - t)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=0, help="campaign workers (default: automatic)")
@@ -252,18 +262,14 @@ def main():
     print(f"verification protocol, work folder {work}", flush=True)
     before = {p for p in glob.glob(os.path.join(ROOT, "results*")) + glob.glob(os.path.join(LAB, "results*"))}
     t0 = time.time()
-    p1_static()
-    p2_tests()
-    p3_campaign(work, a.workers)
-    p4_audit(work)
-    p5_resume(work, a.workers)
-    p6_rebuild(work)
-    p6b_rerun(work, a.workers)
-    p7_smoke(work)
-    p8_launcher(work)
+    phases = [("P1", p1_static, ()), ("P2", p2_tests, ()), ("P3", p3_campaign, (work, a.workers)),
+              ("P4", p4_audit, (work,)), ("P5", p5_resume, (work, a.workers)), ("P6", p6_rebuild, (work,)),
+              ("P6b", p6b_rerun, (work, a.workers)), ("P7", p7_smoke, (work,)), ("P8", p8_launcher, (work,))]
     if a.heavy:
-        p9_theory(work, a.workers)
-    p10_clean(before)
+        phases.append(("P9", p9_theory, (work, a.workers)))
+    phases.append(("P10", p10_clean, (before,)))
+    for phase, fn, args in phases:
+        guarded(phase, fn, *args)
     n_ok = sum(r["ok"] for r in ROWS)
     lines = [f"# Verification protocol ({dt.datetime.now():%Y-%m-%d %H:%M}), {n_ok} of {len(ROWS)} checks pass, "
              f"{(time.time() - t0) / 60:.1f} min", "", "| phase | check | result | detail |", "|---|---|---|---|"]
