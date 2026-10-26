@@ -189,7 +189,7 @@ class Certificates:
                 "component_union": self._first(lambda u: sums[u] < 1 - MARGIN) / UNIT,
                 "lll": self._first(lambda u: B.lll_holds(s[:, u], self.laws.nbr)) / UNIT}
 
-    # ---- closed forms with a single threshold (drop-in for the published theorems) ----
+    # ---- closed forms with a single threshold (drop-in for the non-localized theorems) ----
     def closed_forms(self):
         L, T = self.laws, self.inst.T
         rs = [t for t in range(T) if L.rand[t]]

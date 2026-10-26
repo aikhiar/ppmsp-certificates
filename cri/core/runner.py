@@ -53,8 +53,8 @@ def write_results_readme(out):
 | `{RAW}/` | the source of truth: one pickle per (experiment block, instance) job, a list of runs with their peak, charged time, trace, guarantee, lower bound and status; `_references/` holds the exact references and `_contexts/` the bound summaries of each instance |
 | `{DATA}/` | tables rebuilt from `{RAW}/` by `python -m cri report` (runs, enriched runs with every gap measure as .pkl and .csv, traces, Gurobi bound traces, solutions, references, instances, tuning tables, tuned defaults) |
 | `{REPORT}/` | `report.html` / `report.md` (open these first), `index.md` (every table and figure with its caption) and one folder per section and experiment block: `tables/` (.csv, .md, .tex), `statistics/` (tests, ranks, effect sizes, their diagrams) and `figures/` (.png, .pdf) |
-| `{FAITHFULNESS}/` | the published code against the re-implementation of the earlier methods |
-| `{LOGS}/` | `run_log.txt` (every block, job and worker), `config_used.json`, `{ENVIRONMENT}` (machine, processor, cores, RAM and software versions of every start of `run`; campaigns from 2026-10-25 on), `audit.md`, `theory_verification.csv`/`.md` (step 3 of `run_all.bat`), the step markers of `run_all.bat` |
+| `{FAITHFULNESS}/` | the original code against the re-implementation of the earlier methods |
+| `{LOGS}/` | `run_log.txt` (every block, job and worker), `config_used.json`, `{ENVIRONMENT}` (machine, processor, cores, RAM and software versions of every start of `run`; recorded by this version of the framework), `audit.md`, `theory_verification.csv`/`.md` (step 3 of `run_all.bat`), the step markers of `run_all.bat` |
 
 Nothing in `{DATA}/` or `{REPORT}/` needs to be kept: both are rebuilt from `{RAW}/`.
 """
@@ -115,8 +115,8 @@ def _hash(obj):
 def campaign_id(out, store):
     """Identifier of the campaign of a results folder (05_logs/campaign_id.txt); it names the folder of its
     context cache. A new results folder gets a new identifier (date, time, process), so a fresh run never
-    reuses the contexts of another campaign; a resumed one finds its own again. A results folder made before
-    2026-10-24 (runs stored, no identifier) keeps the shared cache folder of that time ('')."""
+    reuses the contexts of another campaign; a resumed one finds its own again. A results folder made by an
+    earlier version of the framework (runs stored, no identifier) keeps the shared cache folder ('')."""
     p = os.path.join(out, LOGS, "campaign_id.txt")
     if os.path.exists(p):
         with open(p, encoding="utf-8") as f:
@@ -299,7 +299,7 @@ def _work(job):
     inst = _PROBLEM.instance_from_dict(job["inst"])
     ctx, cpath, before = _load_context(inst, job["ctx_cfg"], job["cache_dir"])
     # unique even when one worker runs two parts of an instance within one clock tick (Windows clocks tick
-    # every 0.5-16 ms; two parts with the same name overwrote each other on the VM, 2026-10-23)
+    # every 0.5-16 ms; two parts with the same name would overwrite each other)
     fname = f"{_safe(inst.name, 64)}__{time.time_ns()}_{os.getpid()}_{uuid.uuid4().hex[:8]}"
     results, done = [], []
     last = time.time()
@@ -496,7 +496,7 @@ class Runner:
             self.log("keep-awake requested for the duration of the campaign (idle sleep only; a closed lid "
                      "or a manual sleep still suspends the machine)")
         self.log(f"config {self.cfg.get('_config_path')} -> output {self.out}")
-        self.log(f"campaign {self.campaign_id or '(before 2026-10-24)'}, context cache {self.cache_dir}")
+        self.log(f"campaign {self.campaign_id or '(legacy results folder)'}, context cache {self.cache_dir}")
         m = self.machine
         self.log(f"machine: {m['physical_cores']} physical / {m['logical_cores']} logical cores, "
                  + (f"{m['mem_available_gb']:.1f} of {m['mem_total_gb']:.1f} GB RAM available" if m['mem_total_gb']

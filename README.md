@@ -10,7 +10,7 @@ A. Azerine and L. Idoumghar (submitted to *Omega*).
 
 The repository holds everything behind the computational study of the paper:
 
-- the **CRI framework** (Certify–Round–Improve): the a priori certificates on the optimal peak, the
+- the **CRI framework** (Certify-Round-Improve): the a priori certificates on the optimal peak, the
   certified roundings, the local searches, the exact models, and every baseline of the paper;
 - the **numerical verification of the theory**: every statement of Sections 3 and 4 checked on
   instances with a proven optimum (`theory/`);
@@ -43,7 +43,7 @@ with the commands of [Command line](#command-line).
 | 1/6 | correctness tests (`pytest tests`) | ~3 min | yes |
 | 2/6 | smoke test: every remaining method on two large campaign instances (feasibility, status, budgets) | ~10 min | yes |
 | 3/6 | numerical verification of the theory (`theory/verify_theory.py`); stops if any test fails | 15 min to 1 h | yes |
-| 4/6 | faithfulness check against the published code of the earlier methods (`tests/test_faithful.py`) | ~10 min | yes |
+| 4/6 | faithfulness check against the original code of the earlier methods (`tests/test_faithful.py`) | ~10 min | yes |
 | 5/6 | the campaign: every block of `config.yaml`, resumed from the stored runs | hours | resumes |
 | 6/6 | the report, rebuilt from the raw pkl files (`results/03_report/report.html`), then its audit (`results/05_logs/audit.md`) | ~3 min | every time |
 
@@ -123,7 +123,7 @@ theory/        the verified implementation of Sections 3-4 and its numerical ver
 tests/
   test_kernels.py      feasibility, validity of bounds and guarantees, statistics, config
   test_equivalence.py  the framework's Certify code against theory/ (knapsack, LB_cut, alpha_cut, LB_conf)
-  test_faithful.py     earlier methods against their published code (tests/reference_old, verbatim)
+  test_faithful.py     earlier methods against their original code (tests/reference_old, verbatim)
   test_config.py       every reference of config.yaml and config_quick.yaml resolves (ids, sets, blocks)
   test_fuzz.py         every method on degenerate and random tiny instances, against exact optima
   test_invariants.py   incremental loads, segment tree and best schedule of the SA/RR/LLS/MT kernels
@@ -139,7 +139,7 @@ tools/
 
 | id | what it is | paper |
 |---|---|---|
-| G, RR, RLP, SA | earlier methods, faithful re-implementations, published stopping rules | Algorithms 3-7 |
+| G, RR, RLP, SA | earlier methods, faithful re-implementations, original stopping rules | Algorithms 3-7 |
 | HSG, HSR, HSL | SA started from G, from RR (N = 1000) and from RLP (5 trials): the former hybrids | Sec. 5 |
 | G-b, RR-b, RLP-b, SA-b, HS*-b | the same methods using the whole budget (restarts, trials, re-heating) | equal-budget comparisons |
 | CE-{lp,cut,conf}-{excess,union,comp} | derandomized rounding at α*, α_cut, α_conf | Algorithm 1, Thm 4.25(b) |
@@ -291,10 +291,10 @@ or `results/` to start over. Tuned parameters are stored in
 1. Copy this folder to a local folder **outside any synchronized folder** (OneDrive, Dropbox),
    for example `C:/runs/`. Synchronization can lock files while the runner writes them, and it
    fills the disk. For a fresh campaign, leave out any `results/` folder.
-2. Do **not** copy the context cache (`~/.cri_framework_cache/J10`). It holds the Certify
+2. Do **not** copy the context cache (`~/.cri_framework_cache/ppmsp`). It holds the Certify
    artifacts with their measured times, which are charged to the methods, so they must be
    measured on the machine itself. Each results folder has its own cache,
-   `~/.cri_framework_cache/J10/<campaign id>/`, with the id in `results/05_logs/campaign_id.txt`;
+   `~/.cri_framework_cache/ppmsp/<campaign id>/`, with the id in `results/05_logs/campaign_id.txt`;
    old cache folders can be deleted once their campaign is finished.
 3. Install Python and the requirements, and the Gurobi licence. Each worker opens one Gurobi
    environment; with a WLS licence, check that the licence allows that many sessions at once and
@@ -355,7 +355,7 @@ results/
                      (when the block has that analysis), each with tables/ and figures/
     30_budget_ladders/<ladder>/     time-quality ladders across blocks (report.budget_ladders of the
                                     config: E4a -> E4b -> E3, 1 s to 600 s; E10a -> E10b) on common instances
-  04_faithfulness_check/            published code vs re-implementation (step 4)
+  04_faithfulness_check/            original code vs re-implementation (step 4)
   05_logs/                          run_log.txt, config_used.json, audit.md, step markers of run_all.bat,
                                     campaign_id.txt (names this campaign's context cache),
                                     environment.jsonl (machine and software versions of every start of run),
@@ -390,7 +390,7 @@ and the rebuild equivalence; forgetting and recomputing one method; the smoke te
 code. Run it from a short folder path: the audit checks that no result path exceeds 260 characters.
 
 The Certify artifacts of each instance (LP, lower bounds, certificates, with their measured costs)
-are cached in `run.cache` (default `~/.cri_framework_cache/J10`). Deleting the cache only costs
+are cached in `run.cache` (default `~/.cri_framework_cache/ppmsp`). Deleting the cache only costs
 recomputation; keep it to reuse the same recorded costs across blocks.
 
 ## Statistics used in the report
@@ -441,10 +441,10 @@ python -m tests.test_faithful --instances 6 --runs 20
 ```
 
 The last command writes `results/04_faithfulness_check/faithfulness.md`. For each instance and each
-earlier method, it reports the mean peaks of the published code and of the re-implementation,
+earlier method, it reports the mean peaks of the original code and of the re-implementation,
 the Mann-Whitney p-value and the Holm-adjusted p-value. `RLP-sameLP` gives both implementations
 the same LP solution, which isolates the rounding and repair logic from the choice of the
-optimal vertex: CBC in the published code, Gurobi here.
+optimal vertex: CBC in the original code, Gurobi here.
 
 ## Results of the paper
 

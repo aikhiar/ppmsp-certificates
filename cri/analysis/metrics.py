@@ -13,7 +13,7 @@ Metrics per run
   gap_cert  100 (obj - LB_cert) / LB_cert  gap to our own certified lower bound (no MILP involved)
   gap_lp    100 (obj - P_LP) / P_LP        gap to the LP relaxation bound
   gap_ref   100 (obj - REF) / REF          relative difference to the exact solver's incumbent (the
-                                           measure of the Omega submission; NOT an optimality gap unless
+                                           measure used with the earlier methods; NOT an optimality gap unless
                                            the reference is proven)
   hit_cert  obj <= LB_cert   (proved optimal by the certificate alone)
   hit_own   obj <= the method's own lower bound (CRI: its certificate; Gurobi: its dual bound)
@@ -155,9 +155,9 @@ def anytime_curve(traces, keys, ref_of, grid, kind="gap_lb"):
 
 
 def charge_wall_time(runs):
-    """Charged time of the Gurobi runs = their wall time (recorded by the runner around the whole run). Until
-    2026-10-24 the solver wrapper stopped its clock before recovering the schedule of the aggregated model (one
-    LP), so that LP was not charged; nothing else of a Gurobi run is charged separately, so its wall time is
+    """Charged time of the Gurobi runs = their wall time (recorded by the runner around the whole run). In results
+    recorded by earlier versions of the framework, the solver wrapper stopped its clock before recovering the
+    schedule of the aggregated model (one LP), so that LP was not charged; nothing else of a Gurobi run is charged separately, so its wall time is
     what it used. Idempotent; the other methods are unchanged (their artifacts are charged separately)."""
     if runs is None or "info_class" not in runs or "info_wall" not in runs:
         return runs

@@ -7,7 +7,7 @@ marginals alpha[i, t] = P(X_it = 1). Every bound below is valid for ANY alpha in
 LP feasible set (row sums p_i, entries in [0, 1], zero outside the window), because
 each row of such an alpha is a convex combination of p_i-subsets of the window.
 
-Old bounds (Omega submission / thesis appendix):
+Non-localized bounds (Corollary 4.12 of the paper):
     hoeffding_union, hoeffding_lll, bernstein_union, bernstein_lll
 New bounds:
     local_hoeffding_union, local_bernstein_union    per-slot variances, one threshold u

@@ -1,5 +1,5 @@
 """
-State-of-the-art baselines (Reviewer #2, Major comment 1b).
+Baselines from the literature (Section 6.6 of the paper).
 
 Implemented (Numba kernels, like the methods of the paper)
   BK          Burgess & Killebrew (1962) sum-of-squares leveling, the classical resource-leveling

@@ -16,8 +16,8 @@ problem: ppmsp
 
 run:
   output: results               # relative to this file
-  cache: ~/.cri_framework_cache/J10   # per-instance contexts (LP, lower bounds, certificates): kept out of
-                                      # OneDrive (large, rewritten often); ~ and %VARS% are expanded
+  cache: ~/.cri_framework_cache/ppmsp # per-instance contexts (LP, lower bounds, certificates): kept out of
+                                      # synchronized folders (large, rewritten often); ~ and %VARS% are expanded
   seed: 2026                    # base seed of every instance set
   workers: auto                 # auto = from the cores and the free RAM of the machine (see cri/core/resources.py);
                                 # an integer fixes it; a block may override with its own workers / mem_gb_per_worker
@@ -159,7 +159,7 @@ instance_sets:
   - {name: small, family: omega,     n: [10, 20, 30], T: 48, count: 5, seed: 100}
   - {name: small, family: staggered, n: [10, 20, 30], T: 48, count: 5, seed: 200}
   - {name: small, family: overnight, n: [10, 20, 30], T: 48, count: 5, seed: 300}
-  # the benchmark of the Omega submission (same generator and sizes, new seeds)
+  # the benchmark of the earlier methods (same generator and sizes, new seeds)
   - {name: omega_published, family: omega, n: 20,  T: 48,  count: 5, seed: 2561}
   - {name: omega_published, family: omega, n: 30,  T: 48,  count: 5, seed: 2562}
   - {name: omega_published, family: omega, n: 40,  T: 72,  count: 5, seed: 2563}
@@ -203,7 +203,7 @@ experiments:
 
   E1_certificates:
     description: Every lower and upper certificate (Sections 3-4) against the optimum or the best known value; validity, tightness, cost, instances proved optimal a priori.
-    addresses: Reviewer 2, Major 2 (what the bounds add) and Major 3 (independence assumption, estimation from runs)
+    addresses: Section 6.2 of the paper (quality of the a priori certificates)
     sets: [small, omega_published, medium, large, special]
     methods: [CERTIFY]
     budgets: [null]
@@ -212,7 +212,7 @@ experiments:
     analyses: [certificates]
 
   E8a_tuning_faithful:
-    description: Faithful tuning of the earlier SA (and, through tuned_as, of its hybrids) with the grid of the Omega submission (243 points, iteration mode), on the separate tuning set (never on evaluation instances).
+    description: Faithful tuning of the earlier SA (and, through tuned_as, of its hybrids) with its original grid (243 points, iteration mode), on the separate tuning set (never on evaluation instances).
     kind: tuning
     sets: [tune]
     methods: [SA]
@@ -240,7 +240,7 @@ experiments:
 
   E2_head_to_head:
     description: Earlier methods against their certified counterparts, as published (each method's own stopping rule) - RR vs MT, RLP vs CE and IR, G vs CE - and SA vs its hybrids.
-    addresses: the decision on the role of RR and RLP in the portfolio
+    addresses: Section 6.3 of the paper (certified roundings and their heuristic counterparts)
     sets: [small, omega_published, medium]
     methods: [G, RR, RLP, SA, HSG, HSR, HSL, CE-lp-excess, CE-lp-union, CE-lp-comp, CE-cut-excess, CE-cut-union, CE-cut-comp,
               CE-conf-excess, CE-conf-union, CE-conf-comp, IR, MT-lp, MT-cut, MT-conf]
@@ -263,7 +263,7 @@ experiments:
 
   E4a_equal_budgets:
     description: Every method and Gurobi (standard and aggregated models, one thread each) at the same wall-clock budgets of 1 s and 10 s.
-    addresses: Reviewer 2, Major 4 (objective vs time, equal budgets) and Minor 1 (Gurobi bounds and gaps)
+    addresses: Section 6.4 of the paper (equal time budgets; Gurobi's bounds and MIP gaps)
     sets: [omega_published, medium, large]
     methods: [G-b, RR-b, RLP-b, SA-b, HSC-b, LLS, WLNS, BK, CRI, CRI+C, GUROBI-std, GUROBI-agg]
     budgets: [1, 10]
@@ -275,7 +275,7 @@ experiments:
 
   E4b_equal_budgets_60s:
     description: The anytime methods and Gurobi at 60 s; anytime curves over the whole run.
-    addresses: Reviewer 2, Major 4 and Minor 1
+    addresses: Section 6.4 of the paper (equal time budgets, 60 s)
     sets: [medium, large]
     methods: [RR-b, SA-b, HSC-b, LLS, WLNS, CRI, CRI+C, GUROBI-std, GUROBI-agg]
     budgets: [60]
@@ -287,7 +287,7 @@ experiments:
 
   E3_long_runs:
     description: Long runs (600 s) of CRI and Gurobi, one instance per family and size of the medium and large sets; anytime curves and dual bounds.
-    addresses: Reviewer 2, Major 4 and Minor 1
+    addresses: Section 6.5 of the paper (runs of 600 seconds)
     sets: [medium, large]
     reps: [0]
     methods: [CRI, CRI+C, GUROBI-std, GUROBI-agg]
@@ -301,7 +301,7 @@ experiments:
 
   E3x_long_runs_xlarge:
     description: Long runs (600 s) of CRI and Gurobi on the xlarge instances (n = 5,000-10,000, T up to 288), where Gurobi struggles - objective-versus-runtime curves and dual bounds at full length (E6 stops at 120 s). Own block so that its memory need does not reduce the workers of E3.
-    addresses: Reviewer 2, Major 4 (larger instances where Gurobi struggles; objective-versus-runtime curves)
+    addresses: Section 6.5 of the paper (the largest instances; objective-versus-runtime curves)
     sets: [xlarge]
     reps: [0]
     methods: [CRI, CRI+C, GUROBI-std, GUROBI-agg]
@@ -334,7 +334,7 @@ experiments:
 
   E6_scalability:
     description: Scaling up to n = 10,000 vehicles and T = 288 slots - time of the Certify stage and of each method, gap to the certified lower bound. Workers sized automatically from the free RAM (8 GB per worker for these models).
-    addresses: Reviewer 2, Major 4 (substantially larger instances)
+    addresses: Section 6.5 of the paper (scalability)
     sets: [large, xlarge]
     reps: [0]
     methods: [G, CE-lp-excess, CE-cut-excess, IR, LLS, CRI, GUROBI-std, GUROBI-agg, ASAP, GNP, BK]
@@ -346,7 +346,7 @@ experiments:
 
   E7_gurobi_threads:
     description: Gurobi with 4 threads against single-thread CRI at 10 s and 60 s. Workers sized automatically, 4 cores each (physical cores - 1, divided by 4), so that Gurobi has its threads.
-    addresses: Reviewer 2, Major 4 (fairness of the solver comparison) and Minor 1
+    addresses: Section 6.5 of the paper (Gurobi with four threads)
     sets: [medium, large]
     reps: [0]
     methods: [GUROBI-std-4t, GUROBI-agg-4t, CRI]
@@ -358,7 +358,7 @@ experiments:
 
   E9_managerial:
     description: Peak reduction against uncontrolled charging (ASAP) and non-preemptive charging (GNP); load profiles.
-    addresses: Reviewer 2, Minor 2 (modelling assumptions and their consequences)
+    addresses: Section 6.8 of the paper (managerial insights)
     sets: [medium, large]
     methods: [ASAP, GNP, CRI]
     budgets: [10]
@@ -371,8 +371,8 @@ experiments:
     analyses: [managerial]
 
   E10a_state_of_the_art:
-    description: State-of-the-art baselines requested by Reviewer 2 at 10 s - NFDH (Ranjan et al. 2014), the heuristic and the ILS of Zaidi et al. (EJOR 2024; as published and restarted until the budget), the online alpha-policy of Hunsaker et al. (2003), the branch and bound of Afshar-Nadjafi et al. (2013), the hybrid metaheuristics of Aristotelous and Nearchou (2024; SER and PAR with LS2, and SER with their leveling objective), the classical Burgess-Killebrew leveling - against CRI and Gurobi (runs reused from E4a).
-    addresses: Reviewer 2, Major 1a and 1b
+    description: Baselines from the literature at 10 s, namely NFDH (Ranjan et al. 2014), the heuristic and the ILS of Zaidi et al. (EJOR 2024; as published and restarted until the budget), the online alpha-policy of Hunsaker et al. (2003), the branch and bound of Afshar-Nadjafi et al. (2013), the hybrid metaheuristics of Aristotelous and Nearchou (2024; SER and PAR with LS2, and SER with their leveling objective), the classical Burgess-Killebrew leveling; against CRI and Gurobi (runs reused from E4a).
+    addresses: Section 6.6 of the paper (methods from the literature, 10 s)
     sets: [omega_published, medium, large]
     methods: [BK, NFDH, ZAIDI_H, ZAIDI_ILS, ZAIDI_ILS-b, HUNSAKER, AFSHAR_BB, AN_HYBRID, AN-PAR, AN-dev]
     budgets: [10]
@@ -384,7 +384,7 @@ experiments:
 
   E10b_state_of_the_art_60s:
     description: The anytime state-of-the-art baselines at 60 s, against CRI and Gurobi (runs reused from E4b).
-    addresses: Reviewer 2, Major 1b
+    addresses: Section 6.6 of the paper (methods from the literature, 60 s)
     sets: [medium, large]
     methods: [ZAIDI_ILS-b, AFSHAR_BB, AN_HYBRID, AN-PAR]
     budgets: [60]
@@ -402,7 +402,7 @@ report:
   highlight: [CRI]
   figure_formats: [png, pdf]
   color_order: [CRI, GUROBI-std, GUROBI-agg, LLS, WLNS, SA-b, CRI+C, RR-b]
-  # time-quality ladders across blocks (Reviewer 2, Major 4: would longer runs improve the solutions?):
+  # time-quality ladders across blocks (would longer runs improve the solutions?):
   # mean gap of every method present in at least two of the blocks, at each budget, on the instances that all
   # the listed blocks share -> 03_report/30_budget_ladders/<name>/
   budget_ladders:

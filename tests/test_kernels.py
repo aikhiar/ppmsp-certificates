@@ -254,8 +254,8 @@ def test_exact_deadline_and_runtime(env):
 
 
 def test_cri_complete_within_budget(env):
-    """CRI+C at 1 s on n = 1000 (the 2026-10-23 campaign: up to 2.5 s there, the completion model was being
-    built after the deadline): it now stays within its budget and keeps a feasible schedule."""
+    """CRI+C at 1 s on n = 1000 (an earlier version took up to 2.5 s there, because the completion model was
+    built after the deadline): it stays within its budget and keeps a feasible schedule."""
     inst = G.FAMILIES["overnight"](1000, 96, np.random.default_rng(1000))
     ctx = CX.make_context(inst, env, {"conf_time_limit": 20})
     make_method({"class": "CRI"}).run(inst, ctx, 1.0, 0)          # artifacts cached, as in the runner

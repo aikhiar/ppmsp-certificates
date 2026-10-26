@@ -4,7 +4,7 @@ base: config.yaml
 
 run:
   output: results_quick
-  cache: ~/.cri_framework_cache/J10_quick
+  cache: ~/.cri_framework_cache/ppmsp_quick
   workers: auto
   min_free_gb: 1.5
 

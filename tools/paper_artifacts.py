@@ -201,35 +201,35 @@ def t_blocks(C, out):
     runs = (st.sum(axis=1)).to_dict()
     B = [
         ("E1", "E1_certificates", "small, omega\\_published, medium, large, special", "certificates only", "none",
-         "\\ref{subsec:exp-certificates}", "M2, M3"),
+         "\\ref{subsec:exp-certificates}"),
         ("E2", "E2_head_to_head", "small, omega\\_published, medium", "earlier methods and their certified counterparts",
-         "own rule", "\\ref{subsec:exp-roundings}", "--"),
+         "own rule", "\\ref{subsec:exp-roundings}"),
         ("E2b", "E2b_head_to_head_budgets", "small, medium", "the same pairs, anytime versions", "1, 10",
-         "\\ref{subsec:exp-roundings}", "M4"),
+         "\\ref{subsec:exp-roundings}"),
         ("E4a", "E4a_equal_budgets", "omega\\_published, medium, large", "all methods, Gurobi (2 models)", "1, 10",
-         "\\ref{subsec:exp-equal}", "M4, m1"),
+         "\\ref{subsec:exp-equal}"),
         ("E4b", "E4b_equal_budgets_60s", "medium, large", "anytime methods, Gurobi", "60",
-         "\\ref{subsec:exp-equal}", "M4, m1"),
+         "\\ref{subsec:exp-equal}"),
         ("E3", "E3_long_runs", "medium, large (one per family and $n$)", "CRI, CRI+C, Gurobi", "600",
-         "\\ref{subsec:exp-long}", "M4, m1"),
-        ("E3x", "E3x_long_runs_xlarge", "xlarge", "CRI, CRI+C, Gurobi", "600", "\\ref{subsec:exp-long}", "M4"),
+         "\\ref{subsec:exp-long}"),
+        ("E3x", "E3x_long_runs_xlarge", "xlarge", "CRI, CRI+C, Gurobi", "600", "\\ref{subsec:exp-long}"),
         ("E6", "E6_scalability", "large, xlarge (one per family and $n$)", "fast methods, CRI, Gurobi", "120",
-         "\\ref{subsec:exp-long}", "M4"),
+         "\\ref{subsec:exp-long}"),
         ("E7", "E7_gurobi_threads", "medium, large (one per family and $n$)", "CRI against Gurobi with 4 threads",
-         "10, 60", "\\ref{subsec:exp-long}", "M4"),
+         "10, 60", "\\ref{subsec:exp-long}"),
         ("E10a", "E10a_state_of_the_art", "omega\\_published, medium, large", "methods from the literature",
-         "10", "\\ref{subsec:exp-sota}", "M1"),
+         "10", "\\ref{subsec:exp-sota}"),
         ("E10b", "E10b_state_of_the_art_60s", "medium, large", "anytime methods from the literature", "60",
-         "\\ref{subsec:exp-sota}", "M1"),
-        ("E5", "E5_ablation", "medium", "configurations of CRI, SA starts", "10", "\\ref{subsec:exp-ablation}", "--"),
-        ("E5b", "E5b_ablation_60s", "medium", "Improve stage", "60", "\\ref{subsec:exp-ablation}", "--"),
+         "\\ref{subsec:exp-sota}"),
+        ("E5", "E5_ablation", "medium", "configurations of CRI, SA starts", "10", "\\ref{subsec:exp-ablation}"),
+        ("E5b", "E5b_ablation_60s", "medium", "Improve stage", "60", "\\ref{subsec:exp-ablation}"),
         ("E9", "E9_managerial", "medium, large", "CRI against reference policies", "10",
-         "\\ref{subsec:exp-managerial}", "m2"),
+         "\\ref{subsec:exp-managerial}"),
         ("E8", "E8a_tuning_faithful", "tune", "tuning of SA (original and anytime), LLS and W-LNS", "own rule, 10",
-         "\\ref{subsec:exp-setup}", "--"),
+         "\\ref{subsec:exp-setup}"),
     ]
     rows = []
-    for short, key, sets, methods, bud, sec, rev in B:
+    for short, key, sets, methods, bud, sec in B:
         n = runs.get(key, 0) + (runs.get("E8b_tuning_budget", 0) if short == "E8" else 0)
         rows.append(f"{short} & {sets} & {methods} & {bud} & {fn(n)} & {sec}")
     total = int(sum(runs.values()))

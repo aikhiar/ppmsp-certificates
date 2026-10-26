@@ -1,7 +1,7 @@
 """
 Instance families. Every generator has the signature (n, T, rng, **params) -> Instance.
 
-  omega      the generator of the Omega submission (chargers with disjoint windows per charger,
+  omega      the generator used with the earlier methods (chargers with disjoint windows per charger,
              Level-2 powers, durations from battery energy demand)
   staggered  short windows (3-10 slots by default) at random positions: sparse dependency
   overnight  long windows: arrival in the first quarter of the horizon, departure in the last

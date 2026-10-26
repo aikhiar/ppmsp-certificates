@@ -1,7 +1,7 @@
 """
 Statistical tests on per-instance values (blocks = instances, treatments = methods). Runs of a
 stochastic method are first averaged per instance, so that seeds are not counted as independent
-instances (the old analysis pooled runs; Reviewer remark on the statistics).
+instances (pooling all runs would overstate the evidence).
 
   friedman            Friedman chi-square and the Iman-Davenport F correction, average ranks
   nemenyi_cd          Nemenyi critical difference (studentized range, Demsar 2006)

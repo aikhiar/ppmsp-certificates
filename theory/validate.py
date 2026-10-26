@@ -39,7 +39,7 @@ def log(*a):
 # ── instance families ───────────────────────────────────────────────────────────
 
 def gen_omega(n, T, rng):
-    """The generator of the Omega submission (vehicles of a charger have disjoint windows)."""
+    """The omega generator, used with the earlier methods (vehicles of a charger have disjoint windows)."""
     m = int(np.ceil(n / 3))
     part = np.zeros(n, int); part[:m] = np.arange(1, m + 1); part[m:] = rng.integers(1, m + 1, n - m)
     part = part[rng.permutation(n)]

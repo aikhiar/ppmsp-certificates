@@ -1,7 +1,7 @@
 """
 Verbatim copy of the instance generator and of the algorithms of the earlier version of this work
-(its published notebook, cells 1 and 4). Used only by tests/test_faithful.py, to check that
-the Numba re-implementations of G, RR, RLP, SA and the hybrids behave like the published code.
+(its original notebook, cells 1 and 4). Used only by tests/test_faithful.py, to check that
+the Numba re-implementations of G, RR, RLP, SA and the hybrids behave like the original code.
 Do not edit (except this header).
 """
 # flake8: noqa

@@ -16,7 +16,7 @@ REM    if one of them fails):
 REM      [1/6] correctness tests                        (pytest tests, in parallel, ~1-3 min)
 REM      [2/6] smoke test on large campaign instances   (~10 min)
 REM      [3/6] numerical verification of the theory     (theory\verify_theory.py, 15 min to 1 h)
-REM      [4/6] faithfulness check against the published code (~10 min)
+REM      [4/6] faithfulness check against the original code (~10 min)
 REM    Experiments:
 REM      [5/6] the campaign: every block of config.yaml (resumes from the stored runs)
 REM      [6/6] the report, rebuilt from the raw pkl files -> results\03_report\report.html,
@@ -107,7 +107,7 @@ if exist "%MK%\step_3_theory_verification_passed.txt" (
 )
 
 echo.
-echo ===== [4/6] Faithfulness check against the published code =====
+echo ===== [4/6] Faithfulness check against the original code =====
 if exist "%MK%\step_4_faithfulness_check_done.txt" (
   echo already done on this machine - skipped
 ) else (

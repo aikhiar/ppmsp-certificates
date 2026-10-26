@@ -60,15 +60,15 @@ class Deadline:
 RAW = "01_raw_runs"                    # one pickle per (block, instance) job: the source of truth
 DATA = "02_aggregated_data"            # tables rebuilt from 01 by `python -m cri report`
 REPORT = "03_report"                   # report.md / report.html and one folder per section and block
-FAITHFULNESS = "04_faithfulness_check"  # published code against the re-implementation (tests/test_faithful.py)
+FAITHFULNESS = "04_faithfulness_check"  # original code against the re-implementation (tests/test_faithful.py)
 LOGS = "05_logs"                       # run log, configuration used, step markers of run_all
 ENVIRONMENT = "environment.jsonl"      # in 05_logs: machine and software versions of every start of `run`
-LEGACY = {RAW: "raw", DATA: "data", REPORT: "report", FAITHFULNESS: "faithfulness"}   # names before 2026-10-23
+LEGACY = {RAW: "raw", DATA: "data", REPORT: "report", FAITHFULNESS: "faithfulness"}   # names of the older layout
 
 
 def results_dir(root, kind):
-    """Folder `kind` of a results folder; the names used before 2026-10-23 are still read when the new
-    folder does not exist yet (e.g. to resume the laptop results)."""
+    """Folder `kind` of a results folder; the names of the older layout are still read when the new
+    folder does not exist yet (to resume older results)."""
     new = os.path.join(root, kind)
     old = os.path.join(root, LEGACY.get(kind, kind))
     return old if (kind in LEGACY and not os.path.exists(new) and os.path.exists(old)) else new

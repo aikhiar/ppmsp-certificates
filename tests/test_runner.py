@@ -51,7 +51,7 @@ def test_waits_for_the_licence(tmp_path):
 
 def test_audit_overrun_check():
     """The budget check of the audit with no overrun, expected single-shot overruns and unexpected ones
-    (the case that crashed the first audit of the VM campaign)."""
+    (a case that once crashed the audit)."""
     import pandas as pd
     from cri.analysis.audit import overrun_check
     base = dict(experiment="E10a_state_of_the_art", instance="i1", seed=0)
@@ -112,7 +112,7 @@ def test_evaluate_at_budget():
 
 
 def test_charge_wall_time():
-    """The Gurobi runs of the 2026-10-23 campaign are charged their wall time (it includes the read-out of the
+    """Gurobi runs recorded before the read-out of the schedule was timed are charged their wall time (it includes the read-out of the
     schedule that the solver wrapper did not count); the other runs and later Gurobi runs are unchanged."""
     import numpy as np
     import pandas as pd
@@ -130,7 +130,7 @@ def test_charge_wall_time():
 
 def test_context_cache_per_campaign(tmp_path):
     """A fresh results folder gets its own, empty context cache (clean run from A to Z); the same folder finds
-    it again (resume); a results folder of before 2026-10-24 keeps the shared cache folder."""
+    it again (resume); a results folder of an earlier version of the framework keeps the shared cache folder."""
     r1, _ = _runner(tmp_path, wait_min=0.001)
     cid = r1.campaign_id
     assert cid and r1.cache_dir == os.path.join(str(tmp_path / "cache"), cid, "contexts")

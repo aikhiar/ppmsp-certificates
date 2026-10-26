@@ -1,10 +1,10 @@
 """
 Faithfulness of the re-implemented earlier methods (G, RR, RLP, SA and the hybrids HSG, HSR, HSL).
 
-For K instances of the Omega generator and each method, R runs of the published code
+For K instances of the omega generator and each method, R runs of the original code
 (tests/reference_old/old_code.py, verbatim) and R runs of the framework are compared:
 Mann-Whitney U test on the peaks (Holm over all instance-method pairs), difference of the means.
-"RLP-sameLP" feeds the framework's rounding kernel with the LP solution of the published code,
+"RLP-sameLP" feeds the framework's rounding kernel with the LP solution of the original code,
 which isolates the rounding and repair logic from the choice of the optimal LP vertex.
 
     python -m tests.test_faithful --instances 6 --runs 20          (full check, in parallel, writes a table)

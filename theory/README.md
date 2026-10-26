@@ -13,7 +13,7 @@ The framework in `../cri/` has a faster version of the same Certify code;
   approximation holds, or an exact binomial test where it does not, so that a false alarm is
   negligible over all the tests. This is step 3 of `../run_all.bat`.
 - `bounds.py`: instances, the LP relaxation (vertex by primal simplex), exact slot laws, the
-  bounds of the earlier version, the localized closed forms, per-slot thresholds with the union
+  non-localized bounds (Corollary 4.12), the localized closed forms, per-slot thresholds with the union
   bound and the asymmetric local lemma, the averaging bound, and derandomized rounding (method of
   conditional expectations).
 - `certificates.py`: the full set of certificates and the algorithms that attain them:

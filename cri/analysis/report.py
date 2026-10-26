@@ -73,7 +73,7 @@ SECTIONS = {
                                       "artifacts",
     "03_validity_checks": "feasibility of every schedule, a priori guarantees, certified lower bounds, budgets, "
                           "abnormal runs",
-    "04_faithfulness_of_earlier_methods": "the published code of the earlier methods against their re-implementation",
+    "04_faithfulness_of_earlier_methods": "the original code of the earlier methods against their re-implementation",
     "05_theory_verification": "numerical verification of every statement of Sections 3-4 (theory/verify_theory.py)",
 }
 BLOCK_PARTS = {
@@ -714,9 +714,9 @@ class Report:
                 best_pub = c[pub].min(axis=1)
                 imp = 100 * (best_pub - c.info_U_best) / best_pub
                 rat = best_pub / c.info_U_best
-                self.p(f"Best new upper certificate (U_best) against the best bound of the Omega submission (same LP "
+                self.p(f"Best new upper certificate (U_best) against the best non-localized bound (same LP "
                        f"vertex): U_best is lower by {imp.mean():.1f}% on average (median {imp.median():.1f}%, min "
-                       f"{imp.min():.1f}%, max {imp.max():.1f}%); the published bound is {rat.mean():.2f} times U_best "
+                       f"{imp.min():.1f}%, max {imp.max():.1f}%); the non-localized bound is {rat.mean():.2f} times U_best "
                        f"on average.")
         keys = [k for k in ("U_best", "lp_union", "lp_component_union", "lp_lll", "lp_exist_sys", "IR_guarantee",
                             "published_best", "LB", "LB_cut", "LB_conf", "P_LP") if "info_" + k in c]
@@ -1025,7 +1025,7 @@ class Report:
                     import traceback
                     self.p(f"> analysis `{a}` failed: `{e!r}`\n\n```\n{traceback.format_exc()[-1500:]}\n```")
         if self.cfg.get("report", {}).get("budget_ladders"):
-            self.at("30_budget_ladders", desc="time-quality ladders across blocks (Reviewer 2, Major 4): every method "
+            self.at("30_budget_ladders", desc="time-quality ladders across blocks: every method "
                     "at every budget from the shortest to the longest runs, on common instances")
             self.h(2, "Budget ladders across blocks")
             try:
