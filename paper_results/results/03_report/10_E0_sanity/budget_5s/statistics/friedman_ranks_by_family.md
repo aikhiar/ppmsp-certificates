@@ -1,0 +1,3 @@
+| index | AFSHAR_BB | AN_HYBRID | CE-cut-union | CE-conf-comp | CRI | GUROBI-std | GUROBI-agg | CRI+C | WLNS | ZAIDI_ILS | LLS | CE-lp-excess | RR | HSR | BK | HSG | RLP | ZAIDI_H | NFDH | G | HSL | SA | GNP | MT-lp | HUNSAKER | IR | ASAP | Friedman p | instances |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| omega | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 9.500 | 10.750 | 11.917 | 11.917 | 14.583 | 15.750 | 15.750 | 16.500 | 16.583 | 16.750 | 17.750 | 17.750 | 18.333 | 19.333 | 20.833 | 22.333 | 26.667 | 1.868e-10 | 6.000 |

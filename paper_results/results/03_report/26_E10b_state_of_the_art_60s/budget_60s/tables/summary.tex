@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{E10b\_state\_of\_the\_art\_60s, budget 60 s: gap\_lb (per-instance mean over seeds)}
+\label{tab:E10b_state_of_the_art_60s_b60_summary}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+method & instances & runs & mean gap\_lb & sd & CI95 lo & CI95 hi & median & max & \#hit LB* & \#best & mean time (s) & infeasible/failed \\
+\midrule
+ZAIDI\_ILS-b & 72 & 72 & 1.26 & 1.43 & 0.94 & 1.60 & 0.64 & 5.73 & 13 & 13 & 60.01 & 0 \\
+AFSHAR\_BB & 72 & 72 & 114.00 & 113.64 & 88.88 & 139.84 & 52.65 & 314.88 & 9 & 9 & 53.08 & 0 \\
+AN\_HYBRID & 72 & 72 & 0.95 & 1.11 & 0.70 & 1.21 & 0.47 & 4.11 & 10 & 10 & 47.56 & 0 \\
+AN-PAR & 72 & 72 & 1.29 & 1.40 & 0.99 & 1.64 & 0.75 & 4.93 & 7 & 7 & 48.08 & 0 \\
+CRI & 72 & 144 & \textbf{0.09} & 0.14 & 0.06 & 0.12 & 0.06 & 0.74 & 23 & 48 & 44.80 & 0 \\
+GUROBI-std & 72 & 72 & 0.36 & 0.37 & 0.29 & 0.45 & 0.23 & 1.26 & 18 & 18 & 48.04 & 0 \\
+GUROBI-agg & 72 & 72 & 1.60 & 7.92 & 0.54 & 3.60 & 0.45 & 67.55 & 16 & 16 & 48.50 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

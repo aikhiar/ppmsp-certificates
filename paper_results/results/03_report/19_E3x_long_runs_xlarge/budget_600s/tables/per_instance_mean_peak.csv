@@ -1,0 +1,6 @@
+instance,CRI,CRI+C,GUROBI-agg,GUROBI-std
+xlarge_omega_n10000_T96_000,7308.8,7308.9,7310.8,7310.0
+xlarge_omega_n5000_T96_000,3688.1,3688.1,3690.3,3689.4
+xlarge_overnight_n5000_T96_000,9200.0,9200.0,9201.1,9200.9
+xlarge_staggered_n10000_T288_000,3392.7,3392.6,3393.6,3393.5
+xlarge_staggered_n5000_T288_000,1700.3,1700.4,1703.6,1701.5

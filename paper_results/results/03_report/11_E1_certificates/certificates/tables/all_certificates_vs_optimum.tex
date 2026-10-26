@@ -1,0 +1,79 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Every certificate against the optimum (or best known value): a violation is an upper certificate below a proven optimum or a lower one above a feasible value}
+\label{tab:E1_certificates_certificates}
+\begin{tabular}{llrrrrrr}
+\toprule
+certificate & kind & instances & mean ratio to OPT/BKS & min ratio & \#equal OPT/BKS & violations & max ratio \\
+\midrule
+P\_LP & lower & 172 & 0.9200 & 0.5000 & 0 & 0 & n/a \\
+LB\_LP\_rounded & lower & 172 & 0.9317 & 0.5227 & 11 & 0 & n/a \\
+LB\_cut & lower & 172 & 0.9793 & 0.7701 & 42 & 0 & n/a \\
+LB\_conf & lower & 172 & 0.9991 & 0.9840 & 95 & 0 & n/a \\
+LP\_plus\_wmax & upper & 172 & 1.3267 & n/a & 0 & 0 & 1.9177 \\
+published\_hoeffding\_union & upper & 172 & 3.2334 & n/a & 0 & 0 & 5.7084 \\
+published\_bernstein\_union & upper & 172 & 2.3700 & n/a & 0 & 0 & 4.3286 \\
+published\_hoeffding\_lll & upper & 172 & 3.3409 & n/a & 0 & 0 & 5.3424 \\
+published\_bernstein\_lll & upper & 172 & 2.4983 & n/a & 0 & 0 & 4.7084 \\
+lp\_union & upper & 172 & 1.1934 & n/a & 6 & 0 & 1.4815 \\
+lp\_component\_union & upper & 172 & 1.1812 & n/a & 7 & 0 & 1.4815 \\
+lp\_lll & upper & 172 & 1.1969 & n/a & 5 & 0 & 1.5227 \\
+lp\_averaging & upper & 172 & 1.2478 & n/a & 1 & 0 & 1.5871 \\
+lp\_component\_averaging & upper & 172 & 1.2443 & n/a & 1 & 0 & 1.5871 \\
+lp\_closed\_hoeffding\_lll & upper & 172 & 1.6036 & n/a & 0 & 0 & 2.7058 \\
+lp\_closed\_ks\_lll & upper & 172 & 1.5690 & n/a & 0 & 0 & 2.5354 \\
+lp\_closed\_bernstein\_lll & upper & 172 & 2.0519 & n/a & 0 & 0 & 3.9125 \\
+lp\_closed\_hoeffding\_comp & upper & 172 & 1.6028 & n/a & 0 & 0 & 2.5398 \\
+lp\_closed\_ks\_comp & upper & 172 & 1.5682 & n/a & 0 & 0 & 2.4789 \\
+lp\_closed\_bernstein\_comp & upper & 171 & 2.0535 & n/a & 0 & 0 & 3.7974 \\
+lp\_dr\_union & upper & 172 & 1.1866 & n/a & 6 & 0 & 1.4815 \\
+lp\_dr\_component\_union & upper & 172 & 1.1739 & n/a & 7 & 0 & 1.4815 \\
+lp\_dr\_averaging & upper & 172 & 1.2359 & n/a & 1 & 0 & 1.5598 \\
+lp\_dr\_component\_averaging & upper & 172 & 1.2326 & n/a & 1 & 0 & 1.5503 \\
+lp\_dr\_ceiling & upper & 172 & 1.4109 & n/a & 1 & 0 & 2.0551 \\
+lp\_exist\_sys & upper & 145 & 1.1210 & n/a & 13 & 0 & 1.4364 \\
+lp\_emax\_exact & upper & 145 & 1.2733 & n/a & 1 & 0 & 1.5450 \\
+lp\_exist\_full & upper & 128 & 1.1136 & n/a & 16 & 0 & 1.4364 \\
+cut\_union & upper & 172 & 1.1933 & n/a & 10 & 0 & 1.6128 \\
+cut\_component\_union & upper & 172 & 1.1818 & n/a & 14 & 0 & 1.6128 \\
+cut\_lll & upper & 172 & 1.2079 & n/a & 10 & 0 & 1.6979 \\
+cut\_averaging & upper & 172 & 1.2520 & n/a & 4 & 0 & 1.6856 \\
+cut\_component\_averaging & upper & 172 & 1.2486 & n/a & 4 & 0 & 1.6856 \\
+cut\_closed\_hoeffding\_lll & upper & 172 & 1.6487 & n/a & 1 & 0 & 2.8395 \\
+cut\_closed\_ks\_lll & upper & 172 & 1.6045 & n/a & 1 & 0 & 2.6272 \\
+cut\_closed\_bernstein\_lll & upper & 172 & 2.1022 & n/a & 1 & 0 & 4.1415 \\
+cut\_closed\_hoeffding\_comp & upper & 172 & 1.6239 & n/a & 1 & 0 & 2.7563 \\
+cut\_closed\_ks\_comp & upper & 172 & 1.5812 & n/a & 1 & 0 & 2.5525 \\
+cut\_closed\_bernstein\_comp & upper & 170 & 2.0516 & n/a & 0 & 0 & 3.9243 \\
+cut\_dr\_union & upper & 172 & 1.1868 & n/a & 11 & 0 & 1.6128 \\
+cut\_dr\_component\_union & upper & 172 & 1.1765 & n/a & 14 & 0 & 1.6128 \\
+cut\_dr\_averaging & upper & 172 & 1.2366 & n/a & 4 & 0 & 1.6549 \\
+cut\_dr\_component\_averaging & upper & 172 & 1.2338 & n/a & 4 & 0 & 1.6549 \\
+cut\_dr\_ceiling & upper & 172 & 1.4372 & n/a & 4 & 0 & 2.6811 \\
+cut\_exist\_sys & upper & 129 & 1.0890 & n/a & 28 & 0 & 1.3704 \\
+cut\_exist\_full & upper & 99 & 1.0681 & n/a & 28 & 0 & 1.2125 \\
+conf\_union & upper & 143 & 1.2283 & n/a & 46 & 0 & 1.5522 \\
+conf\_component\_union & upper & 143 & 1.2212 & n/a & 46 & 0 & 1.5522 \\
+conf\_lll & upper & 143 & 1.2814 & n/a & 44 & 0 & 1.6951 \\
+conf\_averaging & upper & 143 & 1.3031 & n/a & 37 & 0 & 1.7048 \\
+conf\_component\_averaging & upper & 143 & 1.3008 & n/a & 37 & 0 & 1.7048 \\
+conf\_closed\_hoeffding\_lll & upper & 143 & 1.6863 & n/a & 34 & 0 & 2.3984 \\
+conf\_closed\_ks\_lll & upper & 143 & 1.6530 & n/a & 34 & 0 & 2.3378 \\
+conf\_closed\_bernstein\_lll & upper & 143 & 1.9228 & n/a & 34 & 0 & 3.1285 \\
+conf\_closed\_hoeffding\_comp & upper & 143 & 1.6189 & n/a & 34 & 0 & 2.3693 \\
+conf\_closed\_ks\_comp & upper & 143 & 1.5884 & n/a & 34 & 0 & 2.2787 \\
+conf\_dr\_union & upper & 143 & 1.1706 & n/a & 46 & 0 & 1.5275 \\
+conf\_dr\_component\_union & upper & 143 & 1.1648 & n/a & 47 & 0 & 1.5275 \\
+conf\_dr\_averaging & upper & 143 & 1.2233 & n/a & 38 & 0 & 1.6354 \\
+conf\_dr\_component\_averaging & upper & 143 & 1.2217 & n/a & 38 & 0 & 1.6354 \\
+conf\_dr\_ceiling & upper & 143 & 1.4419 & n/a & 38 & 0 & 2.3704 \\
+conf\_exist\_sys & upper & 61 & 1.0055 & n/a & 54 & 0 & 1.1301 \\
+conf\_exist\_full & upper & 58 & 1.0001 & n/a & 55 & 0 & 1.0032 \\
+IR\_guarantee & upper & 172 & 1.2496 & n/a & 2 & 0 & 1.8333 \\
+U\_best & upper (best) & 172 & 1.0542 & n/a & 57 & 0 & 1.2604 \\
+LB & lower & 172 & 0.9991 & 0.9840 & 95 & 0 & n/a \\
+conf\_closed\_bernstein\_comp & upper & 108 & 2.0932 & n/a & 0 & 0 & 2.9077 \\
+\bottomrule
+\end{tabular}
+\end{table}

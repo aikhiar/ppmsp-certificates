@@ -1,0 +1,1502 @@
+[2026-10-25 02:15:15] config C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\config.yaml -> output C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\results
+[2026-10-25 02:15:15] campaign 20261025_021515_9388, context cache C:\Users\Administrateur/.cri_framework_cache/J10\20261025_021515_9388\contexts
+[2026-10-25 02:15:15] machine: 32 physical / 32 logical cores, 28.5 of 32.0 GB RAM available
+[2026-10-25 02:15:15] instances: loaded 195 instances in 7 sets
+[2026-10-25 02:15:15] plan (est. hours = budgets of the methods that use their whole budget / workers; Certify stages and single-run methods come on top):
+               experiment  tasks  remaining  workers  budget_seconds  est. hours
+                E0_sanity    168        168       27             270    0.002778
+          E1_certificates    172        172       13               0    0.000000
+      E8a_tuning_faithful   8748       8748       27               0    0.000000
+        E8b_tuning_budget   1008       1008       27           10080    0.103704
+          E2_head_to_head  14300      14300       27               0    0.000000
+ E2b_head_to_head_budgets   3960       3960       27           17820    0.183333
+        E4a_equal_budgets   6720       6720       18           35728    0.551358
+    E4b_equal_budgets_60s   1152       1152       13           69120    1.476923
+             E3_long_runs     72         72        9           43200    1.333333
+     E3x_long_runs_xlarge     20         20        3           12000    1.111111
+              E5_ablation   2295       2295       27           22950    0.236111
+         E5b_ablation_60s    180        180       27           10800    0.111111
+           E6_scalability    154        154        3            6720    0.622222
+        E7_gurobi_threads    108        108        7            3780    0.150000
+            E9_managerial    216        216       18             720    0.011111
+    E10a_state_of_the_art   2240       2240       18           17920    0.276543
+E10b_state_of_the_art_60s    288        288       13           17280    0.369231
+total est. hours: 6.5
+[2026-10-25 02:15:17] keep-awake requested for the duration of the campaign (idle sleep only; a closed lid or a manual sleep still suspends the machine)
+[2026-10-25 02:15:17] config C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\config.yaml -> output C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\results
+[2026-10-25 02:15:17] campaign 20261025_021515_9388, context cache C:\Users\Administrateur/.cri_framework_cache/J10\20261025_021515_9388\contexts
+[2026-10-25 02:15:17] machine: 32 physical / 32 logical cores, 28.5 of 32.0 GB RAM available
+[2026-10-25 02:15:17] instances: loaded 195 instances in 7 sets
+[2026-10-25 02:15:18] plan (est. hours = budgets of the methods that use their whole budget / workers; Certify stages and single-run methods come on top):
+               experiment  tasks  remaining  workers  budget_seconds  est. hours
+                E0_sanity    168        168       27             270    0.002778
+          E1_certificates    172        172       13               0    0.000000
+      E8a_tuning_faithful   8748       8748       27               0    0.000000
+        E8b_tuning_budget   1008       1008       27           10080    0.103704
+          E2_head_to_head  14300      14300       27               0    0.000000
+ E2b_head_to_head_budgets   3960       3960       27           17820    0.183333
+        E4a_equal_budgets   6720       6720       18           35728    0.551358
+    E4b_equal_budgets_60s   1152       1152       13           69120    1.476923
+             E3_long_runs     72         72        9           43200    1.333333
+     E3x_long_runs_xlarge     20         20        3           12000    1.111111
+              E5_ablation   2295       2295       27           22950    0.236111
+         E5b_ablation_60s    180        180       27           10800    0.111111
+           E6_scalability    154        154        3            6720    0.622222
+        E7_gurobi_threads    108        108        7            3780    0.150000
+            E9_managerial    216        216       18             720    0.011111
+    E10a_state_of_the_art   2240       2240       18           17920    0.276543
+E10b_state_of_the_art_60s    288        288       13           17280    0.369231
+total est. hours: 6.5
+[2026-10-25 02:15:20] kernels compiled / loaded in 2 s
+[2026-10-25 02:15:20] references: 130 exact solves (time limit 300 s)
+[2026-10-25 02:15:20] references: 18 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.4 GB available, 1.5 GB/worker -> 18)
+[2026-10-25 02:15:23] references [1/130] small_omega_n10_T48_001: OPTIMAL best 25.9 bound 25.90 (0.0 s)
+[2026-10-25 02:15:23] references [2/130] small_omega_n10_T48_000: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:23] references [3/130] small_omega_n10_T48_003: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:23] references [4/130] small_omega_n10_T48_002: OPTIMAL best 19.2 bound 19.20 (0.0 s)
+[2026-10-25 02:15:23] references [5/130] small_omega_n10_T48_004: OPTIMAL best 21.1 bound 21.10 (0.0 s)
+[2026-10-25 02:15:24] references [6/130] small_omega_n20_T48_000: OPTIMAL best 25.3 bound 25.30 (0.0 s)
+[2026-10-25 02:15:24] references [7/130] small_omega_n20_T48_001: OPTIMAL best 19.2 bound 19.20 (0.0 s)
+[2026-10-25 02:15:24] references [8/130] small_omega_n20_T48_002: OPTIMAL best 33.6 bound 33.60 (0.0 s)
+[2026-10-25 02:15:24] references [9/130] small_omega_n20_T48_003: OPTIMAL best 24.0 bound 24.00 (0.0 s)
+[2026-10-25 02:15:24] references [10/130] small_omega_n20_T48_004: OPTIMAL best 30.7 bound 30.70 (0.0 s)
+[2026-10-25 02:15:24] references [11/130] small_staggered_n10_T48_000: OPTIMAL best 29.2 bound 29.20 (0.0 s)
+[2026-10-25 02:15:24] references [12/130] small_staggered_n10_T48_002: OPTIMAL best 24.0 bound 24.00 (0.0 s)
+[2026-10-25 02:15:24] references [13/130] small_staggered_n10_T48_001: OPTIMAL best 31.6 bound 31.60 (0.0 s)
+[2026-10-25 02:15:24] references [14/130] small_staggered_n10_T48_003: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:24] references [15/130] small_staggered_n10_T48_004: OPTIMAL best 33.6 bound 33.60 (0.0 s)
+[2026-10-25 02:15:24] references [16/130] small_omega_n30_T48_000: OPTIMAL best 25.4 bound 25.40 (0.0 s)
+[2026-10-25 02:15:24] references [17/130] small_omega_n30_T48_002: OPTIMAL best 24.0 bound 24.00 (0.0 s)
+[2026-10-25 02:15:24] references [18/130] small_omega_n30_T48_003: OPTIMAL best 35.5 bound 35.50 (0.0 s)
+[2026-10-25 02:15:24] references [19/130] small_staggered_n20_T48_000: OPTIMAL best 36.4 bound 36.40 (0.0 s)
+[2026-10-25 02:15:24] references [20/130] small_staggered_n20_T48_002: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:24] references [21/130] small_staggered_n30_T48_000: OPTIMAL best 41.2 bound 41.20 (0.0 s)
+[2026-10-25 02:15:24] references [22/130] small_omega_n30_T48_004: OPTIMAL best 28.2 bound 28.20 (0.1 s)
+[2026-10-25 02:15:24] references [23/130] small_staggered_n20_T48_003: OPTIMAL best 26.4 bound 26.40 (0.0 s)
+[2026-10-25 02:15:24] references [24/130] small_staggered_n20_T48_001: OPTIMAL best 44.0 bound 44.00 (0.0 s)
+[2026-10-25 02:15:24] references [25/130] small_staggered_n20_T48_004: OPTIMAL best 24.0 bound 24.00 (0.0 s)
+[2026-10-25 02:15:24] references [26/130] small_staggered_n30_T48_002: OPTIMAL best 44.0 bound 44.00 (0.0 s)
+[2026-10-25 02:15:24] references [27/130] small_overnight_n10_T48_000: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:24] references [28/130] small_staggered_n30_T48_004: OPTIMAL best 41.2 bound 41.20 (0.0 s)
+[2026-10-25 02:15:24] references [29/130] small_overnight_n10_T48_001: OPTIMAL best 21.6 bound 21.60 (0.0 s)
+[2026-10-25 02:15:24] references [30/130] small_staggered_n30_T48_001: OPTIMAL best 41.2 bound 41.20 (0.0 s)
+[2026-10-25 02:15:24] references [31/130] small_staggered_n30_T48_003: OPTIMAL best 32.6 bound 32.60 (0.0 s)
+[2026-10-25 02:15:24] references [32/130] small_overnight_n10_T48_004: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:24] references [33/130] small_overnight_n10_T48_002: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:15:24] references [34/130] small_overnight_n10_T48_003: OPTIMAL best 26.4 bound 26.40 (0.0 s)
+[2026-10-25 02:15:24] references [35/130] small_omega_n30_T48_001: OPTIMAL best 34.5 bound 34.50 (0.5 s)
+[2026-10-25 02:15:25] references [36/130] medium_omega_n50_T96_002: OPTIMAL best 28.8 bound 28.80 (0.0 s)
+[2026-10-25 02:15:25] references [37/130] medium_omega_n50_T96_004: OPTIMAL best 52.8 bound 52.80 (0.2 s)
+[2026-10-25 02:15:25] references [38/130] medium_omega_n50_T96_001: OPTIMAL best 50.8 bound 50.80 (0.2 s)
+[2026-10-25 02:15:26] references [39/130] small_overnight_n20_T48_000: OPTIMAL best 41.2 bound 41.20 (1.6 s)
+[2026-10-25 02:15:27] references [40/130] small_overnight_n20_T48_002: OPTIMAL best 45.6 bound 45.60 (2.0 s)
+[2026-10-25 02:15:28] references [41/130] medium_omega_n50_T96_000: OPTIMAL best 40.6 bound 40.60 (3.6 s)
+[2026-10-25 02:15:46] references [42/130] small_overnight_n20_T48_003: OPTIMAL best 29.7 bound 29.70 (21.7 s)
+[2026-10-25 02:17:07] references [43/130] medium_omega_n100_T96_000: OPTIMAL best 68.1 bound 68.10 (101.1 s)
+[2026-10-25 02:17:07] references [44/130] medium_staggered_n50_T96_000: OPTIMAL best 29.2 bound 29.20 (0.0 s)
+[2026-10-25 02:17:07] references [45/130] medium_staggered_n50_T96_001: OPTIMAL best 30.7 bound 30.70 (0.1 s)
+[2026-10-25 02:17:07] references [46/130] medium_staggered_n50_T96_002: OPTIMAL best 44.0 bound 44.00 (0.0 s)
+[2026-10-25 02:17:08] references [47/130] medium_staggered_n50_T96_003: OPTIMAL best 38.4 bound 38.40 (0.0 s)
+[2026-10-25 02:17:08] references [48/130] medium_staggered_n50_T96_004: OPTIMAL best 31.5 bound 31.50 (0.0 s)
+[2026-10-25 02:17:09] references [49/130] medium_staggered_n100_T96_000: OPTIMAL best 49.9 bound 49.90 (0.1 s)
+[2026-10-25 02:17:09] references [50/130] medium_staggered_n100_T96_001: OPTIMAL best 56.5 bound 56.50 (0.1 s)
+[2026-10-25 02:17:10] references [51/130] medium_staggered_n100_T96_002: OPTIMAL best 58.9 bound 58.90 (0.1 s)
+[2026-10-25 02:17:11] references [52/130] medium_staggered_n100_T96_003: OPTIMAL best 52.7 bound 52.70 (0.7 s)
+[2026-10-25 02:17:12] references [53/130] medium_staggered_n100_T96_004: OPTIMAL best 59.5 bound 59.50 (0.1 s)
+[2026-10-25 02:17:16] references [54/130] medium_staggered_n200_T96_000: OPTIMAL best 91.5 bound 91.50 (3.5 s)
+[2026-10-25 02:17:22] references [55/130] medium_staggered_n200_T96_001: OPTIMAL best 81.4 bound 81.40 (4.5 s)
+[2026-10-25 02:18:03] references [56/130] small_overnight_n30_T48_001: OPTIMAL best 51.3 bound 51.30 (158.3 s)
+[2026-10-25 02:19:10] references [57/130] medium_staggered_n200_T96_003: OPTIMAL best 97.8 bound 97.80 (65.2 s)
+[2026-10-25 02:20:25] references [58/130] small_overnight_n20_T48_001: TIME_LIMIT best 52.3 bound 51.70 (300.0 s)
+[2026-10-25 02:20:25] references [59/130] small_overnight_n20_T48_004: TIME_LIMIT best 44.0 bound 43.90 (300.0 s)
+[2026-10-25 02:20:25] references [60/130] small_overnight_n30_T48_002: TIME_LIMIT best 57.0 bound 56.60 (300.0 s)
+[2026-10-25 02:20:25] references [61/130] medium_omega_n50_T96_003: TIME_LIMIT best 38.8 bound 38.40 (300.0 s)
+[2026-10-25 02:20:25] references [62/130] small_overnight_n30_T48_003: TIME_LIMIT best 52.7 bound 52.30 (300.0 s)
+[2026-10-25 02:20:25] references [63/130] small_overnight_n30_T48_004: TIME_LIMIT best 69.0 bound 68.00 (300.0 s)
+[2026-10-25 02:20:25] references [64/130] small_overnight_n30_T48_000: TIME_LIMIT best 56.4 bound 55.50 (300.0 s)
+[2026-10-25 02:20:26] references [65/130] medium_omega_n100_T96_001: TIME_LIMIT best 66.5 bound 65.50 (300.0 s)
+[2026-10-25 02:20:26] references [66/130] medium_omega_n100_T96_004: TIME_LIMIT best 77.0 bound 76.10 (300.0 s)
+[2026-10-25 02:20:26] references [67/130] medium_omega_n100_T96_003: TIME_LIMIT best 75.3 bound 73.70 (300.2 s)
+[2026-10-25 02:20:27] references [68/130] medium_omega_n100_T96_002: TIME_LIMIT best 94.8 bound 92.50 (300.0 s)
+[2026-10-25 02:20:31] references [69/130] medium_omega_n200_T96_001: TIME_LIMIT best 146.7 bound 144.80 (300.1 s)
+[2026-10-25 02:20:31] references [70/130] medium_omega_n200_T96_000: TIME_LIMIT best 145.3 bound 143.20 (300.0 s)
+[2026-10-25 02:20:32] references [71/130] medium_omega_n200_T96_002: TIME_LIMIT best 145.1 bound 143.30 (300.1 s)
+[2026-10-25 02:20:33] references [72/130] medium_omega_n200_T96_003: TIME_LIMIT best 163.9 bound 162.10 (300.1 s)
+[2026-10-25 02:20:52] references [73/130] medium_omega_n200_T96_004: TIME_LIMIT best 165.6 bound 163.90 (300.1 s)
+[2026-10-25 02:20:52] references [74/130] omega_published_omega_n20_T48_000: OPTIMAL best 22.0 bound 22.00 (0.0 s)
+[2026-10-25 02:20:52] references [75/130] omega_published_omega_n20_T48_001: OPTIMAL best 30.7 bound 30.70 (0.0 s)
+[2026-10-25 02:20:52] references [76/130] omega_published_omega_n20_T48_002: OPTIMAL best 26.4 bound 26.40 (0.0 s)
+[2026-10-25 02:20:52] references [77/130] omega_published_omega_n20_T48_003: OPTIMAL best 33.5 bound 33.50 (0.0 s)
+[2026-10-25 02:20:53] references [78/130] omega_published_omega_n20_T48_004: OPTIMAL best 25.4 bound 25.40 (0.0 s)
+[2026-10-25 02:20:53] references [79/130] omega_published_omega_n30_T48_000: OPTIMAL best 31.6 bound 31.60 (0.0 s)
+[2026-10-25 02:20:53] references [80/130] omega_published_omega_n30_T48_001: OPTIMAL best 33.5 bound 33.50 (0.0 s)
+[2026-10-25 02:20:53] references [81/130] omega_published_omega_n30_T48_002: OPTIMAL best 28.8 bound 28.80 (0.0 s)
+[2026-10-25 02:20:53] references [82/130] omega_published_omega_n30_T48_003: OPTIMAL best 44.0 bound 44.00 (0.0 s)
+[2026-10-25 02:20:53] references [83/130] omega_published_omega_n30_T48_004: OPTIMAL best 31.2 bound 31.20 (0.0 s)
+[2026-10-25 02:20:54] references [84/130] omega_published_omega_n40_T72_000: OPTIMAL best 39.8 bound 39.80 (0.6 s)
+[2026-10-25 02:20:55] references [85/130] omega_published_omega_n40_T72_001: OPTIMAL best 33.5 bound 33.50 (0.0 s)
+[2026-10-25 02:20:55] references [86/130] omega_published_omega_n40_T72_002: OPTIMAL best 36.9 bound 36.90 (0.0 s)
+[2026-10-25 02:20:56] references [87/130] omega_published_omega_n40_T72_003: OPTIMAL best 32.6 bound 32.60 (0.1 s)
+[2026-10-25 02:20:57] references [88/130] omega_published_omega_n40_T72_004: OPTIMAL best 29.2 bound 29.20 (0.7 s)
+[2026-10-25 02:20:57] references [89/130] omega_published_omega_n50_T72_000: OPTIMAL best 36.4 bound 36.40 (0.1 s)
+[2026-10-25 02:20:59] references [90/130] omega_published_omega_n50_T72_001: OPTIMAL best 37.4 bound 37.40 (1.4 s)
+[2026-10-25 02:21:15] references [91/130] medium_staggered_n200_T96_004: OPTIMAL best 85.2 bound 85.20 (123.4 s)
+[2026-10-25 02:21:46] references [92/130] omega_published_omega_n50_T72_002: OPTIMAL best 36.3 bound 36.30 (46.7 s)
+[2026-10-25 02:21:48] references [93/130] omega_published_omega_n50_T72_004: OPTIMAL best 36.4 bound 36.40 (1.6 s)
+[2026-10-25 02:22:24] references [94/130] medium_staggered_n200_T96_002: TIME_LIMIT best 93.6 bound 93.00 (300.0 s)
+[2026-10-25 02:25:29] references [95/130] medium_overnight_n50_T96_000: TIME_LIMIT best 100.5 bound 99.10 (300.1 s)
+[2026-10-25 02:25:29] references [96/130] medium_overnight_n50_T96_001: TIME_LIMIT best 89.6 bound 88.10 (300.1 s)
+[2026-10-25 02:25:30] references [97/130] medium_overnight_n50_T96_004: TIME_LIMIT best 106.9 bound 105.00 (300.0 s)
+[2026-10-25 02:25:30] references [98/130] medium_overnight_n50_T96_002: TIME_LIMIT best 93.5 bound 92.00 (300.1 s)
+[2026-10-25 02:25:30] references [99/130] medium_overnight_n50_T96_003: TIME_LIMIT best 96.4 bound 94.90 (300.1 s)
+[2026-10-25 02:25:39] references [100/130] medium_overnight_n100_T96_000: TIME_LIMIT best 179.9 bound 178.30 (300.2 s)
+[2026-10-25 02:25:40] references [101/130] medium_overnight_n100_T96_004: TIME_LIMIT best 203.1 bound 201.70 (300.1 s)
+[2026-10-25 02:25:42] references [102/130] medium_overnight_n100_T96_003: TIME_LIMIT best 199.1 bound 197.50 (300.1 s)
+[2026-10-25 02:25:43] references [103/130] medium_overnight_n100_T96_002: TIME_LIMIT best 203.3 bound 201.50 (300.1 s)
+[2026-10-25 02:25:44] references [104/130] medium_overnight_n100_T96_001: TIME_LIMIT best 170.9 bound 169.30 (300.2 s)
+[2026-10-25 02:26:15] references [105/130] omega_published_omega_n50_T72_003: TIME_LIMIT best 51.7 bound 51.30 (300.0 s)
+[2026-10-25 02:26:28] references [106/130] medium_overnight_n200_T96_000: TIME_LIMIT best 369.7 bound 368.70 (300.2 s)
+[2026-10-25 02:26:32] references [107/130] medium_overnight_n200_T96_001: TIME_LIMIT best 372.6 bound 371.10 (300.2 s)
+[2026-10-25 02:26:32] references [108/130] medium_overnight_n200_T96_002: TIME_LIMIT best 332.7 bound 331.00 (300.2 s)
+[2026-10-25 02:26:33] references [109/130] medium_overnight_n200_T96_003: TIME_LIMIT best 419.5 bound 417.50 (300.2 s)
+[2026-10-25 02:26:34] references [110/130] medium_overnight_n200_T96_004: TIME_LIMIT best 389.4 bound 387.60 (300.2 s)
+[2026-10-25 02:26:50] references [111/130] omega_published_omega_n75_T96_000: TIME_LIMIT best 49.6 bound 49.30 (300.0 s)
+[2026-10-25 02:27:25] references [112/130] omega_published_omega_n75_T96_001: TIME_LIMIT best 56.5 bound 56.10 (300.0 s)
+[2026-10-25 02:28:51] references [113/130] omega_published_omega_n75_T96_003: OPTIMAL best 57.0 bound 57.00 (200.6 s)
+[2026-10-25 02:30:30] references [114/130] omega_published_omega_n75_T96_002: TIME_LIMIT best 58.5 bound 57.50 (300.0 s)
+[2026-10-25 02:30:31] references [115/130] omega_published_omega_n75_T96_004: TIME_LIMIT best 61.6 bound 61.30 (300.0 s)
+[2026-10-25 02:30:32] references [116/130] omega_published_omega_n100_T96_000: TIME_LIMIT best 76.6 bound 75.10 (300.1 s)
+[2026-10-25 02:30:33] references [117/130] omega_published_omega_n100_T96_001: TIME_LIMIT best 83.8 bound 81.60 (300.0 s)
+[2026-10-25 02:30:41] references [118/130] omega_published_omega_n100_T96_003: TIME_LIMIT best 69.0 bound 68.40 (300.0 s)
+[2026-10-25 02:30:41] references [119/130] omega_published_omega_n100_T96_002: TIME_LIMIT best 74.2 bound 72.90 (300.0 s)
+[2026-10-25 02:30:43] references [120/130] omega_published_omega_n100_T96_004: TIME_LIMIT best 83.8 bound 82.80 (300.0 s)
+[2026-10-25 02:30:48] references [121/130] omega_published_omega_n150_T120_000: TIME_LIMIT best 107.6 bound 105.80 (300.1 s)
+[2026-10-25 02:30:49] references [122/130] omega_published_omega_n150_T120_001: TIME_LIMIT best 121.2 bound 118.70 (300.1 s)
+[2026-10-25 02:31:19] references [123/130] omega_published_omega_n150_T120_002: TIME_LIMIT best 99.4 bound 97.60 (300.0 s)
+[2026-10-25 02:31:30] references [124/130] omega_published_omega_n150_T120_003: TIME_LIMIT best 116.6 bound 115.20 (300.0 s)
+[2026-10-25 02:31:36] references [125/130] omega_published_omega_n150_T120_004: TIME_LIMIT best 114.0 bound 112.00 (300.1 s)
+[2026-10-25 02:31:40] references [126/130] omega_published_omega_n200_T120_001: TIME_LIMIT best 139.2 bound 137.50 (300.1 s)
+[2026-10-25 02:31:41] references [127/130] omega_published_omega_n200_T120_000: TIME_LIMIT best 140.7 bound 138.70 (300.1 s)
+[2026-10-25 02:31:43] references [128/130] omega_published_omega_n200_T120_002: TIME_LIMIT best 132.5 bound 130.50 (300.1 s)
+[2026-10-25 02:31:56] references [129/130] omega_published_omega_n200_T120_003: TIME_LIMIT best 144.8 bound 142.60 (300.1 s)
+[2026-10-25 02:32:33] references [130/130] omega_published_omega_n200_T120_004: TIME_LIMIT best 140.7 bound 138.70 (300.1 s)
+[2026-10-25 02:32:33] E0_sanity: 168 runs on 6 instances (Every method once on a few small instances (feasibility, statuses, timing).)
+[2026-10-25 02:32:33] E0_sanity: 81 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.3 GB available, 1 GB/worker -> 27)
+[2026-10-25 02:32:38] E0_sanity [1/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:38] E0_sanity [2/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:38] E0_sanity [3/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:38] E0_sanity [4/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [5/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [6/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [7/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [8/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [9/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [10/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [11/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [12/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [13/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [14/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [15/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [16/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [17/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [18/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [19/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [20/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:38] E0_sanity [21/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [22/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [23/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [24/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [25/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [26/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [27/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [28/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [29/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [30/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [31/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [32/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [33/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [34/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [35/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [36/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [37/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [38/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:39] E0_sanity [39/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [40/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [41/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [42/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [43/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [44/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [45/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [46/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [47/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [48/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [49/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [50/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [51/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [52/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [53/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [54/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [55/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [56/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [57/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [58/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [59/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [60/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [61/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:39] E0_sanity [62/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [63/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [64/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:39] E0_sanity [65/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:41] E0_sanity [66/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:41] E0_sanity [67/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:42] E0_sanity [68/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:43] E0_sanity [69/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:43] E0_sanity [70/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:43] E0_sanity [71/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:43] E0_sanity [72/81] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:32:43] E0_sanity [73/81] small_omega_n10_T48_002: 2 runs
+[2026-10-25 02:32:44] E0_sanity [74/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:44] E0_sanity [75/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:44] E0_sanity [76/81] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:32:44] E0_sanity [77/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:44] E0_sanity [78/81] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:32:54] E0_sanity [79/81] small_omega_n10_T48_003: 28 runs
+[2026-10-25 02:32:55] E0_sanity [80/81] small_omega_n10_T48_004: 28 runs
+[2026-10-25 02:32:58] E0_sanity [81/81] small_omega_n20_T48_000: 28 runs
+[2026-10-25 02:32:58] E0_sanity: done in 0.4 min
+[2026-10-25 02:32:58] E1_certificates: 172 runs on 172 instances (Every lower and upper certificate (Sections 3-4) against the optimum or the best known value; validity, tightness, cost, instances proved optimal a priori.)
+[2026-10-25 02:32:58] E1_certificates: 172 jobs on 13 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.3 GB available, 2 GB/worker -> 13)
+[2026-10-25 02:33:02] E1_certificates [1/172] small_omega_n10_T48_000: 1 runs
+[2026-10-25 02:33:02] E1_certificates [2/172] small_omega_n10_T48_001: 1 runs
+[2026-10-25 02:33:02] E1_certificates [3/172] small_omega_n10_T48_002: 1 runs
+[2026-10-25 02:33:02] E1_certificates [4/172] small_omega_n10_T48_003: 1 runs
+[2026-10-25 02:33:02] E1_certificates [5/172] small_omega_n10_T48_004: 1 runs
+[2026-10-25 02:33:02] E1_certificates [6/172] small_omega_n20_T48_000: 1 runs
+[2026-10-25 02:33:02] E1_certificates [7/172] small_omega_n20_T48_001: 1 runs
+[2026-10-25 02:33:02] E1_certificates [8/172] small_omega_n20_T48_002: 1 runs
+[2026-10-25 02:33:02] E1_certificates [9/172] small_staggered_n10_T48_000: 1 runs
+[2026-10-25 02:33:02] E1_certificates [10/172] small_staggered_n10_T48_003: 1 runs
+[2026-10-25 02:33:02] E1_certificates [11/172] small_staggered_n10_T48_001: 1 runs
+[2026-10-25 02:33:02] E1_certificates [12/172] small_staggered_n10_T48_004: 1 runs
+[2026-10-25 02:33:02] E1_certificates [13/172] small_staggered_n20_T48_000: 1 runs
+[2026-10-25 02:33:02] E1_certificates [14/172] small_omega_n20_T48_004: 1 runs
+[2026-10-25 02:33:03] E1_certificates [15/172] small_omega_n20_T48_003: 1 runs
+[2026-10-25 02:33:03] E1_certificates [16/172] small_omega_n30_T48_003: 1 runs
+[2026-10-25 02:33:03] E1_certificates [17/172] small_omega_n30_T48_000: 1 runs
+[2026-10-25 02:33:03] E1_certificates [18/172] small_omega_n30_T48_002: 1 runs
+[2026-10-25 02:33:03] E1_certificates [19/172] small_staggered_n20_T48_003: 1 runs
+[2026-10-25 02:33:03] E1_certificates [20/172] small_staggered_n20_T48_001: 1 runs
+[2026-10-25 02:33:03] E1_certificates [21/172] small_staggered_n20_T48_004: 1 runs
+[2026-10-25 02:33:03] E1_certificates [22/172] small_omega_n30_T48_004: 1 runs
+[2026-10-25 02:33:03] E1_certificates [23/172] small_staggered_n30_T48_000: 1 runs
+[2026-10-25 02:33:03] E1_certificates [24/172] small_staggered_n10_T48_002: 1 runs
+[2026-10-25 02:33:03] E1_certificates [25/172] small_staggered_n30_T48_002: 1 runs
+[2026-10-25 02:33:03] E1_certificates [26/172] small_staggered_n30_T48_003: 1 runs
+[2026-10-25 02:33:03] E1_certificates [27/172] small_staggered_n30_T48_001: 1 runs
+[2026-10-25 02:33:03] E1_certificates [28/172] small_omega_n30_T48_001: 1 runs
+[2026-10-25 02:33:03] E1_certificates [29/172] small_staggered_n30_T48_004: 1 runs
+[2026-10-25 02:33:03] E1_certificates [30/172] small_overnight_n10_T48_001: 1 runs
+[2026-10-25 02:33:03] E1_certificates [31/172] small_overnight_n10_T48_002: 1 runs
+[2026-10-25 02:33:03] E1_certificates [32/172] small_overnight_n10_T48_000: 1 runs
+[2026-10-25 02:33:03] E1_certificates [33/172] small_overnight_n10_T48_003: 1 runs
+[2026-10-25 02:33:03] E1_certificates [34/172] small_overnight_n20_T48_003: 1 runs
+[2026-10-25 02:33:04] E1_certificates [35/172] small_overnight_n20_T48_004: 1 runs
+[2026-10-25 02:33:04] E1_certificates [36/172] small_overnight_n20_T48_001: 1 runs
+[2026-10-25 02:33:04] E1_certificates [37/172] small_overnight_n30_T48_000: 1 runs
+[2026-10-25 02:33:04] E1_certificates [38/172] small_overnight_n20_T48_000: 1 runs
+[2026-10-25 02:33:04] E1_certificates [39/172] omega_published_omega_n20_T48_001: 1 runs
+[2026-10-25 02:33:04] E1_certificates [40/172] omega_published_omega_n20_T48_000: 1 runs
+[2026-10-25 02:33:04] E1_certificates [41/172] small_overnight_n30_T48_002: 1 runs
+[2026-10-25 02:33:04] E1_certificates [42/172] omega_published_omega_n20_T48_003: 1 runs
+[2026-10-25 02:33:04] E1_certificates [43/172] omega_published_omega_n30_T48_003: 1 runs
+[2026-10-25 02:33:04] E1_certificates [44/172] omega_published_omega_n20_T48_004: 1 runs
+[2026-10-25 02:33:04] E1_certificates [45/172] omega_published_omega_n30_T48_000: 1 runs
+[2026-10-25 02:33:04] E1_certificates [46/172] omega_published_omega_n30_T48_002: 1 runs
+[2026-10-25 02:33:04] E1_certificates [47/172] small_overnight_n30_T48_001: 1 runs
+[2026-10-25 02:33:04] E1_certificates [48/172] omega_published_omega_n30_T48_004: 1 runs
+[2026-10-25 02:33:05] E1_certificates [49/172] omega_published_omega_n40_T72_000: 1 runs
+[2026-10-25 02:33:05] E1_certificates [50/172] small_staggered_n20_T48_002: 1 runs
+[2026-10-25 02:33:05] E1_certificates [51/172] omega_published_omega_n40_T72_003: 1 runs
+[2026-10-25 02:33:05] E1_certificates [52/172] omega_published_omega_n30_T48_001: 1 runs
+[2026-10-25 02:33:05] E1_certificates [53/172] omega_published_omega_n40_T72_002: 1 runs
+[2026-10-25 02:33:05] E1_certificates [54/172] omega_published_omega_n50_T72_000: 1 runs
+[2026-10-25 02:33:05] E1_certificates [55/172] omega_published_omega_n40_T72_001: 1 runs
+[2026-10-25 02:33:05] E1_certificates [56/172] omega_published_omega_n40_T72_004: 1 runs
+[2026-10-25 02:33:06] E1_certificates [57/172] omega_published_omega_n50_T72_001: 1 runs
+[2026-10-25 02:33:06] E1_certificates [58/172] small_overnight_n30_T48_003: 1 runs
+[2026-10-25 02:33:06] E1_certificates [59/172] omega_published_omega_n20_T48_002: 1 runs
+[2026-10-25 02:33:06] E1_certificates [60/172] small_overnight_n30_T48_004: 1 runs
+[2026-10-25 02:33:06] E1_certificates [61/172] omega_published_omega_n50_T72_003: 1 runs
+[2026-10-25 02:33:06] E1_certificates [62/172] omega_published_omega_n50_T72_002: 1 runs
+[2026-10-25 02:33:06] E1_certificates [63/172] omega_published_omega_n50_T72_004: 1 runs
+[2026-10-25 02:33:06] E1_certificates [64/172] omega_published_omega_n75_T96_000: 1 runs
+[2026-10-25 02:33:07] E1_certificates [65/172] small_overnight_n10_T48_004: 1 runs
+[2026-10-25 02:33:07] E1_certificates [66/172] omega_published_omega_n75_T96_003: 1 runs
+[2026-10-25 02:33:07] E1_certificates [67/172] omega_published_omega_n75_T96_002: 1 runs
+[2026-10-25 02:33:07] E1_certificates [68/172] omega_published_omega_n100_T96_000: 1 runs
+[2026-10-25 02:33:08] E1_certificates [69/172] omega_published_omega_n100_T96_001: 1 runs
+[2026-10-25 02:33:08] E1_certificates [70/172] omega_published_omega_n100_T96_004: 1 runs
+[2026-10-25 02:33:08] E1_certificates [71/172] omega_published_omega_n100_T96_002: 1 runs
+[2026-10-25 02:33:08] E1_certificates [72/172] omega_published_omega_n100_T96_003: 1 runs
+[2026-10-25 02:33:08] E1_certificates [73/172] omega_published_omega_n75_T96_004: 1 runs
+[2026-10-25 02:33:09] E1_certificates [74/172] omega_published_omega_n150_T120_001: 1 runs
+[2026-10-25 02:33:09] E1_certificates [75/172] omega_published_omega_n150_T120_003: 1 runs
+[2026-10-25 02:33:09] E1_certificates [76/172] omega_published_omega_n150_T120_002: 1 runs
+[2026-10-25 02:33:09] E1_certificates [77/172] omega_published_omega_n150_T120_004: 1 runs
+[2026-10-25 02:33:10] E1_certificates [78/172] omega_published_omega_n200_T120_000: 1 runs
+[2026-10-25 02:33:10] E1_certificates [79/172] omega_published_omega_n150_T120_000: 1 runs
+[2026-10-25 02:33:10] E1_certificates [80/172] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 02:33:10] E1_certificates [81/172] medium_omega_n50_T96_002: 1 runs
+[2026-10-25 02:33:10] E1_certificates [82/172] omega_published_omega_n75_T96_001: 1 runs
+[2026-10-25 02:33:10] E1_certificates [83/172] omega_published_omega_n200_T120_002: 1 runs
+[2026-10-25 02:33:10] E1_certificates [84/172] medium_omega_n50_T96_003: 1 runs
+[2026-10-25 02:33:10] E1_certificates [85/172] medium_omega_n50_T96_004: 1 runs
+[2026-10-25 02:33:11] E1_certificates [86/172] omega_published_omega_n200_T120_004: 1 runs
+[2026-10-25 02:33:11] E1_certificates [87/172] omega_published_omega_n200_T120_003: 1 runs
+[2026-10-25 02:33:12] E1_certificates [88/172] omega_published_omega_n200_T120_001: 1 runs
+[2026-10-25 02:33:12] E1_certificates [89/172] medium_omega_n50_T96_001: 1 runs
+[2026-10-25 02:33:12] E1_certificates [90/172] medium_omega_n100_T96_003: 1 runs
+[2026-10-25 02:33:12] E1_certificates [91/172] medium_omega_n100_T96_004: 1 runs
+[2026-10-25 02:33:13] E1_certificates [92/172] medium_omega_n100_T96_002: 1 runs
+[2026-10-25 02:33:13] E1_certificates [93/172] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 02:33:13] E1_certificates [94/172] medium_staggered_n50_T96_002: 1 runs
+[2026-10-25 02:33:13] E1_certificates [95/172] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 02:33:13] E1_certificates [96/172] medium_staggered_n50_T96_001: 1 runs
+[2026-10-25 02:33:13] E1_certificates [97/172] medium_staggered_n50_T96_003: 1 runs
+[2026-10-25 02:33:13] E1_certificates [98/172] medium_omega_n200_T96_002: 1 runs
+[2026-10-25 02:33:13] E1_certificates [99/172] medium_omega_n200_T96_001: 1 runs
+[2026-10-25 02:33:13] E1_certificates [100/172] medium_omega_n100_T96_001: 1 runs
+[2026-10-25 02:33:13] E1_certificates [101/172] medium_staggered_n50_T96_004: 1 runs
+[2026-10-25 02:33:13] E1_certificates [102/172] medium_staggered_n100_T96_002: 1 runs
+[2026-10-25 02:33:13] E1_certificates [103/172] medium_staggered_n50_T96_000: 1 runs
+[2026-10-25 02:33:13] E1_certificates [104/172] medium_staggered_n100_T96_000: 1 runs
+[2026-10-25 02:33:13] E1_certificates [105/172] medium_staggered_n100_T96_004: 1 runs
+[2026-10-25 02:33:13] E1_certificates [106/172] medium_staggered_n100_T96_001: 1 runs
+[2026-10-25 02:33:13] E1_certificates [107/172] medium_staggered_n100_T96_003: 1 runs
+[2026-10-25 02:33:14] E1_certificates [108/172] medium_omega_n200_T96_004: 1 runs
+[2026-10-25 02:33:14] E1_certificates [109/172] medium_omega_n200_T96_003: 1 runs
+[2026-10-25 02:33:14] E1_certificates [110/172] medium_staggered_n200_T96_000: 1 runs
+[2026-10-25 02:33:14] E1_certificates [111/172] medium_staggered_n200_T96_003: 1 runs
+[2026-10-25 02:33:15] E1_certificates [112/172] medium_staggered_n200_T96_001: 1 runs
+[2026-10-25 02:33:15] E1_certificates [113/172] medium_staggered_n200_T96_002: 1 runs
+[2026-10-25 02:33:15] E1_certificates [114/172] medium_staggered_n200_T96_004: 1 runs
+[2026-10-25 02:33:15] E1_certificates [115/172] medium_overnight_n50_T96_001: 1 runs
+[2026-10-25 02:33:15] E1_certificates [116/172] medium_overnight_n50_T96_000: 1 runs
+[2026-10-25 02:33:15] E1_certificates [117/172] medium_overnight_n50_T96_002: 1 runs
+[2026-10-25 02:33:15] E1_certificates [118/172] medium_overnight_n50_T96_004: 1 runs
+[2026-10-25 02:33:15] E1_certificates [119/172] medium_overnight_n50_T96_003: 1 runs
+[2026-10-25 02:33:16] E1_certificates [120/172] medium_overnight_n100_T96_001: 1 runs
+[2026-10-25 02:33:16] E1_certificates [121/172] medium_overnight_n100_T96_002: 1 runs
+[2026-10-25 02:33:16] E1_certificates [122/172] medium_overnight_n100_T96_000: 1 runs
+[2026-10-25 02:33:16] E1_certificates [123/172] medium_overnight_n100_T96_003: 1 runs
+[2026-10-25 02:33:17] E1_certificates [124/172] medium_overnight_n100_T96_004: 1 runs
+[2026-10-25 02:33:17] E1_certificates [125/172] medium_overnight_n200_T96_001: 1 runs
+[2026-10-25 02:33:17] E1_certificates [126/172] small_overnight_n20_T48_002: 1 runs
+[2026-10-25 02:33:17] E1_certificates [127/172] medium_overnight_n200_T96_000: 1 runs
+[2026-10-25 02:33:18] E1_certificates [128/172] medium_overnight_n200_T96_002: 1 runs
+[2026-10-25 02:33:18] E1_certificates [129/172] medium_overnight_n200_T96_003: 1 runs
+[2026-10-25 02:33:18] E1_certificates [130/172] medium_overnight_n200_T96_004: 1 runs
+[2026-10-25 02:33:19] E1_certificates [131/172] large_omega_n1000_T96_000: 1 runs
+[2026-10-25 02:33:19] E1_certificates [132/172] large_omega_n1000_T96_001: 1 runs
+[2026-10-25 02:33:19] E1_certificates [133/172] large_omega_n1000_T96_002: 1 runs
+[2026-10-25 02:33:20] E1_certificates [134/172] large_staggered_n1000_T96_000: 1 runs
+[2026-10-25 02:33:21] E1_certificates [135/172] large_staggered_n1000_T96_001: 1 runs
+[2026-10-25 02:33:21] E1_certificates [136/172] large_staggered_n1000_T96_002: 1 runs
+[2026-10-25 02:33:22] E1_certificates [137/172] large_omega_n2000_T96_001: 1 runs
+[2026-10-25 02:33:22] E1_certificates [138/172] large_omega_n2000_T96_000: 1 runs
+[2026-10-25 02:33:22] E1_certificates [139/172] large_omega_n2000_T96_002: 1 runs
+[2026-10-25 02:33:22] E1_certificates [140/172] large_staggered_n2000_T96_001: 1 runs
+[2026-10-25 02:33:22] E1_certificates [141/172] large_staggered_n2000_T96_000: 1 runs
+[2026-10-25 02:33:24] E1_certificates [142/172] large_staggered_n2000_T96_002: 1 runs
+[2026-10-25 02:33:31] E1_certificates [143/172] large_overnight_n1000_T96_000: 1 runs
+[2026-10-25 02:33:31] E1_certificates [144/172] large_overnight_n1000_T96_002: 1 runs
+[2026-10-25 02:33:31] E1_certificates [145/172] large_overnight_n1000_T96_001: 1 runs
+[2026-10-25 02:33:32] E1_certificates [146/172] special_pcmax_n20_T8_000: 1 runs
+[2026-10-25 02:33:33] E1_certificates [147/172] special_pcmax_n20_T8_001: 1 runs
+[2026-10-25 02:33:33] E1_certificates [148/172] special_pcmax_n20_T8_002: 1 runs
+[2026-10-25 02:33:35] E1_certificates [149/172] special_pcmax_n50_T8_000: 1 runs
+[2026-10-25 02:33:37] E1_certificates [150/172] special_pcmax_n50_T8_001: 1 runs
+[2026-10-25 02:33:39] E1_certificates [151/172] large_staggered_n500_T96_002: 1 runs
+[2026-10-25 02:33:39] E1_certificates [152/172] special_pcmax_n50_T8_002: 1 runs
+[2026-10-25 02:33:40] E1_certificates [153/172] large_staggered_n500_T96_001: 1 runs
+[2026-10-25 02:33:41] E1_certificates [154/172] large_overnight_n2000_T96_000: 1 runs
+[2026-10-25 02:33:42] E1_certificates [155/172] special_single_n50_T96_000: 1 runs
+[2026-10-25 02:33:42] E1_certificates [156/172] special_single_n50_T96_001: 1 runs
+[2026-10-25 02:33:42] E1_certificates [157/172] special_single_n50_T96_002: 1 runs
+[2026-10-25 02:33:43] E1_certificates [158/172] large_staggered_n500_T96_000: 1 runs
+[2026-10-25 02:33:43] E1_certificates [159/172] special_single_n200_T96_000: 1 runs
+[2026-10-25 02:33:44] E1_certificates [160/172] special_single_n200_T96_001: 1 runs
+[2026-10-25 02:33:44] E1_certificates [161/172] special_single_n200_T96_002: 1 runs
+[2026-10-25 02:33:46] E1_certificates [162/172] special_pcmax_n100_T8_001: 1 runs
+[2026-10-25 02:33:48] E1_certificates [163/172] special_pcmax_n100_T8_000: 1 runs
+[2026-10-25 02:33:48] E1_certificates [164/172] special_pcmax_n100_T8_002: 1 runs
+[2026-10-25 02:33:49] E1_certificates [165/172] large_overnight_n2000_T96_001: 1 runs
+[2026-10-25 02:33:49] E1_certificates [166/172] large_overnight_n2000_T96_002: 1 runs
+[2026-10-25 02:34:17] E1_certificates [167/172] large_omega_n500_T96_001: 1 runs
+[2026-10-25 02:34:17] E1_certificates [168/172] large_omega_n500_T96_000: 1 runs
+[2026-10-25 02:34:18] E1_certificates [169/172] large_omega_n500_T96_002: 1 runs
+[2026-10-25 02:34:27] E1_certificates [170/172] large_overnight_n500_T96_000: 1 runs
+[2026-10-25 02:34:28] E1_certificates [171/172] large_overnight_n500_T96_001: 1 runs
+[2026-10-25 02:34:28] E1_certificates [172/172] large_overnight_n500_T96_002: 1 runs
+[2026-10-25 02:34:29] E1_certificates: done in 1.5 min
+[2026-10-25 02:34:29] E8a_tuning_faithful: 8748 runs on 18 instances (Faithful tuning of the earlier SA (and, through tuned_as, of its hybrids) with the grid of the Omega submission (243 points, iteration mode), on the separate tuning set (never on evaluation instances).)
+[2026-10-25 02:34:29] E8a_tuning_faithful: 18 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 02:34:34] E8a_tuning_faithful [1/18] tune_staggered_n50_T96_000: 486 runs
+[2026-10-25 02:34:34] E8a_tuning_faithful [2/18] tune_staggered_n50_T96_001: 486 runs
+[2026-10-25 02:34:34] E8a_tuning_faithful [3/18] tune_staggered_n50_T96_002: 486 runs
+[2026-10-25 02:34:34] E8a_tuning_faithful [4/18] tune_omega_n50_T96_001: 486 runs
+[2026-10-25 02:34:35] E8a_tuning_faithful [5/18] tune_omega_n50_T96_000: 486 runs
+[2026-10-25 02:34:35] E8a_tuning_faithful [6/18] tune_omega_n50_T96_002: 486 runs
+[2026-10-25 02:34:35] E8a_tuning_faithful [7/18] tune_staggered_n100_T96_002: 486 runs
+[2026-10-25 02:34:35] E8a_tuning_faithful [8/18] tune_staggered_n100_T96_001: 486 runs
+[2026-10-25 02:34:35] E8a_tuning_faithful [9/18] tune_staggered_n100_T96_000: 486 runs
+[2026-10-25 02:34:36] E8a_tuning_faithful [10/18] tune_omega_n100_T96_000: 486 runs
+[2026-10-25 02:34:37] E8a_tuning_faithful [11/18] tune_omega_n100_T96_001: 486 runs
+[2026-10-25 02:34:37] E8a_tuning_faithful [12/18] tune_omega_n100_T96_002: 486 runs
+[2026-10-25 02:34:39] E8a_tuning_faithful [13/18] tune_overnight_n50_T96_001: 486 runs
+[2026-10-25 02:34:40] E8a_tuning_faithful [14/18] tune_overnight_n50_T96_000: 486 runs
+[2026-10-25 02:34:43] E8a_tuning_faithful [15/18] tune_overnight_n50_T96_002: 486 runs
+[2026-10-25 02:34:49] E8a_tuning_faithful [16/18] tune_overnight_n100_T96_001: 486 runs
+[2026-10-25 02:34:51] E8a_tuning_faithful [17/18] tune_overnight_n100_T96_002: 486 runs
+[2026-10-25 02:34:52] E8a_tuning_faithful [18/18] tune_overnight_n100_T96_000: 486 runs
+[2026-10-25 02:34:52] E8a_tuning_faithful: done in 0.4 min
+[2026-10-25 02:34:54] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 02:34:54] E8b_tuning_budget: 1008 runs on 18 instances (Tuning of the budget-mode methods (SA-b and the SA-b hybrids, LLS, W-LNS) at 10 s on the separate tuning set; the chosen LLS and W-LNS values become the class defaults (used inside CRI).)
+[2026-10-25 02:34:55] E8b_tuning_budget: 81 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 02:35:10] E8b_tuning_budget [1/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:10] E8b_tuning_budget [2/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:20] E8b_tuning_budget [3/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:20] E8b_tuning_budget [4/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:30] E8b_tuning_budget [5/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:30] E8b_tuning_budget [6/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:40] E8b_tuning_budget [7/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:41] E8b_tuning_budget [8/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:51] E8b_tuning_budget [9/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:35:51] E8b_tuning_budget [10/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:00] E8b_tuning_budget [11/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [12/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [13/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [14/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [15/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [16/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [17/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [18/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:01] E8b_tuning_budget [19/81] tune_omega_n50_T96_001: 6 runs
+[2026-10-25 02:36:10] E8b_tuning_budget [20/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [21/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [22/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [23/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [24/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [25/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [26/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [27/81] tune_omega_n50_T96_001: 7 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [28/81] tune_omega_n50_T96_001: 7 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [29/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:11] E8b_tuning_budget [30/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [31/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [32/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [33/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [34/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [35/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [36/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [37/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [38/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [39/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [40/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:21] E8b_tuning_budget [41/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [42/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [43/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [44/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [45/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [46/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [47/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [48/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [49/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [50/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [51/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:31] E8b_tuning_budget [52/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [53/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [54/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [55/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [56/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [57/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [58/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [59/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [60/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [61/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [62/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:41] E8b_tuning_budget [63/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:51] E8b_tuning_budget [64/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:36:51] E8b_tuning_budget [65/81] tune_omega_n50_T96_000: 1 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [66/81] tune_staggered_n50_T96_001: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [67/81] tune_staggered_n50_T96_000: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [68/81] tune_omega_n50_T96_002: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [69/81] tune_omega_n100_T96_000: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [70/81] tune_omega_n100_T96_001: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [71/81] tune_omega_n100_T96_002: 56 runs
+[2026-10-25 02:44:20] E8b_tuning_budget [72/81] tune_staggered_n50_T96_002: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [73/81] tune_staggered_n100_T96_000: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [74/81] tune_staggered_n100_T96_002: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [75/81] tune_staggered_n100_T96_001: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [76/81] tune_overnight_n50_T96_000: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [77/81] tune_overnight_n50_T96_001: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [78/81] tune_overnight_n50_T96_002: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [79/81] tune_overnight_n100_T96_002: 56 runs
+[2026-10-25 02:44:21] E8b_tuning_budget [80/81] tune_overnight_n100_T96_000: 56 runs
+[2026-10-25 02:44:22] E8b_tuning_budget [81/81] tune_overnight_n100_T96_001: 56 runs
+[2026-10-25 02:44:22] E8b_tuning_budget: done in 9.5 min
+[2026-10-25 02:44:23] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 02:44:23] E2_head_to_head: 14300 runs on 130 instances (Earlier methods against their certified counterparts, as published (each method's own stopping rule) - RR vs MT, RLP vs CE and IR, G vs CE - and SA vs its hybrids.)
+[2026-10-25 02:44:23] E2_head_to_head: 130 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 02:44:29] E2_head_to_head [1/130] small_omega_n10_T48_003: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [2/130] small_omega_n10_T48_001: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [3/130] small_omega_n10_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [4/130] small_omega_n10_T48_004: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [5/130] small_omega_n10_T48_002: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [6/130] small_omega_n20_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [7/130] small_omega_n20_T48_001: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [8/130] small_omega_n20_T48_002: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [9/130] small_staggered_n10_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [10/130] small_omega_n20_T48_003: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [11/130] small_omega_n30_T48_002: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [12/130] small_omega_n20_T48_004: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [13/130] small_staggered_n10_T48_003: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [14/130] small_omega_n30_T48_003: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [15/130] small_omega_n30_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [16/130] small_staggered_n10_T48_004: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [17/130] small_staggered_n10_T48_001: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [18/130] small_omega_n30_T48_004: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [19/130] small_staggered_n20_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [20/130] small_staggered_n30_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [21/130] small_staggered_n20_T48_003: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [22/130] small_staggered_n20_T48_002: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [23/130] small_staggered_n20_T48_001: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [24/130] small_staggered_n20_T48_004: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [25/130] small_overnight_n10_T48_000: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [26/130] small_omega_n30_T48_001: 110 runs
+[2026-10-25 02:44:29] E2_head_to_head [27/130] small_staggered_n30_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [28/130] small_staggered_n30_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [29/130] small_overnight_n10_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [30/130] small_overnight_n10_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [31/130] small_staggered_n30_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [32/130] omega_published_omega_n20_T48_000: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [33/130] small_overnight_n10_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [34/130] omega_published_omega_n20_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [35/130] omega_published_omega_n20_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [36/130] omega_published_omega_n20_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [37/130] small_overnight_n10_T48_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [38/130] omega_published_omega_n30_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [39/130] small_overnight_n20_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [40/130] small_overnight_n20_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [41/130] omega_published_omega_n30_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [42/130] omega_published_omega_n20_T48_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [43/130] omega_published_omega_n30_T48_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [44/130] omega_published_omega_n30_T48_000: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [45/130] small_overnight_n20_T48_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [46/130] omega_published_omega_n30_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [47/130] small_overnight_n20_T48_000: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [48/130] small_overnight_n30_T48_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [49/130] small_overnight_n30_T48_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [50/130] omega_published_omega_n40_T72_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [51/130] omega_published_omega_n40_T72_003: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [52/130] omega_published_omega_n40_T72_000: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [53/130] omega_published_omega_n40_T72_004: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [54/130] omega_published_omega_n50_T72_000: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [55/130] small_overnight_n30_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [56/130] small_overnight_n30_T48_002: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [57/130] small_overnight_n20_T48_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [58/130] omega_published_omega_n50_T72_001: 110 runs
+[2026-10-25 02:44:30] E2_head_to_head [59/130] small_overnight_n30_T48_000: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [60/130] omega_published_omega_n50_T72_004: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [61/130] omega_published_omega_n50_T72_003: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [62/130] omega_published_omega_n75_T96_000: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [63/130] small_staggered_n30_T48_004: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [64/130] omega_published_omega_n75_T96_003: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [65/130] medium_omega_n50_T96_002: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [66/130] omega_published_omega_n50_T72_002: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [67/130] medium_omega_n50_T96_001: 110 runs
+[2026-10-25 02:44:31] E2_head_to_head [68/130] medium_omega_n50_T96_000: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [69/130] omega_published_omega_n75_T96_004: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [70/130] omega_published_omega_n75_T96_002: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [71/130] medium_omega_n50_T96_004: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [72/130] omega_published_omega_n100_T96_003: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [73/130] omega_published_omega_n75_T96_001: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [74/130] omega_published_omega_n40_T72_001: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [75/130] omega_published_omega_n100_T96_000: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [76/130] omega_published_omega_n100_T96_004: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [77/130] omega_published_omega_n150_T120_000: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [78/130] medium_staggered_n50_T96_000: 110 runs
+[2026-10-25 02:44:32] E2_head_to_head [79/130] medium_omega_n100_T96_001: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [80/130] medium_omega_n50_T96_003: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [81/130] medium_staggered_n50_T96_001: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [82/130] omega_published_omega_n150_T120_001: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [83/130] medium_staggered_n50_T96_002: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [84/130] omega_published_omega_n100_T96_001: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [85/130] medium_staggered_n50_T96_003: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [86/130] medium_staggered_n50_T96_004: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [87/130] medium_staggered_n100_T96_000: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [88/130] omega_published_omega_n100_T96_002: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [89/130] medium_staggered_n100_T96_002: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [90/130] medium_staggered_n100_T96_003: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [91/130] omega_published_omega_n150_T120_003: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [92/130] medium_staggered_n100_T96_004: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [93/130] medium_staggered_n100_T96_001: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [94/130] omega_published_omega_n150_T120_002: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [95/130] medium_omega_n100_T96_004: 110 runs
+[2026-10-25 02:44:33] E2_head_to_head [96/130] omega_published_omega_n150_T120_004: 110 runs
+[2026-10-25 02:44:34] E2_head_to_head [97/130] small_staggered_n10_T48_002: 110 runs
+[2026-10-25 02:44:34] E2_head_to_head [98/130] medium_omega_n100_T96_000: 110 runs
+[2026-10-25 02:44:34] E2_head_to_head [99/130] medium_omega_n100_T96_003: 110 runs
+[2026-10-25 02:44:34] E2_head_to_head [100/130] medium_omega_n100_T96_002: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [101/130] medium_overnight_n50_T96_000: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [102/130] omega_published_omega_n200_T120_000: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [103/130] omega_published_omega_n200_T120_003: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [104/130] medium_staggered_n200_T96_002: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [105/130] medium_overnight_n50_T96_001: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [106/130] medium_staggered_n200_T96_001: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [107/130] medium_overnight_n50_T96_003: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [108/130] medium_staggered_n200_T96_000: 110 runs
+[2026-10-25 02:44:35] E2_head_to_head [109/130] medium_overnight_n200_T96_001: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [110/130] medium_overnight_n50_T96_004: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [111/130] medium_staggered_n200_T96_004: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [112/130] medium_overnight_n200_T96_000: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [113/130] medium_overnight_n50_T96_002: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [114/130] medium_staggered_n200_T96_003: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [115/130] medium_overnight_n200_T96_002: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [116/130] medium_overnight_n200_T96_003: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [117/130] medium_omega_n200_T96_002: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [118/130] medium_overnight_n200_T96_004: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [119/130] medium_omega_n200_T96_000: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [120/130] medium_omega_n200_T96_001: 110 runs
+[2026-10-25 02:44:36] E2_head_to_head [121/130] medium_overnight_n100_T96_000: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [122/130] medium_overnight_n100_T96_001: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [123/130] medium_overnight_n100_T96_002: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [124/130] omega_published_omega_n200_T120_004: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [125/130] omega_published_omega_n200_T120_002: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [126/130] medium_omega_n200_T96_003: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [127/130] medium_omega_n200_T96_004: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [128/130] medium_overnight_n100_T96_004: 110 runs
+[2026-10-25 02:44:37] E2_head_to_head [129/130] medium_overnight_n100_T96_003: 110 runs
+[2026-10-25 02:44:41] E2_head_to_head [130/130] omega_published_omega_n200_T120_001: 110 runs
+[2026-10-25 02:44:41] E2_head_to_head: done in 0.3 min
+[2026-10-25 02:44:41] E2b_head_to_head_budgets: 3960 runs on 90 instances (The same pairs at equal budgets (1 s and 10 s) - the earlier methods use the whole budget (restarts, more trials, more iterations); MT repeats with new seeds.)
+[2026-10-25 02:44:41] E2b_head_to_head_budgets: 90 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 02:47:31] E2b_head_to_head_budgets [1/90] small_omega_n10_T48_000: 44 runs
+[2026-10-25 02:47:31] E2b_head_to_head_budgets [2/90] small_omega_n10_T48_002: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [3/90] small_omega_n10_T48_001: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [4/90] small_omega_n10_T48_003: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [5/90] small_omega_n30_T48_002: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [6/90] small_omega_n20_T48_001: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [7/90] small_omega_n30_T48_000: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [8/90] small_omega_n20_T48_002: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [9/90] small_omega_n10_T48_004: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [10/90] small_omega_n20_T48_003: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [11/90] small_omega_n20_T48_000: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [12/90] small_omega_n30_T48_004: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [13/90] small_staggered_n20_T48_000: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [14/90] small_staggered_n20_T48_004: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [15/90] small_staggered_n10_T48_000: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [16/90] small_staggered_n20_T48_002: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [17/90] small_omega_n30_T48_003: 44 runs
+[2026-10-25 02:47:32] E2b_head_to_head_budgets [18/90] small_staggered_n30_T48_001: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [19/90] small_omega_n20_T48_004: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [20/90] small_staggered_n10_T48_004: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [21/90] small_staggered_n20_T48_001: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [22/90] small_staggered_n20_T48_003: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [23/90] small_staggered_n30_T48_000: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [24/90] small_staggered_n10_T48_001: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [25/90] small_staggered_n10_T48_003: 44 runs
+[2026-10-25 02:47:33] E2b_head_to_head_budgets [26/90] small_omega_n30_T48_001: 44 runs
+[2026-10-25 02:47:36] E2b_head_to_head_budgets [27/90] small_staggered_n10_T48_002: 44 runs
+[2026-10-25 02:50:16] E2b_head_to_head_budgets [28/90] medium_omega_n100_T96_001: 44 runs
+[2026-10-25 02:50:16] E2b_head_to_head_budgets [29/90] small_staggered_n30_T48_002: 44 runs
+[2026-10-25 02:50:16] E2b_head_to_head_budgets [30/90] small_staggered_n30_T48_003: 44 runs
+[2026-10-25 02:50:16] E2b_head_to_head_budgets [31/90] medium_omega_n100_T96_000: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [32/90] small_overnight_n20_T48_000: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [33/90] small_overnight_n30_T48_002: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [34/90] small_overnight_n30_T48_004: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [35/90] small_overnight_n20_T48_002: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [36/90] medium_omega_n50_T96_001: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [37/90] small_overnight_n30_T48_001: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [38/90] small_staggered_n30_T48_004: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [39/90] small_overnight_n30_T48_003: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [40/90] medium_omega_n50_T96_000: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [41/90] medium_omega_n50_T96_004: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [42/90] small_overnight_n20_T48_003: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [43/90] medium_omega_n50_T96_002: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [44/90] small_overnight_n20_T48_004: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [45/90] small_overnight_n10_T48_002: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [46/90] small_overnight_n10_T48_003: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [47/90] small_overnight_n10_T48_000: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [48/90] small_overnight_n10_T48_004: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [49/90] medium_omega_n50_T96_003: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [50/90] small_overnight_n20_T48_001: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [51/90] small_overnight_n30_T48_000: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [52/90] small_overnight_n10_T48_001: 44 runs
+[2026-10-25 02:50:17] E2b_head_to_head_budgets [53/90] medium_omega_n100_T96_002: 44 runs
+[2026-10-25 02:50:19] E2b_head_to_head_budgets [54/90] medium_omega_n100_T96_003: 44 runs
+[2026-10-25 02:52:59] E2b_head_to_head_budgets [55/90] medium_omega_n100_T96_004: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [56/90] medium_overnight_n50_T96_002: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [57/90] medium_overnight_n50_T96_001: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [58/90] medium_overnight_n50_T96_000: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [59/90] medium_omega_n200_T96_001: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [60/90] medium_overnight_n50_T96_003: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [61/90] medium_overnight_n50_T96_004: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [62/90] medium_omega_n200_T96_003: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [63/90] medium_omega_n200_T96_004: 44 runs
+[2026-10-25 02:53:00] E2b_head_to_head_budgets [64/90] medium_omega_n200_T96_002: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [65/90] medium_staggered_n100_T96_000: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [66/90] medium_overnight_n100_T96_000: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [67/90] medium_staggered_n100_T96_001: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [68/90] medium_staggered_n200_T96_001: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [69/90] medium_staggered_n100_T96_003: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [70/90] medium_staggered_n100_T96_002: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [71/90] medium_omega_n200_T96_000: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [72/90] medium_staggered_n50_T96_000: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [73/90] medium_staggered_n200_T96_002: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [74/90] medium_staggered_n100_T96_004: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [75/90] medium_staggered_n50_T96_004: 44 runs
+[2026-10-25 02:53:01] E2b_head_to_head_budgets [76/90] medium_staggered_n50_T96_003: 44 runs
+[2026-10-25 02:53:02] E2b_head_to_head_budgets [77/90] medium_staggered_n50_T96_001: 44 runs
+[2026-10-25 02:53:02] E2b_head_to_head_budgets [78/90] medium_staggered_n50_T96_002: 44 runs
+[2026-10-25 02:53:02] E2b_head_to_head_budgets [79/90] medium_staggered_n200_T96_004: 44 runs
+[2026-10-25 02:53:02] E2b_head_to_head_budgets [80/90] medium_staggered_n200_T96_000: 44 runs
+[2026-10-25 02:53:03] E2b_head_to_head_budgets [81/90] medium_staggered_n200_T96_003: 44 runs
+[2026-10-25 02:55:38] E2b_head_to_head_budgets [82/90] medium_overnight_n200_T96_003: 44 runs
+[2026-10-25 02:55:38] E2b_head_to_head_budgets [83/90] medium_overnight_n200_T96_000: 44 runs
+[2026-10-25 02:55:38] E2b_head_to_head_budgets [84/90] medium_overnight_n200_T96_001: 44 runs
+[2026-10-25 02:55:38] E2b_head_to_head_budgets [85/90] medium_overnight_n200_T96_002: 44 runs
+[2026-10-25 02:55:38] E2b_head_to_head_budgets [86/90] medium_overnight_n200_T96_004: 44 runs
+[2026-10-25 02:55:41] E2b_head_to_head_budgets [87/90] medium_overnight_n100_T96_001: 44 runs
+[2026-10-25 02:55:41] E2b_head_to_head_budgets [88/90] medium_overnight_n100_T96_003: 44 runs
+[2026-10-25 02:55:42] E2b_head_to_head_budgets [89/90] medium_overnight_n100_T96_002: 44 runs
+[2026-10-25 02:55:42] E2b_head_to_head_budgets [90/90] medium_overnight_n100_T96_004: 44 runs
+[2026-10-25 02:55:42] E2b_head_to_head_budgets: done in 11.0 min
+[2026-10-25 02:55:42] E4a_equal_budgets: 6720 runs on 112 instances (Every method and Gurobi (standard and aggregated models, one thread each) at the same wall-clock budgets of 1 s and 10 s.)
+[2026-10-25 02:55:42] E4a_equal_budgets: 112 jobs on 18 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1.5 GB/worker -> 18)
+[2026-10-25 02:59:35] E4a_equal_budgets [1/112] omega_published_omega_n20_T48_000: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [2/112] omega_published_omega_n20_T48_002: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [3/112] omega_published_omega_n30_T48_000: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [4/112] omega_published_omega_n30_T48_004: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [5/112] omega_published_omega_n20_T48_001: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [6/112] omega_published_omega_n30_T48_002: 60 runs
+[2026-10-25 02:59:35] E4a_equal_budgets [7/112] omega_published_omega_n20_T48_004: 60 runs
+[2026-10-25 02:59:36] E4a_equal_budgets [8/112] omega_published_omega_n20_T48_003: 60 runs
+[2026-10-25 02:59:36] E4a_equal_budgets [9/112] omega_published_omega_n30_T48_003: 60 runs
+[2026-10-25 02:59:37] E4a_equal_budgets [10/112] omega_published_omega_n50_T72_000: 60 runs
+[2026-10-25 02:59:37] E4a_equal_budgets [11/112] omega_published_omega_n40_T72_002: 60 runs
+[2026-10-25 02:59:38] E4a_equal_budgets [12/112] omega_published_omega_n30_T48_001: 60 runs
+[2026-10-25 02:59:38] E4a_equal_budgets [13/112] omega_published_omega_n40_T72_001: 60 runs
+[2026-10-25 02:59:40] E4a_equal_budgets [14/112] omega_published_omega_n40_T72_003: 60 runs
+[2026-10-25 02:59:41] E4a_equal_budgets [15/112] omega_published_omega_n40_T72_000: 60 runs
+[2026-10-25 02:59:43] E4a_equal_budgets [16/112] omega_published_omega_n40_T72_004: 60 runs
+[2026-10-25 02:00:00] E4a_equal_budgets [17/112] omega_published_omega_n50_T72_001: 60 runs
+[2026-10-25 02:00:51] E4a_equal_budgets [18/112] omega_published_omega_n50_T72_002: 60 runs
+[2026-10-25 02:04:04] E4a_equal_budgets [19/112] omega_published_omega_n75_T96_000: 60 runs
+[2026-10-25 02:04:08] E4a_equal_budgets [20/112] omega_published_omega_n150_T120_000: 60 runs
+[2026-10-25 02:04:09] E4a_equal_budgets [21/112] omega_published_omega_n150_T120_001: 60 runs
+[2026-10-25 02:04:11] E4a_equal_budgets [22/112] omega_published_omega_n150_T120_002: 60 runs
+[2026-10-25 02:04:21] E4a_equal_budgets [23/112] omega_published_omega_n75_T96_004: 60 runs
+[2026-10-25 02:04:21] E4a_equal_budgets [24/112] omega_published_omega_n50_T72_004: 60 runs
+[2026-10-25 02:04:22] E4a_equal_budgets [25/112] omega_published_omega_n100_T96_000: 60 runs
+[2026-10-25 02:04:24] E4a_equal_budgets [26/112] omega_published_omega_n100_T96_004: 60 runs
+[2026-10-25 02:04:25] E4a_equal_budgets [27/112] omega_published_omega_n150_T120_003: 60 runs
+[2026-10-25 02:04:26] E4a_equal_budgets [28/112] omega_published_omega_n100_T96_001: 60 runs
+[2026-10-25 02:04:29] E4a_equal_budgets [29/112] omega_published_omega_n100_T96_002: 60 runs
+[2026-10-25 02:04:29] E4a_equal_budgets [30/112] omega_published_omega_n150_T120_004: 60 runs
+[2026-10-25 02:04:32] E4a_equal_budgets [31/112] omega_published_omega_n75_T96_002: 60 runs
+[2026-10-25 02:04:33] E4a_equal_budgets [32/112] omega_published_omega_n75_T96_001: 60 runs
+[2026-10-25 02:04:34] E4a_equal_budgets [33/112] omega_published_omega_n100_T96_003: 60 runs
+[2026-10-25 02:04:34] E4a_equal_budgets [34/112] omega_published_omega_n75_T96_003: 60 runs
+[2026-10-25 02:04:41] E4a_equal_budgets [35/112] omega_published_omega_n50_T72_003: 60 runs
+[2026-10-25 02:05:21] E4a_equal_budgets [36/112] omega_published_omega_n200_T120_000: 60 runs
+[2026-10-25 02:08:10] E4a_equal_budgets [37/112] medium_omega_n50_T96_002: 60 runs
+[2026-10-25 02:08:10] E4a_equal_budgets [38/112] medium_omega_n50_T96_001: 60 runs
+[2026-10-25 02:08:23] E4a_equal_budgets [39/112] medium_omega_n50_T96_004: 60 runs
+[2026-10-25 02:08:34] E4a_equal_budgets [40/112] omega_published_omega_n200_T120_001: 60 runs
+[2026-10-25 02:08:38] E4a_equal_budgets [41/112] omega_published_omega_n200_T120_002: 60 runs
+[2026-10-25 02:08:39] E4a_equal_budgets [42/112] omega_published_omega_n200_T120_003: 60 runs
+[2026-10-25 02:08:40] E4a_equal_budgets [43/112] omega_published_omega_n200_T120_004: 60 runs
+[2026-10-25 02:09:04] E4a_equal_budgets [44/112] medium_omega_n200_T96_001: 60 runs
+[2026-10-25 02:09:05] E4a_equal_budgets [45/112] medium_omega_n200_T96_000: 60 runs
+[2026-10-25 02:09:11] E4a_equal_budgets [46/112] medium_omega_n200_T96_002: 60 runs
+[2026-10-25 02:09:16] E4a_equal_budgets [47/112] medium_omega_n50_T96_003: 60 runs
+[2026-10-25 02:09:16] E4a_equal_budgets [48/112] medium_omega_n100_T96_000: 60 runs
+[2026-10-25 02:09:18] E4a_equal_budgets [49/112] medium_omega_n100_T96_001: 60 runs
+[2026-10-25 02:09:20] E4a_equal_budgets [50/112] medium_omega_n100_T96_002: 60 runs
+[2026-10-25 02:09:23] E4a_equal_budgets [51/112] medium_omega_n50_T96_000: 60 runs
+[2026-10-25 02:09:27] E4a_equal_budgets [52/112] medium_omega_n100_T96_003: 60 runs
+[2026-10-25 02:09:29] E4a_equal_budgets [53/112] medium_omega_n100_T96_004: 60 runs
+[2026-10-25 02:09:51] E4a_equal_budgets [54/112] medium_omega_n200_T96_003: 60 runs
+[2026-10-25 02:12:01] E4a_equal_budgets [55/112] medium_staggered_n50_T96_000: 60 runs
+[2026-10-25 02:12:14] E4a_equal_budgets [56/112] medium_staggered_n50_T96_001: 60 runs
+[2026-10-25 02:12:22] E4a_equal_budgets [57/112] medium_staggered_n50_T96_002: 60 runs
+[2026-10-25 02:12:26] E4a_equal_budgets [58/112] medium_staggered_n50_T96_003: 60 runs
+[2026-10-25 02:12:30] E4a_equal_budgets [59/112] medium_staggered_n50_T96_004: 60 runs
+[2026-10-25 02:12:34] E4a_equal_budgets [60/112] medium_staggered_n100_T96_000: 60 runs
+[2026-10-25 02:12:40] E4a_equal_budgets [61/112] medium_omega_n200_T96_004: 60 runs
+[2026-10-25 02:12:55] E4a_equal_budgets [62/112] medium_staggered_n100_T96_001: 60 runs
+[2026-10-25 02:13:00] E4a_equal_budgets [63/112] medium_staggered_n100_T96_002: 60 runs
+[2026-10-25 02:13:09] E4a_equal_budgets [64/112] medium_staggered_n100_T96_004: 60 runs
+[2026-10-25 02:13:13] E4a_equal_budgets [65/112] medium_staggered_n100_T96_003: 60 runs
+[2026-10-25 02:13:33] E4a_equal_budgets [66/112] medium_staggered_n200_T96_002: 60 runs
+[2026-10-25 02:13:38] E4a_equal_budgets [67/112] medium_staggered_n200_T96_003: 60 runs
+[2026-10-25 02:14:03] E4a_equal_budgets [68/112] medium_overnight_n50_T96_000: 60 runs
+[2026-10-25 02:14:11] E4a_equal_budgets [69/112] medium_staggered_n200_T96_000: 60 runs
+[2026-10-25 02:14:12] E4a_equal_budgets [70/112] medium_staggered_n200_T96_001: 60 runs
+[2026-10-25 02:14:21] E4a_equal_budgets [71/112] medium_overnight_n50_T96_001: 60 runs
+[2026-10-25 02:14:23] E4a_equal_budgets [72/112] medium_staggered_n200_T96_004: 60 runs
+[2026-10-25 02:16:31] E4a_equal_budgets [73/112] medium_overnight_n50_T96_002: 60 runs
+[2026-10-25 02:16:44] E4a_equal_budgets [74/112] medium_overnight_n50_T96_003: 60 runs
+[2026-10-25 02:16:52] E4a_equal_budgets [75/112] medium_overnight_n50_T96_004: 60 runs
+[2026-10-25 02:16:56] E4a_equal_budgets [76/112] medium_overnight_n100_T96_000: 60 runs
+[2026-10-25 02:17:00] E4a_equal_budgets [77/112] medium_overnight_n100_T96_001: 60 runs
+[2026-10-25 02:17:04] E4a_equal_budgets [78/112] medium_overnight_n100_T96_002: 60 runs
+[2026-10-25 02:17:09] E4a_equal_budgets [79/112] medium_overnight_n100_T96_003: 60 runs
+[2026-10-25 02:17:25] E4a_equal_budgets [80/112] medium_overnight_n100_T96_004: 60 runs
+[2026-10-25 02:17:29] E4a_equal_budgets [81/112] medium_overnight_n200_T96_000: 60 runs
+[2026-10-25 02:17:39] E4a_equal_budgets [82/112] medium_overnight_n200_T96_001: 60 runs
+[2026-10-25 02:17:42] E4a_equal_budgets [83/112] medium_overnight_n200_T96_002: 60 runs
+[2026-10-25 02:18:02] E4a_equal_budgets [84/112] medium_overnight_n200_T96_003: 60 runs
+[2026-10-25 02:18:07] E4a_equal_budgets [85/112] medium_overnight_n200_T96_004: 60 runs
+[2026-10-25 02:18:33] E4a_equal_budgets [86/112] large_omega_n500_T96_000: 60 runs
+[2026-10-25 02:18:40] E4a_equal_budgets [87/112] large_omega_n500_T96_001: 60 runs
+[2026-10-25 02:18:42] E4a_equal_budgets [88/112] large_omega_n500_T96_002: 60 runs
+[2026-10-25 02:19:08] E4a_equal_budgets [89/112] large_omega_n1000_T96_000: 60 runs
+[2026-10-25 02:19:10] E4a_equal_budgets [90/112] large_omega_n1000_T96_001: 60 runs
+[2026-10-25 02:21:12] E4a_equal_budgets [91/112] large_omega_n2000_T96_000: 60 runs
+[2026-10-25 02:21:19] E4a_equal_budgets [92/112] large_omega_n1000_T96_002: 60 runs
+[2026-10-25 02:21:21] E4a_equal_budgets [93/112] large_omega_n2000_T96_001: 60 runs
+[2026-10-25 02:21:23] E4a_equal_budgets [94/112] large_omega_n2000_T96_002: 60 runs
+[2026-10-25 02:21:30] E4a_equal_budgets [95/112] large_staggered_n500_T96_000: 60 runs
+[2026-10-25 02:21:34] E4a_equal_budgets [96/112] large_staggered_n500_T96_001: 60 runs
+[2026-10-25 02:21:39] E4a_equal_budgets [97/112] large_staggered_n500_T96_002: 60 runs
+[2026-10-25 02:22:25] E4a_equal_budgets [98/112] large_staggered_n1000_T96_000: 60 runs
+[2026-10-25 02:22:31] E4a_equal_budgets [99/112] large_staggered_n1000_T96_001: 60 runs
+[2026-10-25 02:22:32] E4a_equal_budgets [100/112] large_staggered_n2000_T96_000: 60 runs
+[2026-10-25 02:22:38] E4a_equal_budgets [101/112] large_staggered_n1000_T96_002: 60 runs
+[2026-10-25 02:22:56] E4a_equal_budgets [102/112] large_staggered_n2000_T96_001: 60 runs
+[2026-10-25 02:22:57] E4a_equal_budgets [103/112] large_overnight_n500_T96_000: 60 runs
+[2026-10-25 02:23:00] E4a_equal_budgets [104/112] large_staggered_n2000_T96_002: 60 runs
+[2026-10-25 02:23:05] E4a_equal_budgets [105/112] large_overnight_n500_T96_001: 60 runs
+[2026-10-25 02:23:06] E4a_equal_budgets [106/112] large_overnight_n500_T96_002: 60 runs
+[2026-10-25 02:23:36] E4a_equal_budgets [107/112] large_overnight_n1000_T96_000: 60 runs
+[2026-10-25 02:23:38] E4a_equal_budgets [108/112] large_overnight_n1000_T96_001: 60 runs
+[2026-10-25 02:25:40] E4a_equal_budgets [109/112] large_overnight_n1000_T96_002: 60 runs
+[2026-10-25 02:25:47] E4a_equal_budgets [110/112] large_overnight_n2000_T96_000: 60 runs
+[2026-10-25 02:25:48] E4a_equal_budgets [111/112] large_overnight_n2000_T96_001: 60 runs
+[2026-10-25 02:25:49] E4a_equal_budgets [112/112] large_overnight_n2000_T96_002: 60 runs
+[2026-10-25 02:25:49] E4a_equal_budgets: done in 30.1 min
+[2026-10-25 02:25:49] E4b_equal_budgets_60s: 1152 runs on 72 instances (The anytime methods and Gurobi at 60 s; anytime curves over the whole run.)
+[2026-10-25 02:25:49] E4b_equal_budgets_60s: 72 jobs on 13 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 2 GB/worker -> 13)
+[2026-10-25 02:35:51] E4b_equal_budgets_60s [1/72] medium_omega_n50_T96_002: 16 runs
+[2026-10-25 02:35:52] E4b_equal_budgets_60s [2/72] medium_omega_n50_T96_001: 16 runs
+[2026-10-25 02:35:57] E4b_equal_budgets_60s [3/72] medium_omega_n50_T96_004: 16 runs
+[2026-10-25 02:39:19] E4b_equal_budgets_60s [4/72] medium_omega_n50_T96_003: 16 runs
+[2026-10-25 02:40:09] E4b_equal_budgets_60s [5/72] medium_omega_n100_T96_000: 16 runs
+[2026-10-25 02:40:27] E4b_equal_budgets_60s [6/72] medium_omega_n50_T96_000: 16 runs
+[2026-10-25 02:41:08] E4b_equal_budgets_60s [7/72] medium_omega_n200_T96_000: 16 runs
+[2026-10-25 02:41:14] E4b_equal_budgets_60s [8/72] medium_omega_n200_T96_002: 16 runs
+[2026-10-25 02:41:20] E4b_equal_budgets_60s [9/72] medium_omega_n200_T96_001: 16 runs
+[2026-10-25 02:41:33] E4b_equal_budgets_60s [10/72] medium_omega_n100_T96_001: 16 runs
+[2026-10-25 02:41:34] E4b_equal_budgets_60s [11/72] medium_omega_n100_T96_002: 16 runs
+[2026-10-25 02:41:37] E4b_equal_budgets_60s [12/72] medium_omega_n100_T96_003: 16 runs
+[2026-10-25 02:41:38] E4b_equal_budgets_60s [13/72] medium_omega_n100_T96_004: 16 runs
+[2026-10-25 02:45:56] E4b_equal_budgets_60s [14/72] medium_staggered_n50_T96_000: 16 runs
+[2026-10-25 02:49:18] E4b_equal_budgets_60s [15/72] medium_staggered_n50_T96_001: 16 runs
+[2026-10-25 02:50:08] E4b_equal_budgets_60s [16/72] medium_staggered_n50_T96_002: 16 runs
+[2026-10-25 02:50:26] E4b_equal_budgets_60s [17/72] medium_staggered_n50_T96_003: 16 runs
+[2026-10-25 02:51:07] E4b_equal_budgets_60s [18/72] medium_staggered_n50_T96_004: 16 runs
+[2026-10-25 02:51:13] E4b_equal_budgets_60s [19/72] medium_omega_n200_T96_004: 16 runs
+[2026-10-25 02:51:14] E4b_equal_budgets_60s [20/72] medium_staggered_n100_T96_000: 16 runs
+[2026-10-25 02:51:15] E4b_equal_budgets_60s [21/72] medium_omega_n200_T96_003: 16 runs
+[2026-10-25 02:51:19] E4b_equal_budgets_60s [22/72] medium_staggered_n100_T96_001: 16 runs
+[2026-10-25 02:51:34] E4b_equal_budgets_60s [23/72] medium_staggered_n100_T96_002: 16 runs
+[2026-10-25 02:51:37] E4b_equal_budgets_60s [24/72] medium_staggered_n100_T96_004: 16 runs
+[2026-10-25 02:51:42] E4b_equal_budgets_60s [25/72] medium_staggered_n100_T96_003: 16 runs
+[2026-10-25 02:54:18] E4b_equal_budgets_60s [26/72] medium_staggered_n200_T96_000: 16 runs
+[2026-10-25 02:57:30] E4b_equal_budgets_60s [27/72] medium_staggered_n200_T96_001: 16 runs
+[2026-10-25 03:01:17] E4b_equal_budgets_60s [28/72] medium_staggered_n200_T96_002: 16 runs
+[2026-10-25 03:02:08] E4b_equal_budgets_60s [29/72] medium_staggered_n200_T96_003: 16 runs
+[2026-10-25 03:04:25] E4b_equal_budgets_60s [30/72] medium_overnight_n50_T96_002: 16 runs
+[2026-10-25 03:05:37] E4b_equal_budgets_60s [31/72] medium_overnight_n100_T96_001: 16 runs
+[2026-10-25 03:05:51] E4b_equal_budgets_60s [32/72] medium_staggered_n200_T96_004: 16 runs
+[2026-10-25 03:05:55] E4b_equal_budgets_60s [33/72] medium_overnight_n100_T96_002: 16 runs
+[2026-10-25 03:06:02] E4b_equal_budgets_60s [34/72] medium_overnight_n50_T96_004: 16 runs
+[2026-10-25 03:06:05] E4b_equal_budgets_60s [35/72] medium_overnight_n100_T96_000: 16 runs
+[2026-10-25 03:06:36] E4b_equal_budgets_60s [36/72] medium_overnight_n50_T96_003: 16 runs
+[2026-10-25 03:06:38] E4b_equal_budgets_60s [37/72] medium_overnight_n50_T96_000: 16 runs
+[2026-10-25 03:06:40] E4b_equal_budgets_60s [38/72] medium_overnight_n50_T96_001: 16 runs
+[2026-10-25 03:08:40] E4b_equal_budgets_60s [39/72] medium_overnight_n100_T96_003: 16 runs
+[2026-10-25 03:12:06] E4b_equal_budgets_60s [40/72] medium_overnight_n100_T96_004: 16 runs
+[2026-10-25 03:14:16] E4b_equal_budgets_60s [41/72] medium_overnight_n200_T96_000: 16 runs
+[2026-10-25 03:15:07] E4b_equal_budgets_60s [42/72] medium_overnight_n200_T96_001: 16 runs
+[2026-10-25 03:17:24] E4b_equal_budgets_60s [43/72] medium_overnight_n200_T96_002: 16 runs
+[2026-10-25 03:18:36] E4b_equal_budgets_60s [44/72] medium_overnight_n200_T96_003: 16 runs
+[2026-10-25 03:18:50] E4b_equal_budgets_60s [45/72] medium_overnight_n200_T96_004: 16 runs
+[2026-10-25 03:18:55] E4b_equal_budgets_60s [46/72] large_omega_n500_T96_000: 16 runs
+[2026-10-25 03:19:01] E4b_equal_budgets_60s [47/72] large_omega_n500_T96_001: 16 runs
+[2026-10-25 03:19:04] E4b_equal_budgets_60s [48/72] large_omega_n500_T96_002: 16 runs
+[2026-10-25 03:22:18] E4b_equal_budgets_60s [49/72] large_omega_n1000_T96_000: 16 runs
+[2026-10-25 03:22:19] E4b_equal_budgets_60s [50/72] large_omega_n1000_T96_001: 16 runs
+[2026-10-25 03:22:21] E4b_equal_budgets_60s [51/72] large_omega_n1000_T96_002: 16 runs
+[2026-10-25 03:24:11] E4b_equal_budgets_60s [52/72] large_omega_n2000_T96_000: 16 runs
+[2026-10-25 03:26:58] E4b_equal_budgets_60s [53/72] large_staggered_n500_T96_000: 16 runs
+[2026-10-25 03:27:36] E4b_equal_budgets_60s [54/72] large_omega_n2000_T96_001: 16 runs
+[2026-10-25 03:29:46] E4b_equal_budgets_60s [55/72] large_omega_n2000_T96_002: 16 runs
+[2026-10-25 03:31:13] E4b_equal_budgets_60s [56/72] large_staggered_n500_T96_001: 16 runs
+[2026-10-25 03:32:34] E4b_equal_budgets_60s [57/72] large_staggered_n500_T96_002: 16 runs
+[2026-10-25 03:34:38] E4b_equal_budgets_60s [58/72] large_staggered_n1000_T96_000: 16 runs
+[2026-10-25 03:34:44] E4b_equal_budgets_60s [59/72] large_staggered_n1000_T96_001: 16 runs
+[2026-10-25 03:34:46] E4b_equal_budgets_60s [60/72] large_staggered_n2000_T96_000: 16 runs
+[2026-10-25 03:34:49] E4b_equal_budgets_60s [61/72] large_staggered_n1000_T96_002: 16 runs
+[2026-10-25 03:35:21] E4b_equal_budgets_60s [62/72] large_overnight_n500_T96_000: 16 runs
+[2026-10-25 03:37:11] E4b_equal_budgets_60s [63/72] large_overnight_n500_T96_001: 16 runs
+[2026-10-25 03:38:02] E4b_equal_budgets_60s [64/72] large_staggered_n2000_T96_001: 16 runs
+[2026-10-25 03:38:03] E4b_equal_budgets_60s [65/72] large_staggered_n2000_T96_002: 16 runs
+[2026-10-25 03:39:59] E4b_equal_budgets_60s [66/72] large_overnight_n500_T96_002: 16 runs
+[2026-10-25 03:42:49] E4b_equal_budgets_60s [67/72] large_overnight_n1000_T96_000: 16 runs
+[2026-10-25 03:44:56] E4b_equal_budgets_60s [68/72] large_overnight_n1000_T96_001: 16 runs
+[2026-10-25 03:46:25] E4b_equal_budgets_60s [69/72] large_overnight_n1000_T96_002: 16 runs
+[2026-10-25 03:46:59] E4b_equal_budgets_60s [70/72] large_overnight_n2000_T96_000: 16 runs
+[2026-10-25 03:49:00] E4b_equal_budgets_60s [71/72] large_overnight_n2000_T96_001: 16 runs
+[2026-10-25 03:49:04] E4b_equal_budgets_60s [72/72] large_overnight_n2000_T96_002: 16 runs
+[2026-10-25 03:49:04] E4b_equal_budgets_60s: done in 83.2 min
+[2026-10-25 03:49:04] E3_long_runs: 72 runs on 18 instances (Long runs (600 s) of CRI and Gurobi, one instance per family and size of the medium and large sets; anytime curves and dual bounds.)
+[2026-10-25 03:49:04] E3_long_runs: 27 jobs on 9 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 3 GB/worker -> 9)
+[2026-10-25 03:49:08] E3_long_runs [1/27] medium_staggered_n50_T96_000: 4 runs
+[2026-10-25 03:49:10] E3_long_runs [2/27] medium_staggered_n100_T96_000: 4 runs
+[2026-10-25 03:50:46] E3_long_runs [3/27] medium_staggered_n200_T96_000: 4 runs
+[2026-10-25 04:02:46] E3_long_runs [4/27] large_staggered_n500_T96_000: 4 runs
+[2026-10-25 04:11:07] E3_long_runs [5/27] medium_overnight_n50_T96_000: 4 runs
+[2026-10-25 04:12:59] E3_long_runs [6/27] medium_overnight_n100_T96_000: 4 runs
+[2026-10-25 04:15:11] E3_long_runs [7/27] large_omega_n2000_T96_000: 4 runs
+[2026-10-25 04:16:35] E3_long_runs [8/27] medium_overnight_n200_T96_000: 4 runs
+[2026-10-25 04:23:48] E3_long_runs [9/27] large_staggered_n1000_T96_000: 4 runs
+[2026-10-25 04:24:06] E3_long_runs [10/27] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 04:24:14] E3_long_runs [11/27] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 04:25:10] E3_long_runs [12/27] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 04:25:38] E3_long_runs [13/27] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 04:25:42] E3_long_runs [14/27] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 04:26:10] E3_long_runs [15/27] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 04:26:51] E3_long_runs [16/27] large_omega_n500_T96_000: 4 runs
+[2026-10-25 04:28:48] E3_long_runs [17/27] large_omega_n1000_T96_000: 4 runs
+[2026-10-25 04:30:14] E3_long_runs [18/27] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 04:30:26] E3_long_runs [19/27] large_staggered_n2000_T96_000: 4 runs
+[2026-10-25 04:31:01] E3_long_runs [20/27] large_overnight_n500_T96_000: 4 runs
+[2026-10-25 04:34:06] E3_long_runs [21/27] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 04:36:03] E3_long_runs [22/27] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 04:36:29] E3_long_runs [23/27] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 04:38:48] E3_long_runs [24/27] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 04:39:12] E3_long_runs [25/27] large_overnight_n1000_T96_000: 4 runs
+[2026-10-25 04:40:14] E3_long_runs [26/27] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 04:44:25] E3_long_runs [27/27] large_overnight_n2000_T96_000: 4 runs
+[2026-10-25 04:44:26] E3_long_runs: done in 55.4 min
+[2026-10-25 04:44:26] E3x_long_runs_xlarge: 20 runs on 5 instances (Long runs (600 s) of CRI and Gurobi on the xlarge instances (n = 5,000-10,000, T up to 288), where Gurobi struggles - objective-versus-runtime curves and dual bounds at full length (E6 stops at 120 s). Own block so that its memory need does not reduce the workers of E3.)
+[2026-10-25 04:44:26] E3x_long_runs_xlarge: 5 jobs on 3 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 8 GB/worker -> 3)
+[2026-10-25 05:18:57] E3x_long_runs_xlarge [1/5] xlarge_omega_n10000_T96_000: 4 runs
+[2026-10-25 05:24:09] E3x_long_runs_xlarge [2/5] xlarge_staggered_n5000_T288_000: 4 runs
+[2026-10-25 05:24:14] E3x_long_runs_xlarge [3/5] xlarge_omega_n5000_T96_000: 4 runs
+[2026-10-25 05:58:02] E3x_long_runs_xlarge [4/5] xlarge_staggered_n10000_T288_000: 4 runs
+[2026-10-25 06:03:27] E3x_long_runs_xlarge [5/5] xlarge_overnight_n5000_T96_000: 4 runs
+[2026-10-25 06:03:28] E3x_long_runs_xlarge: done in 79.0 min
+[2026-10-25 06:03:28] E5_ablation: 2295 runs on 45 instances (Contribution of each CRI component - Round only, + LLS, + W-LNS, + SA, both; marginal matrix (LP, cover cuts, configuration LP); rounding family (CE, MT, IR, greedy); SA initialisation (the former hybrids are SA started from G, RR, RLP or the CRI Round stage).)
+[2026-10-25 06:03:28] E5_ablation: 81 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 06:05:59] E5_ablation [1/81] medium_omega_n50_T96_002: 51 runs
+[2026-10-25 06:06:02] E5_ablation [2/81] medium_staggered_n50_T96_003: 51 runs
+[2026-10-25 06:06:02] E5_ablation [3/81] medium_staggered_n50_T96_002: 51 runs
+[2026-10-25 06:06:29] E5_ablation [4/81] medium_staggered_n100_T96_000: 51 runs
+[2026-10-25 06:06:29] E5_ablation [5/81] medium_staggered_n100_T96_001: 51 runs
+[2026-10-25 06:06:30] E5_ablation [6/81] medium_omega_n50_T96_001: 51 runs
+[2026-10-25 06:06:30] E5_ablation [7/81] medium_staggered_n50_T96_000: 51 runs
+[2026-10-25 06:06:30] E5_ablation [8/81] medium_staggered_n50_T96_001: 51 runs
+[2026-10-25 06:06:36] E5_ablation [9/81] medium_staggered_n100_T96_004: 51 runs
+[2026-10-25 06:06:57] E5_ablation [10/81] medium_omega_n50_T96_004: 51 runs
+[2026-10-25 06:06:58] E5_ablation [11/81] medium_staggered_n50_T96_004: 51 runs
+[2026-10-25 06:07:01] E5_ablation [12/81] medium_staggered_n100_T96_002: 51 runs
+[2026-10-25 06:07:13] E5_ablation [13/81] medium_staggered_n100_T96_003: 51 runs
+[2026-10-25 06:08:46] E5_ablation [14/81] medium_omega_n200_T96_002: 51 runs
+[2026-10-25 06:08:46] E5_ablation [15/81] medium_omega_n200_T96_004: 51 runs
+[2026-10-25 06:08:46] E5_ablation [16/81] medium_omega_n200_T96_003: 51 runs
+[2026-10-25 06:08:47] E5_ablation [17/81] medium_omega_n200_T96_000: 51 runs
+[2026-10-25 06:08:55] E5_ablation [18/81] medium_omega_n200_T96_001: 51 runs
+[2026-10-25 06:09:05] E5_ablation [19/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:09:15] E5_ablation [20/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:09:25] E5_ablation [21/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:09:34] E5_ablation [22/81] medium_staggered_n200_T96_001: 51 runs
+[2026-10-25 06:09:44] E5_ablation [23/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:09:44] E5_ablation [24/81] medium_staggered_n200_T96_002: 51 runs
+[2026-10-25 06:09:53] E5_ablation [25/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:09:54] E5_ablation [26/81] medium_staggered_n200_T96_000: 51 runs
+[2026-10-25 06:10:03] E5_ablation [27/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:03] E5_ablation [28/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:08] E5_ablation [29/81] medium_omega_n100_T96_001: 51 runs
+[2026-10-25 06:10:09] E5_ablation [30/81] medium_omega_n100_T96_000: 51 runs
+[2026-10-25 06:10:11] E5_ablation [31/81] medium_omega_n100_T96_002: 51 runs
+[2026-10-25 06:10:12] E5_ablation [32/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:13] E5_ablation [33/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:15] E5_ablation [34/81] medium_staggered_n200_T96_003: 51 runs
+[2026-10-25 06:10:20] E5_ablation [35/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:20] E5_ablation [36/81] medium_omega_n50_T96_003: 51 runs
+[2026-10-25 06:10:21] E5_ablation [37/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:22] E5_ablation [38/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:23] E5_ablation [39/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:25] E5_ablation [40/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:26] E5_ablation [41/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:26] E5_ablation [42/81] medium_omega_n100_T96_003: 51 runs
+[2026-10-25 06:10:26] E5_ablation [43/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:28] E5_ablation [44/81] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 06:10:30] E5_ablation [45/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:30] E5_ablation [46/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:31] E5_ablation [47/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:31] E5_ablation [48/81] medium_omega_n100_T96_004: 51 runs
+[2026-10-25 06:10:31] E5_ablation [49/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:31] E5_ablation [50/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:34] E5_ablation [51/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:35] E5_ablation [52/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:35] E5_ablation [53/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:36] E5_ablation [54/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:37] E5_ablation [55/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:39] E5_ablation [56/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:39] E5_ablation [57/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:40] E5_ablation [58/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:40] E5_ablation [59/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:40] E5_ablation [60/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:40] E5_ablation [61/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:43] E5_ablation [62/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:44] E5_ablation [63/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:45] E5_ablation [64/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:10:46] E5_ablation [65/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:11:41] E5_ablation [66/81] medium_overnight_n50_T96_000: 51 runs
+[2026-10-25 06:11:42] E5_ablation [67/81] medium_overnight_n100_T96_000: 51 runs
+[2026-10-25 06:11:42] E5_ablation [68/81] medium_overnight_n50_T96_003: 51 runs
+[2026-10-25 06:11:48] E5_ablation [69/81] medium_overnight_n50_T96_002: 51 runs
+[2026-10-25 06:11:48] E5_ablation [70/81] medium_overnight_n100_T96_001: 51 runs
+[2026-10-25 06:11:49] E5_ablation [71/81] medium_overnight_n50_T96_004: 51 runs
+[2026-10-25 06:11:49] E5_ablation [72/81] medium_overnight_n50_T96_001: 51 runs
+[2026-10-25 06:12:09] E5_ablation [73/81] medium_overnight_n100_T96_002: 51 runs
+[2026-10-25 06:12:10] E5_ablation [74/81] medium_overnight_n100_T96_003: 51 runs
+[2026-10-25 06:12:13] E5_ablation [75/81] medium_overnight_n100_T96_004: 51 runs
+[2026-10-25 06:12:24] E5_ablation [76/81] medium_overnight_n200_T96_000: 51 runs
+[2026-10-25 06:12:57] E5_ablation [77/81] medium_staggered_n200_T96_004: 51 runs
+[2026-10-25 06:13:57] E5_ablation [78/81] medium_overnight_n200_T96_003: 51 runs
+[2026-10-25 06:13:57] E5_ablation [79/81] medium_overnight_n200_T96_001: 51 runs
+[2026-10-25 06:13:57] E5_ablation [80/81] medium_overnight_n200_T96_002: 51 runs
+[2026-10-25 06:13:57] E5_ablation [81/81] medium_overnight_n200_T96_004: 51 runs
+[2026-10-25 06:13:58] E5_ablation: done in 10.5 min
+[2026-10-25 06:13:58] E5b_ablation_60s: 180 runs on 45 instances (The improvement-stage ablation at 60 s.)
+[2026-10-25 06:13:58] E5b_ablation_60s: 81 jobs on 27 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1 GB/worker -> 27)
+[2026-10-25 06:14:03] E5b_ablation_60s [1/81] medium_staggered_n50_T96_000: 4 runs
+[2026-10-25 06:14:03] E5b_ablation_60s [2/81] medium_staggered_n50_T96_001: 4 runs
+[2026-10-25 06:14:03] E5b_ablation_60s [3/81] medium_staggered_n50_T96_002: 4 runs
+[2026-10-25 06:14:03] E5b_ablation_60s [4/81] medium_staggered_n50_T96_003: 4 runs
+[2026-10-25 06:14:03] E5b_ablation_60s [5/81] medium_staggered_n100_T96_000: 4 runs
+[2026-10-25 06:14:03] E5b_ablation_60s [6/81] medium_staggered_n100_T96_001: 4 runs
+[2026-10-25 06:14:04] E5b_ablation_60s [7/81] medium_staggered_n100_T96_004: 4 runs
+[2026-10-25 06:14:25] E5b_ablation_60s [8/81] medium_staggered_n50_T96_004: 4 runs
+[2026-10-25 06:15:03] E5b_ablation_60s [9/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:15:03] E5b_ablation_60s [10/81] medium_staggered_n100_T96_002: 4 runs
+[2026-10-25 06:15:05] E5b_ablation_60s [11/81] medium_staggered_n100_T96_003: 4 runs
+[2026-10-25 06:15:05] E5b_ablation_60s [12/81] medium_omega_n50_T96_001: 1 runs
+[2026-10-25 06:15:06] E5b_ablation_60s [13/81] medium_omega_n50_T96_001: 1 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [14/81] medium_staggered_n200_T96_003: 4 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [15/81] medium_omega_n50_T96_001: 1 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [16/81] medium_omega_n50_T96_002: 1 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [17/81] medium_omega_n50_T96_002: 1 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [18/81] medium_omega_n50_T96_002: 1 runs
+[2026-10-25 06:15:10] E5b_ablation_60s [19/81] medium_omega_n50_T96_002: 1 runs
+[2026-10-25 06:15:23] E5b_ablation_60s [20/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:15:28] E5b_ablation_60s [21/81] medium_staggered_n200_T96_000: 4 runs
+[2026-10-25 06:15:56] E5b_ablation_60s [22/81] medium_staggered_n200_T96_002: 4 runs
+[2026-10-25 06:16:01] E5b_ablation_60s [23/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:16:01] E5b_ablation_60s [24/81] medium_omega_n50_T96_004: 1 runs
+[2026-10-25 06:16:02] E5b_ablation_60s [25/81] medium_omega_n50_T96_004: 1 runs
+[2026-10-25 06:16:02] E5b_ablation_60s [26/81] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 06:16:02] E5b_ablation_60s [27/81] medium_omega_n50_T96_004: 1 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [28/81] medium_overnight_n200_T96_001: 4 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [29/81] medium_overnight_n200_T96_000: 4 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [30/81] medium_overnight_n200_T96_002: 4 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [31/81] medium_overnight_n200_T96_004: 4 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [32/81] medium_overnight_n200_T96_003: 4 runs
+[2026-10-25 06:16:04] E5b_ablation_60s [33/81] medium_omega_n50_T96_003: 1 runs
+[2026-10-25 06:16:05] E5b_ablation_60s [34/81] medium_omega_n50_T96_001: 1 runs
+[2026-10-25 06:16:12] E5b_ablation_60s [35/81] medium_staggered_n200_T96_001: 4 runs
+[2026-10-25 06:16:22] E5b_ablation_60s [36/81] medium_omega_n50_T96_003: 1 runs
+[2026-10-25 06:16:27] E5b_ablation_60s [37/81] medium_omega_n50_T96_003: 1 runs
+[2026-10-25 06:16:45] E5b_ablation_60s [38/81] medium_overnight_n100_T96_001: 4 runs
+[2026-10-25 06:16:45] E5b_ablation_60s [39/81] medium_overnight_n50_T96_002: 4 runs
+[2026-10-25 06:16:54] E5b_ablation_60s [40/81] medium_overnight_n100_T96_002: 4 runs
+[2026-10-25 06:16:55] E5b_ablation_60s [41/81] medium_omega_n50_T96_003: 1 runs
+[2026-10-25 06:17:00] E5b_ablation_60s [42/81] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 06:17:00] E5b_ablation_60s [43/81] medium_overnight_n100_T96_003: 4 runs
+[2026-10-25 06:17:01] E5b_ablation_60s [44/81] medium_omega_n50_T96_004: 1 runs
+[2026-10-25 06:17:01] E5b_ablation_60s [45/81] medium_omega_n100_T96_001: 1 runs
+[2026-10-25 06:17:01] E5b_ablation_60s [46/81] medium_omega_n100_T96_001: 1 runs
+[2026-10-25 06:17:01] E5b_ablation_60s [47/81] medium_omega_n100_T96_001: 1 runs
+[2026-10-25 06:17:02] E5b_ablation_60s [48/81] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 06:17:02] E5b_ablation_60s [49/81] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 06:17:02] E5b_ablation_60s [50/81] medium_omega_n100_T96_000: 1 runs
+[2026-10-25 06:17:02] E5b_ablation_60s [51/81] medium_omega_n100_T96_001: 1 runs
+[2026-10-25 06:17:05] E5b_ablation_60s [52/81] medium_overnight_n100_T96_000: 4 runs
+[2026-10-25 06:17:08] E5b_ablation_60s [53/81] medium_overnight_n100_T96_004: 4 runs
+[2026-10-25 06:17:09] E5b_ablation_60s [54/81] medium_omega_n100_T96_002: 1 runs
+[2026-10-25 06:17:19] E5b_ablation_60s [55/81] medium_omega_n100_T96_002: 1 runs
+[2026-10-25 06:17:24] E5b_ablation_60s [56/81] medium_omega_n100_T96_002: 1 runs
+[2026-10-25 06:17:32] E5b_ablation_60s [57/81] medium_staggered_n200_T96_004: 4 runs
+[2026-10-25 06:17:36] E5b_ablation_60s [58/81] medium_overnight_n50_T96_000: 4 runs
+[2026-10-25 06:17:38] E5b_ablation_60s [59/81] medium_omega_n200_T96_004: 4 runs
+[2026-10-25 06:17:38] E5b_ablation_60s [60/81] medium_omega_n200_T96_002: 4 runs
+[2026-10-25 06:17:39] E5b_ablation_60s [61/81] medium_overnight_n50_T96_003: 4 runs
+[2026-10-25 06:17:39] E5b_ablation_60s [62/81] medium_omega_n200_T96_003: 4 runs
+[2026-10-25 06:17:42] E5b_ablation_60s [63/81] medium_omega_n100_T96_002: 1 runs
+[2026-10-25 06:17:43] E5b_ablation_60s [64/81] medium_omega_n100_T96_003: 1 runs
+[2026-10-25 06:17:43] E5b_ablation_60s [65/81] medium_overnight_n50_T96_004: 4 runs
+[2026-10-25 06:17:43] E5b_ablation_60s [66/81] medium_overnight_n50_T96_001: 4 runs
+[2026-10-25 06:17:51] E5b_ablation_60s [67/81] medium_omega_n100_T96_003: 1 runs
+[2026-10-25 06:17:52] E5b_ablation_60s [68/81] medium_omega_n100_T96_003: 1 runs
+[2026-10-25 06:17:54] E5b_ablation_60s [69/81] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 06:17:54] E5b_ablation_60s [70/81] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 06:17:54] E5b_ablation_60s [71/81] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 06:17:54] E5b_ablation_60s [72/81] medium_omega_n200_T96_000: 1 runs
+[2026-10-25 06:17:57] E5b_ablation_60s [73/81] medium_omega_n200_T96_001: 1 runs
+[2026-10-25 06:17:57] E5b_ablation_60s [74/81] medium_omega_n100_T96_003: 1 runs
+[2026-10-25 06:17:58] E5b_ablation_60s [75/81] medium_omega_n100_T96_004: 1 runs
+[2026-10-25 06:17:59] E5b_ablation_60s [76/81] medium_omega_n100_T96_004: 1 runs
+[2026-10-25 06:17:59] E5b_ablation_60s [77/81] medium_omega_n100_T96_004: 1 runs
+[2026-10-25 06:17:59] E5b_ablation_60s [78/81] medium_omega_n100_T96_004: 1 runs
+[2026-10-25 06:17:59] E5b_ablation_60s [79/81] medium_omega_n200_T96_001: 1 runs
+[2026-10-25 06:18:03] E5b_ablation_60s [80/81] medium_omega_n200_T96_001: 1 runs
+[2026-10-25 06:18:04] E5b_ablation_60s [81/81] medium_omega_n200_T96_001: 1 runs
+[2026-10-25 06:18:04] E5b_ablation_60s: done in 4.1 min
+[2026-10-25 06:18:04] E6_scalability: 154 runs on 14 instances (Scaling up to n = 10,000 vehicles and T = 288 slots - time of the Certify stage and of each method, gap to the certified lower bound. Workers sized automatically from the free RAM (8 GB per worker for these models).)
+[2026-10-25 06:18:05] E6_scalability: 14 jobs on 3 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 8 GB/worker -> 3)
+[2026-10-25 06:25:08] E6_scalability [1/14] large_omega_n500_T96_000: 11 runs
+[2026-10-25 06:26:04] E6_scalability [2/14] large_omega_n2000_T96_000: 11 runs
+[2026-10-25 06:26:05] E6_scalability [3/14] large_omega_n1000_T96_000: 11 runs
+[2026-10-25 06:31:24] E6_scalability [4/14] large_staggered_n500_T96_000: 11 runs
+[2026-10-25 06:34:03] E6_scalability [5/14] large_staggered_n1000_T96_000: 11 runs
+[2026-10-25 06:34:03] E6_scalability [6/14] large_staggered_n2000_T96_000: 11 runs
+[2026-10-25 06:38:25] E6_scalability [7/14] large_overnight_n500_T96_000: 11 runs
+[2026-10-25 06:41:51] E6_scalability [8/14] large_overnight_n2000_T96_000: 11 runs
+[2026-10-25 06:41:57] E6_scalability [9/14] large_overnight_n1000_T96_000: 11 runs
+[2026-10-25 06:46:27] E6_scalability [10/14] xlarge_omega_n5000_T96_000: 11 runs
+[2026-10-25 06:49:56] E6_scalability [11/14] xlarge_omega_n10000_T96_000: 11 runs
+[2026-10-25 06:50:00] E6_scalability [12/14] xlarge_staggered_n5000_T288_000: 11 runs
+[2026-10-25 06:54:36] E6_scalability [13/14] xlarge_staggered_n10000_T288_000: 11 runs
+[2026-10-25 06:58:05] E6_scalability [14/14] xlarge_overnight_n5000_T96_000: 11 runs
+[2026-10-25 06:58:05] E6_scalability: done in 40.0 min
+[2026-10-25 06:58:05] E7_gurobi_threads: 108 runs on 18 instances (Gurobi with 4 threads against single-thread CRI at 10 s and 60 s. Workers sized automatically, 4 cores each (physical cores - 1, divided by 4), so that Gurobi has its threads.)
+[2026-10-25 06:58:05] E7_gurobi_threads: 21 jobs on 7 workers (auto: 32 physical cores - 1 reserved, 4 thread(s)/task -> 7; 28.2 GB available, 3 GB/worker -> 9)
+[2026-10-25 06:58:09] E7_gurobi_threads [1/21] medium_staggered_n50_T96_000: 6 runs
+[2026-10-25 06:58:12] E7_gurobi_threads [2/21] medium_staggered_n100_T96_000: 6 runs
+[2026-10-25 06:58:52] E7_gurobi_threads [3/21] medium_staggered_n200_T96_000: 6 runs
+[2026-10-25 07:00:14] E7_gurobi_threads [4/21] medium_omega_n100_T96_000: 6 runs
+[2026-10-25 07:01:05] E7_gurobi_threads [5/21] medium_overnight_n200_T96_000: 6 runs
+[2026-10-25 07:01:07] E7_gurobi_threads [6/21] large_omega_n500_T96_000: 6 runs
+[2026-10-25 07:01:11] E7_gurobi_threads [7/21] medium_overnight_n50_T96_000: 6 runs
+[2026-10-25 07:01:20] E7_gurobi_threads [8/21] medium_overnight_n100_T96_000: 6 runs
+[2026-10-25 07:01:27] E7_gurobi_threads [9/21] medium_omega_n200_T96_000: 6 runs
+[2026-10-25 07:02:17] E7_gurobi_threads [10/21] large_omega_n1000_T96_000: 6 runs
+[2026-10-25 07:03:18] E7_gurobi_threads [11/21] large_staggered_n500_T96_000: 6 runs
+[2026-10-25 07:03:36] E7_gurobi_threads [12/21] large_omega_n2000_T96_000: 6 runs
+[2026-10-25 07:04:17] E7_gurobi_threads [13/21] large_overnight_n500_T96_000: 6 runs
+[2026-10-25 07:04:28] E7_gurobi_threads [14/21] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 07:04:35] E7_gurobi_threads [15/21] large_staggered_n1000_T96_000: 6 runs
+[2026-10-25 07:04:36] E7_gurobi_threads [16/21] large_staggered_n2000_T96_000: 6 runs
+[2026-10-25 07:04:39] E7_gurobi_threads [17/21] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 07:04:44] E7_gurobi_threads [18/21] medium_omega_n50_T96_000: 2 runs
+[2026-10-25 07:04:47] E7_gurobi_threads [19/21] large_overnight_n1000_T96_000: 6 runs
+[2026-10-25 07:05:15] E7_gurobi_threads [20/21] medium_omega_n50_T96_000: 1 runs
+[2026-10-25 07:05:32] E7_gurobi_threads [21/21] large_overnight_n2000_T96_000: 6 runs
+[2026-10-25 07:05:33] E7_gurobi_threads: done in 7.5 min
+[2026-10-25 07:05:33] E9_managerial: 216 runs on 72 instances (Peak reduction against uncontrolled charging (ASAP) and non-preemptive charging (GNP); load profiles.)
+[2026-10-25 07:05:33] E9_managerial: 72 jobs on 18 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1.5 GB/worker -> 18)
+[2026-10-25 07:05:36] E9_managerial [1/72] medium_omega_n50_T96_002: 3 runs
+[2026-10-25 07:05:37] E9_managerial [2/72] medium_omega_n50_T96_001: 3 runs
+[2026-10-25 07:05:37] E9_managerial [3/72] medium_omega_n50_T96_004: 3 runs
+[2026-10-25 07:05:37] E9_managerial [4/72] medium_staggered_n50_T96_000: 3 runs
+[2026-10-25 07:05:37] E9_managerial [5/72] medium_staggered_n50_T96_001: 3 runs
+[2026-10-25 07:05:37] E9_managerial [6/72] medium_staggered_n50_T96_002: 3 runs
+[2026-10-25 07:05:37] E9_managerial [7/72] medium_staggered_n50_T96_003: 3 runs
+[2026-10-25 07:05:37] E9_managerial [8/72] medium_staggered_n100_T96_001: 3 runs
+[2026-10-25 07:05:37] E9_managerial [9/72] medium_staggered_n100_T96_000: 3 runs
+[2026-10-25 07:05:37] E9_managerial [10/72] medium_staggered_n50_T96_004: 3 runs
+[2026-10-25 07:05:37] E9_managerial [11/72] medium_staggered_n100_T96_004: 3 runs
+[2026-10-25 07:05:37] E9_managerial [12/72] medium_staggered_n100_T96_002: 3 runs
+[2026-10-25 07:05:38] E9_managerial [13/72] medium_staggered_n200_T96_003: 3 runs
+[2026-10-25 07:05:38] E9_managerial [14/72] medium_staggered_n200_T96_002: 3 runs
+[2026-10-25 07:05:38] E9_managerial [15/72] medium_staggered_n100_T96_003: 3 runs
+[2026-10-25 07:05:42] E9_managerial [16/72] medium_omega_n200_T96_000: 3 runs
+[2026-10-25 07:05:42] E9_managerial [17/72] medium_omega_n200_T96_004: 3 runs
+[2026-10-25 07:05:42] E9_managerial [18/72] medium_omega_n200_T96_003: 3 runs
+[2026-10-25 07:05:42] E9_managerial [19/72] medium_omega_n200_T96_001: 3 runs
+[2026-10-25 07:05:42] E9_managerial [20/72] medium_omega_n200_T96_002: 3 runs
+[2026-10-25 07:05:42] E9_managerial [21/72] medium_staggered_n200_T96_001: 3 runs
+[2026-10-25 07:05:43] E9_managerial [22/72] medium_overnight_n50_T96_001: 3 runs
+[2026-10-25 07:05:43] E9_managerial [23/72] medium_staggered_n200_T96_000: 3 runs
+[2026-10-25 07:05:43] E9_managerial [24/72] medium_overnight_n50_T96_000: 3 runs
+[2026-10-25 07:05:43] E9_managerial [25/72] medium_overnight_n50_T96_002: 3 runs
+[2026-10-25 07:05:44] E9_managerial [26/72] medium_omega_n100_T96_001: 3 runs
+[2026-10-25 07:05:44] E9_managerial [27/72] medium_omega_n100_T96_002: 3 runs
+[2026-10-25 07:05:44] E9_managerial [28/72] medium_omega_n100_T96_000: 3 runs
+[2026-10-25 07:05:45] E9_managerial [29/72] medium_omega_n100_T96_003: 3 runs
+[2026-10-25 07:05:45] E9_managerial [30/72] medium_omega_n100_T96_004: 3 runs
+[2026-10-25 07:05:45] E9_managerial [31/72] medium_staggered_n200_T96_004: 3 runs
+[2026-10-25 07:05:45] E9_managerial [32/72] medium_omega_n50_T96_003: 3 runs
+[2026-10-25 07:05:45] E9_managerial [33/72] medium_omega_n50_T96_000: 3 runs
+[2026-10-25 07:05:47] E9_managerial [34/72] medium_overnight_n50_T96_003: 3 runs
+[2026-10-25 07:05:47] E9_managerial [35/72] medium_overnight_n50_T96_004: 3 runs
+[2026-10-25 07:05:47] E9_managerial [36/72] medium_overnight_n100_T96_001: 3 runs
+[2026-10-25 07:05:47] E9_managerial [37/72] medium_overnight_n100_T96_000: 3 runs
+[2026-10-25 07:05:47] E9_managerial [38/72] medium_overnight_n100_T96_002: 3 runs
+[2026-10-25 07:05:47] E9_managerial [39/72] medium_overnight_n100_T96_003: 3 runs
+[2026-10-25 07:05:48] E9_managerial [40/72] medium_overnight_n100_T96_004: 3 runs
+[2026-10-25 07:05:48] E9_managerial [41/72] medium_overnight_n200_T96_000: 3 runs
+[2026-10-25 07:05:48] E9_managerial [42/72] medium_overnight_n200_T96_001: 3 runs
+[2026-10-25 07:05:48] E9_managerial [43/72] medium_overnight_n200_T96_002: 3 runs
+[2026-10-25 07:05:49] E9_managerial [44/72] medium_overnight_n200_T96_003: 3 runs
+[2026-10-25 07:05:49] E9_managerial [45/72] medium_overnight_n200_T96_004: 3 runs
+[2026-10-25 07:05:49] E9_managerial [46/72] large_omega_n500_T96_000: 3 runs
+[2026-10-25 07:05:50] E9_managerial [47/72] large_omega_n500_T96_001: 3 runs
+[2026-10-25 07:05:50] E9_managerial [48/72] large_omega_n500_T96_002: 3 runs
+[2026-10-25 07:05:52] E9_managerial [49/72] large_staggered_n500_T96_000: 3 runs
+[2026-10-25 07:05:52] E9_managerial [50/72] large_staggered_n500_T96_001: 3 runs
+[2026-10-25 07:05:52] E9_managerial [51/72] large_omega_n1000_T96_000: 3 runs
+[2026-10-25 07:05:52] E9_managerial [52/72] large_omega_n2000_T96_002: 3 runs
+[2026-10-25 07:05:52] E9_managerial [53/72] large_omega_n1000_T96_001: 3 runs
+[2026-10-25 07:05:52] E9_managerial [54/72] large_omega_n2000_T96_000: 3 runs
+[2026-10-25 07:05:52] E9_managerial [55/72] large_omega_n1000_T96_002: 3 runs
+[2026-10-25 07:05:52] E9_managerial [56/72] large_omega_n2000_T96_001: 3 runs
+[2026-10-25 07:05:53] E9_managerial [57/72] large_staggered_n500_T96_002: 3 runs
+[2026-10-25 07:05:55] E9_managerial [58/72] large_overnight_n500_T96_000: 3 runs
+[2026-10-25 07:05:55] E9_managerial [59/72] large_overnight_n500_T96_001: 3 runs
+[2026-10-25 07:05:55] E9_managerial [60/72] large_overnight_n500_T96_002: 3 runs
+[2026-10-25 07:05:56] E9_managerial [61/72] large_staggered_n2000_T96_000: 3 runs
+[2026-10-25 07:05:56] E9_managerial [62/72] large_staggered_n1000_T96_000: 3 runs
+[2026-10-25 07:05:56] E9_managerial [63/72] large_staggered_n1000_T96_001: 3 runs
+[2026-10-25 07:05:57] E9_managerial [64/72] large_staggered_n1000_T96_002: 3 runs
+[2026-10-25 07:05:57] E9_managerial [65/72] large_staggered_n2000_T96_002: 3 runs
+[2026-10-25 07:05:57] E9_managerial [66/72] large_staggered_n2000_T96_001: 3 runs
+[2026-10-25 07:05:57] E9_managerial [67/72] large_overnight_n1000_T96_002: 3 runs
+[2026-10-25 07:05:57] E9_managerial [68/72] large_overnight_n1000_T96_000: 3 runs
+[2026-10-25 07:05:58] E9_managerial [69/72] large_overnight_n1000_T96_001: 3 runs
+[2026-10-25 07:05:58] E9_managerial [70/72] large_overnight_n2000_T96_001: 3 runs
+[2026-10-25 07:05:58] E9_managerial [71/72] large_overnight_n2000_T96_000: 3 runs
+[2026-10-25 07:05:58] E9_managerial [72/72] large_overnight_n2000_T96_002: 3 runs
+[2026-10-25 07:05:59] E9_managerial: done in 0.4 min
+[2026-10-25 07:05:59] E10a_state_of_the_art: 2240 runs on 112 instances (State-of-the-art baselines requested by Reviewer 2 at 10 s - NFDH (Ranjan et al. 2014), the heuristic and the ILS of Zaidi et al. (EJOR 2024; as published and restarted until the budget), the online alpha-policy of Hunsaker et al. (2003), the branch and bound of Afshar-Nadjafi et al. (2013), the hybrid metaheuristics of Aristotelous and Nearchou (2024; SER and PAR with LS2, and SER with their leveling objective), the classical Burgess-Killebrew leveling - against CRI and Gurobi (runs reused from E4a).)
+[2026-10-25 07:05:59] E10a_state_of_the_art: 112 jobs on 18 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 1.5 GB/worker -> 18)
+[2026-10-25 07:07:25] E10a_state_of_the_art [1/112] omega_published_omega_n20_T48_004: 20 runs
+[2026-10-25 07:07:25] E10a_state_of_the_art [2/112] omega_published_omega_n20_T48_003: 20 runs
+[2026-10-25 07:07:26] E10a_state_of_the_art [3/112] omega_published_omega_n20_T48_000: 20 runs
+[2026-10-25 07:07:27] E10a_state_of_the_art [4/112] omega_published_omega_n20_T48_002: 20 runs
+[2026-10-25 07:07:31] E10a_state_of_the_art [5/112] omega_published_omega_n20_T48_001: 20 runs
+[2026-10-25 07:07:39] E10a_state_of_the_art [6/112] omega_published_omega_n30_T48_002: 20 runs
+[2026-10-25 07:07:41] E10a_state_of_the_art [7/112] omega_published_omega_n30_T48_003: 20 runs
+[2026-10-25 07:07:42] E10a_state_of_the_art [8/112] omega_published_omega_n30_T48_001: 20 runs
+[2026-10-25 07:07:44] E10a_state_of_the_art [9/112] omega_published_omega_n30_T48_000: 20 runs
+[2026-10-25 07:07:45] E10a_state_of_the_art [10/112] omega_published_omega_n30_T48_004: 20 runs
+[2026-10-25 07:08:22] E10a_state_of_the_art [11/112] omega_published_omega_n40_T72_002: 20 runs
+[2026-10-25 07:08:28] E10a_state_of_the_art [12/112] omega_published_omega_n40_T72_000: 20 runs
+[2026-10-25 07:08:28] E10a_state_of_the_art [13/112] omega_published_omega_n40_T72_003: 20 runs
+[2026-10-25 07:08:31] E10a_state_of_the_art [14/112] omega_published_omega_n50_T72_000: 20 runs
+[2026-10-25 07:08:32] E10a_state_of_the_art [15/112] omega_published_omega_n40_T72_001: 20 runs
+[2026-10-25 07:08:33] E10a_state_of_the_art [16/112] omega_published_omega_n50_T72_001: 20 runs
+[2026-10-25 07:08:33] E10a_state_of_the_art [17/112] omega_published_omega_n40_T72_004: 20 runs
+[2026-10-25 07:08:38] E10a_state_of_the_art [18/112] omega_published_omega_n50_T72_002: 20 runs
+[2026-10-25 07:09:58] E10a_state_of_the_art [19/112] omega_published_omega_n50_T72_003: 20 runs
+[2026-10-25 07:10:01] E10a_state_of_the_art [20/112] omega_published_omega_n50_T72_004: 20 runs
+[2026-10-25 07:10:03] E10a_state_of_the_art [21/112] omega_published_omega_n75_T96_001: 20 runs
+[2026-10-25 07:10:03] E10a_state_of_the_art [22/112] omega_published_omega_n75_T96_000: 20 runs
+[2026-10-25 07:10:09] E10a_state_of_the_art [23/112] omega_published_omega_n75_T96_002: 20 runs
+[2026-10-25 07:10:14] E10a_state_of_the_art [24/112] omega_published_omega_n75_T96_003: 20 runs
+[2026-10-25 07:10:21] E10a_state_of_the_art [25/112] omega_published_omega_n75_T96_004: 20 runs
+[2026-10-25 07:10:22] E10a_state_of_the_art [26/112] omega_published_omega_n100_T96_000: 20 runs
+[2026-10-25 07:10:23] E10a_state_of_the_art [27/112] omega_published_omega_n100_T96_002: 20 runs
+[2026-10-25 07:10:23] E10a_state_of_the_art [28/112] omega_published_omega_n100_T96_001: 20 runs
+[2026-10-25 07:11:02] E10a_state_of_the_art [29/112] omega_published_omega_n100_T96_003: 20 runs
+[2026-10-25 07:11:07] E10a_state_of_the_art [30/112] omega_published_omega_n100_T96_004: 20 runs
+[2026-10-25 07:11:08] E10a_state_of_the_art [31/112] omega_published_omega_n150_T120_000: 20 runs
+[2026-10-25 07:11:11] E10a_state_of_the_art [32/112] omega_published_omega_n150_T120_001: 20 runs
+[2026-10-25 07:11:13] E10a_state_of_the_art [33/112] omega_published_omega_n150_T120_002: 20 runs
+[2026-10-25 07:11:13] E10a_state_of_the_art [34/112] omega_published_omega_n150_T120_003: 20 runs
+[2026-10-25 07:11:14] E10a_state_of_the_art [35/112] omega_published_omega_n150_T120_004: 20 runs
+[2026-10-25 07:11:19] E10a_state_of_the_art [36/112] omega_published_omega_n200_T120_000: 20 runs
+[2026-10-25 07:12:38] E10a_state_of_the_art [37/112] omega_published_omega_n200_T120_001: 20 runs
+[2026-10-25 07:12:42] E10a_state_of_the_art [38/112] omega_published_omega_n200_T120_002: 20 runs
+[2026-10-25 07:12:44] E10a_state_of_the_art [39/112] omega_published_omega_n200_T120_003: 20 runs
+[2026-10-25 07:12:44] E10a_state_of_the_art [40/112] omega_published_omega_n200_T120_004: 20 runs
+[2026-10-25 07:12:45] E10a_state_of_the_art [41/112] medium_omega_n50_T96_000: 20 runs
+[2026-10-25 07:12:51] E10a_state_of_the_art [42/112] medium_omega_n50_T96_001: 20 runs
+[2026-10-25 07:12:54] E10a_state_of_the_art [43/112] medium_omega_n50_T96_002: 20 runs
+[2026-10-25 07:12:57] E10a_state_of_the_art [44/112] medium_omega_n50_T96_004: 20 runs
+[2026-10-25 07:13:01] E10a_state_of_the_art [45/112] medium_omega_n100_T96_000: 20 runs
+[2026-10-25 07:13:02] E10a_state_of_the_art [46/112] medium_omega_n50_T96_003: 20 runs
+[2026-10-25 07:13:41] E10a_state_of_the_art [47/112] medium_omega_n100_T96_001: 20 runs
+[2026-10-25 07:13:47] E10a_state_of_the_art [48/112] medium_omega_n100_T96_002: 20 runs
+[2026-10-25 07:13:48] E10a_state_of_the_art [49/112] medium_omega_n100_T96_003: 20 runs
+[2026-10-25 07:13:50] E10a_state_of_the_art [50/112] medium_omega_n100_T96_004: 20 runs
+[2026-10-25 07:13:53] E10a_state_of_the_art [51/112] medium_omega_n200_T96_000: 20 runs
+[2026-10-25 07:13:53] E10a_state_of_the_art [52/112] medium_omega_n200_T96_001: 20 runs
+[2026-10-25 07:13:54] E10a_state_of_the_art [53/112] medium_omega_n200_T96_002: 20 runs
+[2026-10-25 07:13:59] E10a_state_of_the_art [54/112] medium_omega_n200_T96_003: 20 runs
+[2026-10-25 07:14:55] E10a_state_of_the_art [55/112] medium_staggered_n50_T96_002: 20 runs
+[2026-10-25 07:14:56] E10a_state_of_the_art [56/112] medium_staggered_n50_T96_000: 20 runs
+[2026-10-25 07:14:56] E10a_state_of_the_art [57/112] medium_staggered_n50_T96_001: 20 runs
+[2026-10-25 07:14:56] E10a_state_of_the_art [58/112] medium_staggered_n50_T96_003: 20 runs
+[2026-10-25 07:15:05] E10a_state_of_the_art [59/112] medium_staggered_n50_T96_004: 20 runs
+[2026-10-25 07:15:14] E10a_state_of_the_art [60/112] medium_staggered_n100_T96_001: 20 runs
+[2026-10-25 07:15:18] E10a_state_of_the_art [61/112] medium_omega_n200_T96_004: 20 runs
+[2026-10-25 07:15:26] E10a_state_of_the_art [62/112] medium_staggered_n100_T96_000: 20 runs
+[2026-10-25 07:15:28] E10a_state_of_the_art [63/112] medium_staggered_n100_T96_003: 20 runs
+[2026-10-25 07:15:32] E10a_state_of_the_art [64/112] medium_staggered_n100_T96_002: 20 runs
+[2026-10-25 07:16:07] E10a_state_of_the_art [65/112] medium_staggered_n100_T96_004: 20 runs
+[2026-10-25 07:16:19] E10a_state_of_the_art [66/112] medium_staggered_n200_T96_000: 20 runs
+[2026-10-25 07:16:21] E10a_state_of_the_art [67/112] medium_staggered_n200_T96_001: 20 runs
+[2026-10-25 07:16:23] E10a_state_of_the_art [68/112] medium_staggered_n200_T96_002: 20 runs
+[2026-10-25 07:16:24] E10a_state_of_the_art [69/112] medium_staggered_n200_T96_004: 20 runs
+[2026-10-25 07:16:28] E10a_state_of_the_art [70/112] medium_staggered_n200_T96_003: 20 runs
+[2026-10-25 07:16:34] E10a_state_of_the_art [71/112] medium_overnight_n50_T96_000: 20 runs
+[2026-10-25 07:16:39] E10a_state_of_the_art [72/112] medium_overnight_n50_T96_001: 20 runs
+[2026-10-25 07:17:35] E10a_state_of_the_art [73/112] medium_overnight_n50_T96_002: 20 runs
+[2026-10-25 07:17:36] E10a_state_of_the_art [74/112] medium_overnight_n50_T96_003: 20 runs
+[2026-10-25 07:17:36] E10a_state_of_the_art [75/112] medium_overnight_n50_T96_004: 20 runs
+[2026-10-25 07:17:37] E10a_state_of_the_art [76/112] medium_overnight_n100_T96_000: 20 runs
+[2026-10-25 07:17:46] E10a_state_of_the_art [77/112] medium_overnight_n100_T96_001: 20 runs
+[2026-10-25 07:17:54] E10a_state_of_the_art [78/112] medium_overnight_n100_T96_002: 20 runs
+[2026-10-25 07:17:59] E10a_state_of_the_art [79/112] medium_overnight_n100_T96_003: 20 runs
+[2026-10-25 07:18:06] E10a_state_of_the_art [80/112] medium_overnight_n100_T96_004: 20 runs
+[2026-10-25 07:18:08] E10a_state_of_the_art [81/112] medium_overnight_n200_T96_000: 20 runs
+[2026-10-25 07:18:13] E10a_state_of_the_art [82/112] medium_overnight_n200_T96_001: 20 runs
+[2026-10-25 07:18:48] E10a_state_of_the_art [83/112] medium_overnight_n200_T96_002: 20 runs
+[2026-10-25 07:19:00] E10a_state_of_the_art [84/112] medium_overnight_n200_T96_003: 20 runs
+[2026-10-25 07:19:02] E10a_state_of_the_art [85/112] medium_overnight_n200_T96_004: 20 runs
+[2026-10-25 07:19:04] E10a_state_of_the_art [86/112] large_omega_n500_T96_000: 20 runs
+[2026-10-25 07:19:04] E10a_state_of_the_art [87/112] large_omega_n500_T96_001: 20 runs
+[2026-10-25 07:19:08] E10a_state_of_the_art [88/112] large_omega_n500_T96_002: 20 runs
+[2026-10-25 07:19:15] E10a_state_of_the_art [89/112] large_omega_n1000_T96_000: 20 runs
+[2026-10-25 07:19:20] E10a_state_of_the_art [90/112] large_omega_n1000_T96_001: 20 runs
+[2026-10-25 07:20:16] E10a_state_of_the_art [91/112] large_omega_n1000_T96_002: 20 runs
+[2026-10-25 07:20:18] E10a_state_of_the_art [92/112] large_omega_n2000_T96_000: 20 runs
+[2026-10-25 07:20:18] E10a_state_of_the_art [93/112] large_omega_n2000_T96_001: 20 runs
+[2026-10-25 07:20:18] E10a_state_of_the_art [94/112] large_omega_n2000_T96_002: 20 runs
+[2026-10-25 07:20:25] E10a_state_of_the_art [95/112] large_staggered_n500_T96_000: 20 runs
+[2026-10-25 07:20:33] E10a_state_of_the_art [96/112] large_staggered_n500_T96_001: 20 runs
+[2026-10-25 07:20:39] E10a_state_of_the_art [97/112] large_staggered_n500_T96_002: 20 runs
+[2026-10-25 07:20:47] E10a_state_of_the_art [98/112] large_staggered_n1000_T96_000: 20 runs
+[2026-10-25 07:20:49] E10a_state_of_the_art [99/112] large_staggered_n1000_T96_001: 20 runs
+[2026-10-25 07:20:53] E10a_state_of_the_art [100/112] large_staggered_n1000_T96_002: 20 runs
+[2026-10-25 07:21:29] E10a_state_of_the_art [101/112] large_staggered_n2000_T96_000: 20 runs
+[2026-10-25 07:21:41] E10a_state_of_the_art [102/112] large_staggered_n2000_T96_001: 20 runs
+[2026-10-25 07:21:43] E10a_state_of_the_art [103/112] large_staggered_n2000_T96_002: 20 runs
+[2026-10-25 07:21:45] E10a_state_of_the_art [104/112] large_overnight_n500_T96_000: 20 runs
+[2026-10-25 07:21:45] E10a_state_of_the_art [105/112] large_overnight_n500_T96_001: 20 runs
+[2026-10-25 07:21:49] E10a_state_of_the_art [106/112] large_overnight_n500_T96_002: 20 runs
+[2026-10-25 07:21:57] E10a_state_of_the_art [107/112] large_overnight_n1000_T96_000: 20 runs
+[2026-10-25 07:22:02] E10a_state_of_the_art [108/112] large_overnight_n1000_T96_001: 20 runs
+[2026-10-25 07:22:58] E10a_state_of_the_art [109/112] large_overnight_n1000_T96_002: 20 runs
+[2026-10-25 07:23:01] E10a_state_of_the_art [110/112] large_overnight_n2000_T96_000: 20 runs
+[2026-10-25 07:23:01] E10a_state_of_the_art [111/112] large_overnight_n2000_T96_002: 20 runs
+[2026-10-25 07:23:02] E10a_state_of_the_art [112/112] large_overnight_n2000_T96_001: 20 runs
+[2026-10-25 07:23:03] E10a_state_of_the_art: done in 17.1 min
+[2026-10-25 07:23:03] E10b_state_of_the_art_60s: 288 runs on 72 instances (The anytime state-of-the-art baselines at 60 s, against CRI and Gurobi (runs reused from E4b).)
+[2026-10-25 07:23:03] E10b_state_of_the_art_60s: 72 jobs on 13 workers (auto: 32 physical cores - 1 reserved, 1 thread(s)/task -> 31; 28.2 GB available, 2 GB/worker -> 13)
+[2026-10-25 07:25:35] E10b_state_of_the_art_60s [1/72] medium_omega_n50_T96_001: 4 runs
+[2026-10-25 07:25:36] E10b_state_of_the_art_60s [2/72] medium_omega_n50_T96_002: 4 runs
+[2026-10-25 07:25:37] E10b_state_of_the_art_60s [3/72] medium_omega_n50_T96_004: 4 runs
+[2026-10-25 07:25:38] E10b_state_of_the_art_60s [4/72] medium_omega_n50_T96_000: 4 runs
+[2026-10-25 07:25:48] E10b_state_of_the_art_60s [5/72] medium_omega_n50_T96_003: 4 runs
+[2026-10-25 07:26:10] E10b_state_of_the_art_60s [6/72] medium_omega_n100_T96_003: 4 runs
+[2026-10-25 07:26:11] E10b_state_of_the_art_60s [7/72] medium_omega_n100_T96_004: 4 runs
+[2026-10-25 07:26:14] E10b_state_of_the_art_60s [8/72] medium_omega_n100_T96_000: 4 runs
+[2026-10-25 07:26:14] E10b_state_of_the_art_60s [9/72] medium_omega_n100_T96_001: 4 runs
+[2026-10-25 07:26:20] E10b_state_of_the_art_60s [10/72] medium_omega_n100_T96_002: 4 runs
+[2026-10-25 07:26:57] E10b_state_of_the_art_60s [11/72] medium_staggered_n50_T96_000: 4 runs
+[2026-10-25 07:26:57] E10b_state_of_the_art_60s [12/72] medium_staggered_n50_T96_001: 4 runs
+[2026-10-25 07:27:07] E10b_state_of_the_art_60s [13/72] medium_omega_n200_T96_000: 4 runs
+[2026-10-25 07:27:07] E10b_state_of_the_art_60s [14/72] medium_omega_n200_T96_001: 4 runs
+[2026-10-25 07:27:07] E10b_state_of_the_art_60s [15/72] medium_omega_n200_T96_002: 4 runs
+[2026-10-25 07:27:08] E10b_state_of_the_art_60s [16/72] medium_staggered_n50_T96_002: 4 runs
+[2026-10-25 07:27:30] E10b_state_of_the_art_60s [17/72] medium_staggered_n50_T96_003: 4 runs
+[2026-10-25 07:27:31] E10b_state_of_the_art_60s [18/72] medium_staggered_n50_T96_004: 4 runs
+[2026-10-25 07:27:55] E10b_state_of_the_art_60s [19/72] medium_staggered_n100_T96_001: 4 runs
+[2026-10-25 07:28:01] E10b_state_of_the_art_60s [20/72] medium_staggered_n100_T96_000: 4 runs
+[2026-10-25 07:28:45] E10b_state_of_the_art_60s [21/72] medium_staggered_n100_T96_003: 4 runs
+[2026-10-25 07:29:01] E10b_state_of_the_art_60s [22/72] medium_staggered_n100_T96_002: 4 runs
+[2026-10-25 07:29:06] E10b_state_of_the_art_60s [23/72] medium_staggered_n100_T96_004: 4 runs
+[2026-10-25 07:29:35] E10b_state_of_the_art_60s [24/72] medium_omega_n200_T96_003: 4 runs
+[2026-10-25 07:29:36] E10b_state_of_the_art_60s [25/72] medium_omega_n200_T96_004: 4 runs
+[2026-10-25 07:30:34] E10b_state_of_the_art_60s [26/72] medium_staggered_n200_T96_000: 4 runs
+[2026-10-25 07:30:34] E10b_state_of_the_art_60s [27/72] medium_staggered_n200_T96_001: 4 runs
+[2026-10-25 07:30:37] E10b_state_of_the_art_60s [28/72] medium_staggered_n200_T96_003: 4 runs
+[2026-10-25 07:30:38] E10b_state_of_the_art_60s [29/72] medium_staggered_n200_T96_002: 4 runs
+[2026-10-25 07:30:55] E10b_state_of_the_art_60s [30/72] medium_staggered_n200_T96_004: 4 runs
+[2026-10-25 07:31:29] E10b_state_of_the_art_60s [31/72] medium_overnight_n50_T96_000: 4 runs
+[2026-10-25 07:31:55] E10b_state_of_the_art_60s [32/72] medium_overnight_n50_T96_001: 4 runs
+[2026-10-25 07:32:01] E10b_state_of_the_art_60s [33/72] medium_overnight_n50_T96_002: 4 runs
+[2026-10-25 07:32:45] E10b_state_of_the_art_60s [34/72] medium_overnight_n50_T96_003: 4 runs
+[2026-10-25 07:33:00] E10b_state_of_the_art_60s [35/72] medium_overnight_n50_T96_004: 4 runs
+[2026-10-25 07:33:06] E10b_state_of_the_art_60s [36/72] medium_overnight_n100_T96_000: 4 runs
+[2026-10-25 07:33:35] E10b_state_of_the_art_60s [37/72] medium_overnight_n100_T96_001: 4 runs
+[2026-10-25 07:33:36] E10b_state_of_the_art_60s [38/72] medium_overnight_n100_T96_002: 4 runs
+[2026-10-25 07:34:34] E10b_state_of_the_art_60s [39/72] medium_overnight_n100_T96_003: 4 runs
+[2026-10-25 07:34:34] E10b_state_of_the_art_60s [40/72] medium_overnight_n100_T96_004: 4 runs
+[2026-10-25 07:34:37] E10b_state_of_the_art_60s [41/72] medium_overnight_n200_T96_000: 4 runs
+[2026-10-25 07:34:38] E10b_state_of_the_art_60s [42/72] medium_overnight_n200_T96_001: 4 runs
+[2026-10-25 07:34:56] E10b_state_of_the_art_60s [43/72] medium_overnight_n200_T96_002: 4 runs
+[2026-10-25 07:35:29] E10b_state_of_the_art_60s [44/72] medium_overnight_n200_T96_003: 4 runs
+[2026-10-25 07:35:55] E10b_state_of_the_art_60s [45/72] medium_overnight_n200_T96_004: 4 runs
+[2026-10-25 07:36:01] E10b_state_of_the_art_60s [46/72] large_omega_n500_T96_000: 4 runs
+[2026-10-25 07:36:45] E10b_state_of_the_art_60s [47/72] large_omega_n500_T96_001: 4 runs
+[2026-10-25 07:37:00] E10b_state_of_the_art_60s [48/72] large_omega_n500_T96_002: 4 runs
+[2026-10-25 07:37:06] E10b_state_of_the_art_60s [49/72] large_omega_n1000_T96_000: 4 runs
+[2026-10-25 07:37:36] E10b_state_of_the_art_60s [50/72] large_omega_n1000_T96_001: 4 runs
+[2026-10-25 07:37:36] E10b_state_of_the_art_60s [51/72] large_omega_n1000_T96_002: 4 runs
+[2026-10-25 07:38:35] E10b_state_of_the_art_60s [52/72] large_omega_n2000_T96_000: 4 runs
+[2026-10-25 07:38:35] E10b_state_of_the_art_60s [53/72] large_omega_n2000_T96_001: 4 runs
+[2026-10-25 07:38:37] E10b_state_of_the_art_60s [54/72] large_omega_n2000_T96_002: 4 runs
+[2026-10-25 07:38:38] E10b_state_of_the_art_60s [55/72] large_staggered_n500_T96_000: 4 runs
+[2026-10-25 07:38:56] E10b_state_of_the_art_60s [56/72] large_staggered_n500_T96_001: 4 runs
+[2026-10-25 07:39:29] E10b_state_of_the_art_60s [57/72] large_staggered_n500_T96_002: 4 runs
+[2026-10-25 07:39:55] E10b_state_of_the_art_60s [58/72] large_staggered_n1000_T96_000: 4 runs
+[2026-10-25 07:40:01] E10b_state_of_the_art_60s [59/72] large_staggered_n1000_T96_001: 4 runs
+[2026-10-25 07:40:45] E10b_state_of_the_art_60s [60/72] large_staggered_n1000_T96_002: 4 runs
+[2026-10-25 07:41:00] E10b_state_of_the_art_60s [61/72] large_staggered_n2000_T96_000: 4 runs
+[2026-10-25 07:41:07] E10b_state_of_the_art_60s [62/72] large_staggered_n2000_T96_001: 4 runs
+[2026-10-25 07:41:36] E10b_state_of_the_art_60s [63/72] large_staggered_n2000_T96_002: 4 runs
+[2026-10-25 07:41:37] E10b_state_of_the_art_60s [64/72] large_overnight_n500_T96_000: 4 runs
+[2026-10-25 07:42:35] E10b_state_of_the_art_60s [65/72] large_overnight_n500_T96_001: 4 runs
+[2026-10-25 07:42:35] E10b_state_of_the_art_60s [66/72] large_overnight_n500_T96_002: 4 runs
+[2026-10-25 07:42:38] E10b_state_of_the_art_60s [67/72] large_overnight_n1000_T96_000: 4 runs
+[2026-10-25 07:42:39] E10b_state_of_the_art_60s [68/72] large_overnight_n1000_T96_001: 4 runs
+[2026-10-25 07:42:56] E10b_state_of_the_art_60s [69/72] large_overnight_n1000_T96_002: 4 runs
+[2026-10-25 07:43:30] E10b_state_of_the_art_60s [70/72] large_overnight_n2000_T96_000: 4 runs
+[2026-10-25 07:43:56] E10b_state_of_the_art_60s [71/72] large_overnight_n2000_T96_001: 4 runs
+[2026-10-25 07:44:03] E10b_state_of_the_art_60s [72/72] large_overnight_n2000_T96_002: 4 runs
+[2026-10-25 07:44:03] E10b_state_of_the_art_60s: done in 21.0 min
+[2026-10-25 07:44:29] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\results\02_aggregated_data
+[2026-10-25 07:44:29] campaign finished in 389.2 min
+[2026-10-25 07:44:32] instances: loaded 195 instances in 7 sets
+[2026-10-25 07:44:34] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 07:44:34] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 07:44:47] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\Administrateur\Desktop\j10_peak_power_certificates\j10_peak_power_certificates\cri_framework\results\02_aggregated_data
+[2026-10-25 14:19:22] instances: loaded 195 instances in 7 sets
+[2026-10-25 14:19:25] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 14:19:25] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 14:19:42] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\akhiar\OneDrive - Cesi\Bureau\Papers to Submit\codes\j10_vm_results_2026-10-25\results\02_aggregated_data
+[2026-10-25 18:28:32] instances: loaded 195 instances in 7 sets
+[2026-10-25 18:28:34] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 18:28:35] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 18:28:51] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\akhiar\OneDrive - Cesi\Bureau\Papers to Submit\codes\j10_vm_results_2026-10-25\results\02_aggregated_data
+[2026-10-25 19:23:38] instances: loaded 195 instances in 7 sets
+[2026-10-25 19:23:40] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 19:23:41] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 19:23:55] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\akhiar\OneDrive - Cesi\Bureau\Papers to Submit\codes\j10_vm_results_2026-10-25\results\02_aggregated_data
+[2026-10-25 21:00:44] instances: loaded 195 instances in 7 sets
+[2026-10-25 21:00:48] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-25 21:00:49] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-25 21:01:08] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\akhiar\OneDrive - Cesi\Bureau\Papers to Submit\codes\j10_vm_results_2026-10-25\results\02_aggregated_data
+[2026-10-26 12:36:19] instances: loaded 195 instances in 7 sets
+[2026-10-26 12:36:22] E8a_tuning_faithful: chosen parameters {'SA': {'L': 50, 'T0': 50.0, 'Tmin': 0.01, 'alpha_c': 0.95, 'alpha_p': 0.3}}
+[2026-10-26 12:36:22] E8b_tuning_budget: chosen parameters {'LLS': {'kick_size': 2}, 'SA-b': {'L': 200, 'T0': 10.0, 'alpha_c': 0.99, 'alpha_p': 0.1}, 'WLNS': {'sub_time_limit': 1.0, 'width': 24}}
+[2026-10-26 12:36:42] aggregated 41801 runs, 130 references, 195 contexts into C:\Users\akhiar\OneDrive - Cesi\Bureau\Papers to Submit\codes\J10\j10_vm_results_2026-10-25\results\02_aggregated_data

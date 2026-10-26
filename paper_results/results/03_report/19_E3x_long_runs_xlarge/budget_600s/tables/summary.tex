@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{E3x\_long\_runs\_xlarge, budget 600 s: gap\_lb (per-instance mean over seeds)}
+\label{tab:E3x_long_runs_xlarge_b600_summary}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+method & instances & runs & mean gap\_lb & sd & CI95 lo & CI95 hi & median & max & \#hit LB* & \#best & mean time (s) & infeasible/failed \\
+\midrule
+CRI & 5 & 5 & \textbf{0.02} & 0.02 & 9.77e-04 & 0.04 & 2.71e-03 & 0.05 & 1 & 4 & 538.19 & 0 \\
+CRI+C & 5 & 5 & 0.02 & 0.02 & 1.52e-03 & 0.04 & 2.71e-03 & 0.06 & 0 & 3 & 585.76 & 0 \\
+GUROBI-std & 5 & 5 & 0.05 & 0.05 & 0.02 & 0.09 & 0.04 & 0.12 & 0 & 0 & 600.47 & 0 \\
+GUROBI-agg & 5 & 5 & 0.08 & 0.10 & 0.03 & 0.17 & 0.05 & 0.25 & 0 & 0 & 603.55 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

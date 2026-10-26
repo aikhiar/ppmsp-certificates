@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Head-to-head: earlier method (A) against its certified counterpart (B)}
+\label{tab:E2b_head_to_head_budgets_pairs}
+\begin{tabular}{lllrrrrrrrrrrlr}
+\toprule
+budget & A & B & N & mean gap\_lb A & mean gap\_lb B & mean time A & mean time B & A better & ties & B better & p (Wilcoxon) & Cliff delta & magnitude & p (Holm) \\
+\midrule
+1.000 & RR-b & MT-lp-b & 90 & 8.851 & 12.798 & 1.015 & 1.025 & 58 & 7 & 25 & 3.668e-05 & -0.202 & small & 2.934e-04 \\
+1.000 & RR-b & MT-cut-b & 90 & 8.851 & 9.853 & 1.015 & 1.017 & 46 & 7 & 37 & 0.397 & -0.003 & negligible & 1.000 \\
+1.000 & RLP-b & CE-lp-excess & 90 & 10.658 & 5.623 & 1.010 & 0.047 & 4 & 28 & 58 & 4.224e-11 & 0.368 & medium & 4.224e-10 \\
+1.000 & RLP-b & CE-cut-excess & 90 & 10.658 & 3.093 & 1.010 & 0.207 & 2 & 22 & 66 & 3.178e-14 & 0.529 & large & 3.813e-13 \\
+1.000 & RLP-b & IR & 90 & 10.658 & 25.958 & 1.010 & 0.523 & 82 & 7 & 1 & 8.722e-16 & -0.602 & large & 1.143e-14 \\
+1.000 & G-b & CE-cut-excess & 90 & 3.407 & 3.093 & 1.015 & 0.207 & 29 & 33 & 28 & 0.934 & -0.049 & negligible & 1.000 \\
+1.000 & G-b & CRI-R & 90 & 3.407 & 2.448 & 1.015 & 0.473 & 20 & 39 & 31 & 0.067 & 0.040 & negligible & 0.336 \\
+10.000 & RR-b & MT-lp-b & 90 & 8.851 & 12.730 & 10.015 & 10.028 & 58 & 7 & 25 & 5.370e-05 & -0.197 & small & 3.759e-04 \\
+10.000 & RR-b & MT-cut-b & 90 & 8.851 & 9.463 & 10.015 & 10.022 & 46 & 7 & 37 & 0.534 & 0.022 & negligible & 1.000 \\
+10.000 & RLP-b & CE-lp-excess & 90 & 10.061 & 5.623 & 10.014 & 0.047 & 6 & 28 & 56 & 6.285e-10 & 0.344 & medium & 5.656e-09 \\
+10.000 & RLP-b & CE-cut-excess & 90 & 10.061 & 3.093 & 10.014 & 0.207 & 2 & 22 & 66 & 6.499e-14 & 0.515 & large & 7.149e-13 \\
+10.000 & RLP-b & IR & 90 & 10.061 & 25.958 & 10.014 & 0.523 & 82 & 7 & 1 & 8.167e-16 & -0.624 & large & 1.143e-14 \\
+10.000 & G-b & CE-cut-excess & 90 & 3.210 & 3.093 & 10.014 & 0.207 & 29 & 35 & 26 & 0.701 & -0.067 & negligible & 1.000 \\
+10.000 & G-b & CRI-R & 90 & 3.210 & 1.899 & 10.014 & 1.827 & 16 & 41 & 33 & 0.005 & 0.101 & negligible & 0.030 \\
+\bottomrule
+\end{tabular}
+\end{table}

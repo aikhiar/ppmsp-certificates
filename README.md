@@ -17,7 +17,10 @@ The repository holds everything behind the computational study of the paper:
 - the **experiments**: one configuration file drives the instances, the methods, their parameters
   and tuning, and every experiment block;
 - the **report**: tables, figures and statistical tests, rebuilt from the raw runs, and the tables
-  and figures of Section 6 of the paper.
+  and figures of Section 6 of the paper;
+- the **results of the paper's campaign** (`paper_results/`): the raw runs of all 41,801 runs, the
+  full report, the audit and the theory verification, from which every table and figure of the
+  paper is rebuilt.
 
 ## Quick start (Windows)
 
@@ -92,6 +95,7 @@ config_quick.yaml    the same blocks and methods on tiny instances with short bu
 requirements.txt     Python packages (tested versions)
 LICENSE              MIT
 CITATION.cff         how to cite (GitHub's "Cite this repository")
+paper_results/       the results of the paper's campaign: raw runs, report, audit, logs (README there)
 cri/
   core/        problem-agnostic machinery
     config.py      YAML with inheritance (base: other.yaml) and deep merge (__replace__: true replaces a dict)
@@ -409,9 +413,10 @@ recomputation; keep it to reuse the same recorded costs across blocks.
 ## Tables and figures of the paper
 
 `python tools/paper_artifacts.py <results folder> <paper folder> [--numbers FILE]` writes the 11
-tables (`<paper>/tables/*.tex`) and 4 figures (`<paper>/figures/*.pdf`) of Section 6 of the paper.
-It reads the campaign's data and the report's statistics without changing them, and with
-`--numbers` it lists every number quoted in the text.
+tables (`<paper>/tables/*.tex`) and 4 figures (`<paper>/figures/*.pdf`) of Section 6 of the paper
+and of its Supplementary Material. It reads the campaign's data and the report's statistics
+without changing them, and with `--numbers` it lists every number quoted in the text. For the
+paper's own results, first rebuild their aggregated data (Results of the paper, below).
 
 ## Extending
 
@@ -450,10 +455,19 @@ optimal vertex: CBC in the original code, Gurobi here.
 
 ## Results of the paper
 
-The results of the paper's campaign (raw runs, aggregated data, the full report and the theory
-verification) are not part of this repository; as the paper's data availability statement says,
-they are available from the corresponding author on request. `run_all.bat` reproduces them on any
-machine with a Gurobi licence; the measured times, and therefore the results at short budgets, depend on the machine.
+The results of the paper's campaign are in `paper_results/` (its README describes them): the raw
+runs, the full report (`paper_results/results/03_report/report.html`), the audit, the theory
+verification, the faithfulness check and the logs. The aggregated pickles are not stored; the
+report rebuilds them from the raw runs. To rebuild everything and the paper's tables and figures:
+
+```
+python -m cri report paper_results/report_config.yaml       # aggregated data and report
+python -m cri audit  paper_results/report_config.yaml       # paper_results/results/05_logs/audit.md
+python tools/paper_artifacts.py paper_results/results <paper folder> --numbers numbers.md
+```
+
+`run_all.bat` reproduces the campaign itself on any machine with a Gurobi licence; the measured
+times, and therefore the results at short budgets, depend on the machine.
 
 ## Citation
 

@@ -1,0 +1,74 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Method library (explicit parameters; the class defaults of the configuration apply otherwise)}
+\label{tab:method_library}
+\begin{tabular}{lll}
+\toprule
+id & class & params \\
+\midrule
+G & G & \{\} \\
+RR & RR & \{"N": 10000, "stop": "iterations"\} \\
+RLP & RLP & \{"stop": "trials", "trials": 50\} \\
+SA & SA & \{"L": 50, "N": 10000, "T0": 100.0, "Tmin": 0.01, "alpha\_c": 0.95, "alpha\_p": 0.3, "stop": "iterations"\} \\
+HSG & SA & \{"L": 50, "N": 10000, "T0": 100.0, "Tmin": 0.01, "alpha\_c": 0.95, "alpha\_p": 0.3, "init": "G", "stop": "iterations"\} \\
+HSR & SA & \{"L": 50, "N": 10000, "T0": 100.0, "Tmin": 0.01, "alpha\_c": 0.95, "alpha\_p": 0.3, "init": "RR", "init\_spec": \{"class": "RR", "params": \{"N": 1000, "stop": "iterations"\}\}, "stop": "iterations"\} \\
+HSL & SA & \{"L": 50, "N": 10000, "T0": 100.0, "Tmin": 0.01, "alpha\_c": 0.95, "alpha\_p": 0.3, "init": "RLP", "init\_spec": \{"class": "RLP", "params": \{"stop": "trials", "trials": 5\}\}, "stop": "iterations"\} \\
+G-b & G & \{"mode": "budget"\} \\
+RR-b & RR & \{"stop": "budget"\} \\
+RLP-b & RLP & \{"stop": "budget"\} \\
+SA-b & SA & \{"stop": "budget"\} \\
+HSG-b & SA & \{"init": "G", "stop": "budget"\} \\
+HSR-b & SA & \{"init": "RR", "init\_spec": \{"class": "RR", "params": \{"N": 1000, "stop": "iterations"\}\}, "stop": "budget"\} \\
+HSL-b & SA & \{"init": "RLP", "init\_spec": \{"class": "RLP", "params": \{"stop": "trials", "trials": 5\}\}, "stop": "budget"\} \\
+HSC-b & SA & \{"init": "CRI", "init\_spec": \{"class": "CRI", "params": \{"improve": []\}\}, "stop": "budget"\} \\
+CE-lp-excess & CE & \{"estimator": "excess", "matrix": "lp"\} \\
+CE-lp-union & CE & \{"estimator": "union", "matrix": "lp"\} \\
+CE-lp-comp & CE & \{"estimator": "component", "matrix": "lp"\} \\
+CE-cut-excess & CE & \{"estimator": "excess", "matrix": "cut"\} \\
+CE-cut-union & CE & \{"estimator": "union", "matrix": "cut"\} \\
+CE-cut-comp & CE & \{"estimator": "component", "matrix": "cut"\} \\
+CE-conf-excess & CE & \{"estimator": "excess", "matrix": "conf"\} \\
+CE-conf-union & CE & \{"estimator": "union", "matrix": "conf"\} \\
+CE-conf-comp & CE & \{"estimator": "component", "matrix": "conf"\} \\
+IR & IR & \{\} \\
+MT-lp & MT & \{"matrix": "lp"\} \\
+MT-cut & MT & \{"matrix": "cut"\} \\
+MT-conf & MT & \{"matrix": "conf"\} \\
+MT-lp-b & MT & \{"matrix": "lp", "mode": "budget"\} \\
+MT-cut-b & MT & \{"matrix": "cut", "mode": "budget"\} \\
+LLS & LLS & \{\} \\
+WLNS & WLNS & \{\} \\
+CRI & CRI & \{\} \\
+CRI+C & CRI & \{"complete": true\} \\
+CRI-R & CRI & \{"improve": []\} \\
+CRI-R+LLS & CRI & \{"improve": [\{"class": "LLS"\}]\} \\
+CRI-R+WLNS & CRI & \{"improve": [\{"class": "WLNS"\}]\} \\
+CRI-R+SA & CRI & \{"improve": [\{"class": "SA", "params": \{"stop": "budget"\}\}]\} \\
+CRI-lp & CRI & \{"round": [\{"class": "CE", "params": \{"estimator": "excess", "matrix": "lp"\}\}, \{"class": "CE", "params": \{"estimator": "union", "matrix": "lp"\}\}, \{"class": "CE", "params": \{"estimator": "component", "matrix": "lp"\}\}, \{"class": "MT", "params": \{"matrix": "lp"\}\}, \{"class": "G"\}]\} \\
+CRI-cut & CRI & \{"round": [\{"class": "CE", "params": \{"estimator": "excess", "matrix": "cut"\}\}, \{"class": "CE", "params": \{"estimator": "union", "matrix": "cut"\}\}, \{"class": "CE", "params": \{"estimator": "component", "matrix": "cut"\}\}, \{"class": "MT", "params": \{"matrix": "cut"\}\}, \{"class": "G"\}]\} \\
+CRI-noconf & CRI & \{"certify": \{"conf": false\}, "round": [\{"class": "CE", "params": \{"estimator": "excess", "matrix": "lp"\}\}, \{"class": "CE", "params": \{"estimator": "excess", "matrix": "cut"\}\}, \{"class": "CE", "params": \{"estimator": "component", "matrix": "lp"\}\}, \{"class": "CE", "params": \{"estimator": "component", "matrix": "cut"\}\}, \{"class": "MT", "params": \{"matrix": "lp"\}\}, \{"class": "IR"\}, \{"class": "G"\}]\} \\
+CRI-CE & CRI & \{"round": [\{"class": "CE", "params": \{"estimator": "excess", "matrix": "lp"\}\}, \{"class": "CE", "params": \{"estimator": "excess", "matrix": "cut"\}\}, \{"class": "CE", "params": \{"estimator": "excess", "matrix": "conf"\}\}]\} \\
+CRI-MT & CRI & \{"round": [\{"class": "MT", "params": \{"matrix": "lp"\}\}, \{"class": "MT", "params": \{"matrix": "cut"\}\}, \{"class": "MT", "params": \{"matrix": "conf"\}\}]\} \\
+CRI-IR & CRI & \{"round": [\{"class": "IR"\}]\} \\
+CRI-G & CRI & \{"round": [\{"class": "G"\}]\} \\
+GUROBI-std & GUROBI & \{"model": "standard", "threads": 1\} \\
+GUROBI-agg & GUROBI & \{"model": "aggregated", "threads": 1\} \\
+GUROBI-std-4t & GUROBI & \{"model": "standard", "threads": 4\} \\
+GUROBI-agg-4t & GUROBI & \{"model": "aggregated", "threads": 4\} \\
+ASAP & ASAP & \{\} \\
+GNP & GNP & \{\} \\
+BK & BK & \{\} \\
+NFDH & NFDH & \{\} \\
+ZAIDI\_H & ZAIDI\_H & \{\} \\
+ZAIDI\_ILS & ZAIDI\_ILS & \{\} \\
+ZAIDI\_ILS-b & ZAIDI\_ILS & \{"restart": true\} \\
+HUNSAKER & HUNSAKER & \{\} \\
+AFSHAR\_BB & AFSHAR\_BB & \{\} \\
+AN\_HYBRID & AN\_HYBRID & \{\} \\
+AN-PAR & AN\_HYBRID & \{"ls": "LS2", "variant": "PAR"\} \\
+AN-dev & AN\_HYBRID & \{"ls": "LS2", "objective": "dev", "variant": "SER"\} \\
+CERTIFY & CERTIFY & \{\} \\
+\bottomrule
+\end{tabular}
+\end{table}

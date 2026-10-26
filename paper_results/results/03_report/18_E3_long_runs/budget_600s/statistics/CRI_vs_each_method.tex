@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CRI against every other method (wins = instances where the control is strictly better)}
+\label{tab:E3_long_runs_b600_vs_CRI}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+CRI+C & CRI & 18 & 0.104 & 0.019 & 0.084 & 0 & 15 & 3 & 0.127 & negligible & 0.437 & 0.084 & no \\
+GUROBI-agg & CRI & 18 & 0.104 & 0.359 & 0.005 & 13 & 4 & 1 & -0.506 & large & 0.753 & 0.016 & yes \\
+GUROBI-std & CRI & 18 & 0.104 & 0.218 & 0.008 & 12 & 5 & 1 & -0.426 & medium & 0.713 & 0.016 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{All quality measures (means over instances): gap to the best lower bound LB*, to the best known value, to the proven optimum, to our own certified lower bound, to the LP bound, relative difference to the exact solver's incumbent; instances proved optimal by our certificate alone and by the method's own bound}
+\label{tab:E10b_state_of_the_art_60s_b60_all_metrics}
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+method & instances & \#with OPT & gap LB* \% & gap BKS \% & gap OPT \% (proven-optimum inst.) & gap own cert. LB \% & gap P\_LP \% & rel. diff. exact ref. \% & \#best & \#= LB* & \#proved by certificate & \#proved by own bound & mean time (s) & primal integral \\
+\midrule
+ZAIDI\_ILS-b & 72 & 32 & 1.259 & 1.215 & 1.171 & 1.259 & 3.752 & 0.709 & 13 & 13 & 13 & 0 & 60.011 & 0.013 \\
+AFSHAR\_BB & 72 & 32 & 114.003 & 113.906 & 82.072 & 114.003 & 116.741 & 105.919 & 9 & 9 & 9 & 0 & 53.075 & 0.409 \\
+AN\_HYBRID & 72 & 32 & 0.954 & 0.910 & 0.965 & 0.954 & 3.447 & 0.451 & 10 & 10 & 10 & 0 & 47.560 & 0.012 \\
+AN-PAR & 72 & 32 & 1.292 & 1.247 & 1.363 & 1.292 & 3.796 & 0.878 & 7 & 7 & 7 & 0 & 48.075 & 0.015 \\
+CRI & 72 & 32 & 0.093 & 0.049 & 0.071 & 0.093 & 2.580 & -0.541 & 48 & 23 & 23 & 23 & 44.802 & 0.160 \\
+GUROBI-std & 72 & 32 & 0.364 & 0.320 & 0.200 & 0.364 & 2.851 & -0.212 & 18 & 18 & 18 & 17 & 48.038 & 0.009 \\
+GUROBI-agg & 72 & 32 & 1.600 & 1.555 & 0.437 & 1.600 & 4.087 & 0.193 & 16 & 16 & 16 & 15 & 48.501 & 0.037 \\
+\bottomrule
+\end{tabular}
+\end{table}

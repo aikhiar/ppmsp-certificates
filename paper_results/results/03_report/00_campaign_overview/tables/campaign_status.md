@@ -1,0 +1,19 @@
+| experiment | not_available | ok |
+|---|---|---|
+| E0_sanity | 0 | 168 |
+| E10a_state_of_the_art | 0 | 2240 |
+| E10b_state_of_the_art_60s | 0 | 288 |
+| E1_certificates | 0 | 172 |
+| E2_head_to_head | 65 | 14235 |
+| E2b_head_to_head_budgets | 10 | 3950 |
+| E3_long_runs | 0 | 72 |
+| E3x_long_runs_xlarge | 0 | 20 |
+| E4a_equal_budgets | 0 | 6720 |
+| E4b_equal_budgets_60s | 0 | 1152 |
+| E5_ablation | 0 | 2295 |
+| E5b_ablation_60s | 0 | 180 |
+| E6_scalability | 5 | 149 |
+| E7_gurobi_threads | 0 | 108 |
+| E8a_tuning_faithful | 0 | 8748 |
+| E8b_tuning_budget | 0 | 1008 |
+| E9_managerial | 0 | 216 |

@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{All quality measures (means over instances): gap to the best lower bound LB*, to the best known value, to the proven optimum, to our own certified lower bound, to the LP bound, relative difference to the exact solver's incumbent; instances proved optimal by our certificate alone and by the method's own bound}
+\label{tab:E5_ablation_b10_all_metrics}
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+method & instances & \#with OPT & gap LB* \% & gap BKS \% & gap OPT \% (proven-optimum inst.) & gap own cert. LB \% & gap P\_LP \% & rel. diff. exact ref. \% & \#best & \#= LB* & \#proved by certificate & \#proved by own bound & mean time (s) & primal integral \\
+\midrule
+CRI-R & 45 & 26 & 2.613 & 2.565 & 2.896 & 2.613 & 6.633 & 1.941 & 7 & 7 & 7 & 7 & 3.114 & 0.320 \\
+CRI-R+LLS & 45 & 26 & 0.257 & 0.210 & 0.204 & 0.257 & 4.226 & -0.398 & 18 & 16 & 16 & 16 & 7.045 & 0.312 \\
+CRI-R+WLNS & 45 & 26 & 0.898 & 0.851 & 0.559 & 0.898 & 4.869 & 0.235 & 17 & 17 & 17 & 17 & 7.320 & 0.314 \\
+CRI-R+SA & 45 & 26 & 2.341 & 2.293 & 2.425 & 2.341 & 6.352 & 1.669 & 8 & 8 & 8 & 8 & 8.407 & 0.319 \\
+CRI & 45 & 26 & 0.249 & 0.202 & 0.188 & 0.249 & 4.219 & -0.405 & 21 & 19 & 19 & 19 & 6.974 & 0.312 \\
+CRI-lp & 45 & 26 & 0.266 & 0.219 & 0.204 & 0.266 & 4.236 & -0.389 & 21 & 19 & 19 & 19 & 6.978 & 0.278 \\
+CRI-cut & 45 & 26 & 0.247 & 0.200 & 0.188 & 0.247 & 4.217 & -0.407 & 20 & 17 & 17 & 17 & 6.901 & 0.276 \\
+CRI-noconf & 45 & 26 & 0.246 & 0.199 & 0.195 & 0.246 & 4.216 & -0.408 & 21 & 19 & 19 & 4 & 9.193 & 0.120 \\
+CRI-CE & 45 & 26 & 0.261 & 0.214 & 0.209 & 0.261 & 4.231 & -0.393 & 20 & 18 & 18 & 18 & 6.975 & 0.276 \\
+CRI-MT & 45 & 26 & 0.244 & 0.197 & 0.187 & 0.244 & 4.214 & -0.410 & 21 & 18 & 18 & 18 & 6.914 & 0.309 \\
+CRI-IR & 45 & 26 & 0.275 & 0.228 & 0.225 & 0.275 & 4.245 & -0.379 & 19 & 17 & 17 & 17 & 7.023 & 0.351 \\
+CRI-G & 45 & 26 & 0.286 & 0.239 & 0.219 & 0.286 & 4.256 & -0.369 & 18 & 18 & 18 & 18 & 7.022 & 0.292 \\
+SA-b & 45 & 26 & 6.179 & 6.128 & 4.844 & 6.179 & 10.233 & 5.470 & 6 & 6 & 6 & 0 & 10.015 & 0.059 \\
+HSG-b & 45 & 26 & 4.257 & 4.207 & 3.702 & 4.257 & 8.307 & 3.565 & 7 & 7 & 7 & 0 & 10.014 & 0.041 \\
+HSR-b & 45 & 26 & 4.179 & 4.129 & 3.614 & 4.179 & 8.224 & 3.488 & 7 & 7 & 7 & 0 & 10.015 & 0.040 \\
+HSL-b & 45 & 26 & 5.891 & 5.840 & 4.744 & 5.891 & 9.944 & 5.183 & 6 & 6 & 6 & 0 & 10.013 & 0.064 \\
+HSC-b & 45 & 26 & 2.315 & 2.267 & 2.381 & 2.315 & 6.325 & 1.644 & 8 & 8 & 8 & 0 & 10.099 & 0.318 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,37 @@
+| family | n | a priori optimal | instances | share % |
+|---|---|---|---|---|
+| omega | 10 | 5 | 5 | 100 |
+| omega | 20 | 10 | 10 | 100 |
+| omega | 30 | 10 | 10 | 100 |
+| omega | 40 | 4 | 5 | 80 |
+| omega | 50 | 2 | 10 | 20 |
+| omega | 75 | 0 | 5 | 0 |
+| omega | 100 | 0 | 10 | 0 |
+| omega | 150 | 0 | 5 | 0 |
+| omega | 200 | 0 | 10 | 0 |
+| omega | 500 | 0 | 3 | 0 |
+| omega | 1000 | 0 | 3 | 0 |
+| omega | 2000 | 0 | 3 | 0 |
+| overnight | 10 | 5 | 5 | 100 |
+| overnight | 20 | 1 | 5 | 20 |
+| overnight | 30 | 0 | 5 | 0 |
+| overnight | 50 | 0 | 5 | 0 |
+| overnight | 100 | 0 | 5 | 0 |
+| overnight | 200 | 0 | 5 | 0 |
+| overnight | 500 | 0 | 3 | 0 |
+| overnight | 1000 | 0 | 3 | 0 |
+| overnight | 2000 | 0 | 3 | 0 |
+| pcmax | 20 | 0 | 3 | 0 |
+| pcmax | 50 | 0 | 3 | 0 |
+| pcmax | 100 | 0 | 3 | 0 |
+| single | 50 | 3 | 3 | 100 |
+| single | 200 | 3 | 3 | 100 |
+| staggered | 10 | 5 | 5 | 100 |
+| staggered | 20 | 5 | 5 | 100 |
+| staggered | 30 | 5 | 5 | 100 |
+| staggered | 50 | 4 | 5 | 80 |
+| staggered | 100 | 1 | 5 | 20 |
+| staggered | 200 | 0 | 5 | 0 |
+| staggered | 500 | 0 | 3 | 0 |
+| staggered | 1000 | 0 | 3 | 0 |
+| staggered | 2000 | 0 | 3 | 0 |

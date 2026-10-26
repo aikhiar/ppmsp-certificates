@@ -1,0 +1,39 @@
+{
+ "ids": {
+  "SA": {
+   "L": 50,
+   "T0": 50.0,
+   "Tmin": 0.01,
+   "alpha_c": 0.95,
+   "alpha_p": 0.3
+  },
+  "LLS": {
+   "kick_size": 2
+  },
+  "SA-b": {
+   "L": 200,
+   "T0": 10.0,
+   "alpha_c": 0.99,
+   "alpha_p": 0.1
+  },
+  "WLNS": {
+   "sub_time_limit": 1.0,
+   "width": 24
+  }
+ },
+ "classes": {
+  "LLS": {
+   "kick_size": 2
+  },
+  "WLNS": {
+   "sub_time_limit": 1.0,
+   "width": 24
+  },
+  "SA": {
+   "L": 200,
+   "T0": 10.0,
+   "alpha_c": 0.99,
+   "alpha_p": 0.1
+  }
+ }
+}

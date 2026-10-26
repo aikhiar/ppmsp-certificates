@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Head-to-head: earlier method (A) against its certified counterpart (B)}
+\label{tab:E2_head_to_head_pairs}
+\begin{tabular}{lllrrrrrrrrrrlr}
+\toprule
+budget & A & B & N & mean gap\_lb A & mean gap\_lb B & mean time A & mean time B & A better & ties & B better & p (Wilcoxon) & Cliff delta & magnitude & p (Holm) \\
+\midrule
+n/a & RR & MT-lp & 130 & 9.296 & 20.827 & 0.012 & 0.065 & 118 & 5 & 7 & 9.491e-21 & -0.577 & large & 7.593e-20 \\
+n/a & RR & MT-cut & 130 & 9.296 & 21.346 & 0.012 & 0.235 & 109 & 6 & 15 & 2.585e-18 & -0.514 & large & 1.292e-17 \\
+n/a & RR & MT-conf & 125 & 9.623 & 22.182 & 0.012 & 1.995 & 78 & 11 & 36 & 5.721e-10 & -0.277 & small & 5.721e-10 \\
+n/a & RLP & CE-lp-excess & 130 & 17.290 & 5.443 & 0.043 & 0.048 & 1 & 10 & 119 & 1.018e-22 & 0.670 & large & 1.018e-21 \\
+n/a & RLP & CE-cut-excess & 130 & 17.290 & 3.374 & 0.043 & 0.218 & 1 & 8 & 121 & 9.015e-23 & 0.785 & large & 9.916e-22 \\
+n/a & RLP & CE-conf-comp & 125 & 17.770 & 8.277 & 0.043 & 1.921 & 25 & 9 & 91 & 1.450e-13 & 0.533 & large & 2.899e-13 \\
+n/a & RLP & IR & 130 & 17.290 & 26.669 & 0.043 & 0.568 & 113 & 7 & 10 & 3.685e-20 & -0.372 & medium & 2.211e-19 \\
+n/a & G & CE-lp-excess & 130 & 12.726 & 5.443 & 1.442e-04 & 0.048 & 17 & 10 & 103 & 8.345e-16 & 0.453 & medium & 3.338e-15 \\
+n/a & SA & HSG & 130 & 20.606 & 9.227 & 0.003 & 0.003 & 9 & 16 & 105 & 2.023e-20 & 0.528 & large & 1.416e-19 \\
+n/a & SA & HSR & 130 & 20.606 & 7.912 & 0.003 & 0.005 & 2 & 17 & 111 & 6.433e-22 & 0.582 & large & 5.789e-21 \\
+n/a & SA & HSL & 130 & 20.606 & 16.769 & 0.003 & 0.045 & 21 & 21 & 88 & 8.386e-14 & 0.220 & small & 2.516e-13 \\
+\bottomrule
+\end{tabular}
+\end{table}

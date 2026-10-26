@@ -1,0 +1,5 @@
+method,average rank
+CRI,1.4
+CRI+C,1.6
+GUROBI-std,3.0
+GUROBI-agg,4.0

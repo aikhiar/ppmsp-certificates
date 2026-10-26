@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Default parameters per method class}
+\label{tab:class_defaults}
+\begin{tabular}{ll}
+\toprule
+class & defaults \\
+\midrule
+G & \{"mode": "single"\} \\
+RR & \{"N": 10000, "chunk": 2000, "stop": "iterations"\} \\
+RLP & \{"stop": "trials", "trials": 50\} \\
+SA & \{"L": 50, "N": 10000, "T0": 100.0, "Tmin": 0.01, "alpha\_c": 0.95, "alpha\_p": 0.3, "chunk": 5000, "eps": 0.0, "stop": "iterations"\} \\
+CE & \{"passes": 3\} \\
+MT & \{"max\_steps": 1000000, "mode": "single"\} \\
+LLS & \{"chunk": 20, "kick\_size": 3, "max\_checks": 200000\} \\
+WLNS & \{"adaptive": true, "min\_width": 6, "sub\_time\_limit": 2.0, "threads": 1, "width": 12\} \\
+CRI & \{"complete": false, "complete\_model": "aggregated", "complete\_share": 0.25, "improve\_slice": 5.0, "threads": 1\} \\
+GUROBI & \{"model": "standard", "threads": 1\} \\
+\bottomrule
+\end{tabular}
+\end{table}

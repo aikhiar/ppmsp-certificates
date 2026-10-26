@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Pairwise Wilcoxon signed-rank tests (Holm), sign test, effect sizes (negative delta: A better); 6 pairs in the files, the 5 most significant of the 5 significant ones shown}
+\label{tab:E5b_ablation_60s_b60_pairwise}
+\begin{tabular}{llrrrrrrrrrrlrr}
+\toprule
+A & B & N & mean\_A & mean\_B & win\_A & tie & win\_B & p & p\_holm & p\_sign & cliff\_delta & cliff\_mag & A12 & significant \\
+\midrule
+CRI & CRI-R+LLS & 45 & 0.161 & 0.184 & 10 & 32 & 3 & 0.055 & 0.055 & 0.092 & -0.065 & negligible & 0.533 & no \\
+CRI & CRI-R+SA & 45 & 0.161 & 2.092 & 36 & 9 & 0 & 1.990e-08 & 1.194e-07 & 2.910e-11 & -0.660 & large & 0.830 & yes \\
+CRI & CRI-R+WLNS & 45 & 0.161 & 0.390 & 24 & 19 & 2 & 5.358e-05 & 1.607e-04 & 1.049e-05 & -0.248 & small & 0.624 & yes \\
+CRI-R+LLS & CRI-R+SA & 45 & 0.184 & 2.092 & 36 & 9 & 0 & 1.990e-08 & 1.194e-07 & 2.910e-11 & -0.645 & large & 0.823 & yes \\
+CRI-R+LLS & CRI-R+WLNS & 45 & 0.184 & 0.390 & 22 & 19 & 4 & 0.001 & 0.002 & 5.335e-04 & -0.217 & small & 0.609 & yes \\
+CRI-R+SA & CRI-R+WLNS & 45 & 2.092 & 0.390 & 0 & 9 & 36 & 1.990e-08 & 1.194e-07 & 2.910e-11 & 0.582 & large & 0.209 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

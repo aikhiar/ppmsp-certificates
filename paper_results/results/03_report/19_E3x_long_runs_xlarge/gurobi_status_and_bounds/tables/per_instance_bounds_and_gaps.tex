@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Per instance: Gurobi incumbent, dual bound, MIP gap, status (Minor comment 1)}
+\label{tab:E3x_long_runs_xlarge_gurobi_per_instance}
+\begin{tabular}{llrrrrlrrrrr}
+\toprule
+instance & method & budget & objective & lower\_bound & mip\_gap\_pct & info\_grb\_status & time & LB\_certified & P\_LP & control & control certified gap \% \\
+\midrule
+xlarge\_omega\_n10000\_T96\_000 & GUROBI-std & 600.000 & 7310.000 & 7308.800 & 0.016 & TIME\_LIMIT & 600.390 & 7308.800 & 7308.730 & 7308.800 & 0.000 \\
+xlarge\_omega\_n10000\_T96\_000 & GUROBI-agg & 600.000 & 7310.800 & 7308.800 & 0.027 & TIME\_LIMIT & 602.920 & 7308.800 & 7308.730 & 7308.800 & 0.000 \\
+xlarge\_omega\_n5000\_T96\_000 & GUROBI-std & 600.000 & 3689.400 & 3688.000 & 0.038 & TIME\_LIMIT & 600.234 & 3688.000 & 3687.984 & 3688.100 & 0.003 \\
+xlarge\_omega\_n5000\_T96\_000 & GUROBI-agg & 600.000 & 3690.300 & 3688.000 & 0.062 & TIME\_LIMIT & 601.577 & 3688.000 & 3687.984 & 3688.100 & 0.003 \\
+xlarge\_overnight\_n5000\_T96\_000 & GUROBI-std & 600.000 & 9200.900 & 9199.900 & 0.011 & TIME\_LIMIT & 600.921 & 9199.900 & 9199.858 & 9200.000 & 0.001 \\
+xlarge\_overnight\_n5000\_T96\_000 & GUROBI-agg & 600.000 & 9201.100 & 9199.900 & 0.013 & TIME\_LIMIT & 605.718 & 9199.900 & 9199.858 & 9200.000 & 0.001 \\
+xlarge\_staggered\_n10000\_T288\_000 & GUROBI-std & 600.000 & 3393.500 & 3391.900 & 0.047 & TIME\_LIMIT & 600.499 & 3391.900 & 3391.900 & 3392.700 & 0.024 \\
+xlarge\_staggered\_n10000\_T288\_000 & GUROBI-agg & 600.000 & 3393.600 & 3391.900 & 0.050 & TIME\_LIMIT & 605.577 & 3391.900 & 3391.900 & 3392.700 & 0.024 \\
+xlarge\_staggered\_n5000\_T288\_000 & GUROBI-std & 600.000 & 1701.500 & 1699.400 & 0.123 & TIME\_LIMIT & 600.296 & 1699.400 & 1699.305 & 1700.300 & 0.053 \\
+xlarge\_staggered\_n5000\_T288\_000 & GUROBI-agg & 600.000 & 1703.600 & 1699.400 & 0.247 & TIME\_LIMIT & 601.952 & 1699.400 & 1699.305 & 1700.300 & 0.053 \\
+\bottomrule
+\end{tabular}
+\end{table}

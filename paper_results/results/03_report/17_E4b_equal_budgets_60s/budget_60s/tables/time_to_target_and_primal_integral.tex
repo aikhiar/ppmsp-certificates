@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Time to targets (median s; inf = not reached), share of runs reaching each target (\%), mean primal integral (normalized by the budget)}
+\label{tab:E4b_equal_budgets_60s_b60_ttt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+method & median ttt\_0 & median ttt\_0.005 & median ttt\_0.01 & median ttt\_0.05 & reached ttt\_0 & reached ttt\_0.005 & reached ttt\_0.01 & reached ttt\_0.05 & primal\_integral \\
+\midrule
+CRI & $\infty$ & 11.023 & 8.062 & 5.508 & 30.556 & 96.528 & 99.306 & 100.000 & 0.160 \\
+CRI+C & $\infty$ & 11.031 & 8.055 & 5.492 & 31.250 & 97.222 & 100.000 & 100.000 & 0.160 \\
+GUROBI-agg & $\infty$ & 51.328 & 8.437 & 2.445 & 22.222 & 52.778 & 75.000 & 98.611 & 0.037 \\
+GUROBI-std & $\infty$ & 6.953 & 0.891 & 0.172 & 25.000 & 69.444 & 93.056 & 100.000 & 0.009 \\
+HSC-b & $\infty$ & $\infty$ & 30.016 & 6.023 & 12.500 & 38.889 & 59.722 & 90.278 & 0.171 \\
+LLS & $\infty$ & 0.077 & 0.016 & 0.000 & 27.778 & 95.139 & 97.917 & 100.000 & \textbf{0.001} \\
+RR-b & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 1.389 & 10.417 & 18.056 & 49.306 & 0.061 \\
+SA-b & $\infty$ & $\infty$ & $\infty$ & $\infty$ & 11.111 & 12.500 & 14.583 & 36.806 & 0.059 \\
+WLNS & $\infty$ & $\infty$ & 40.453 & 0.016 & 24.306 & 42.361 & 52.778 & 95.139 & 0.018 \\
+\bottomrule
+\end{tabular}
+\end{table}

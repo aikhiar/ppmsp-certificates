@@ -1,0 +1,21 @@
+method,average rank
+CE-cut-excess,4.556
+CE-cut-union,4.572
+CE-conf-excess,5.268
+CE-conf-union,5.284
+CE-lp-union,5.716
+CE-lp-excess,5.832
+HSR,8.32
+CE-conf-comp,8.5
+HSG,9.336
+RR,9.864
+G,11.292
+CE-cut-comp,11.908
+CE-lp-comp,13.152
+HSL,14.116
+MT-conf,14.124
+RLP,14.308
+SA,15.068
+MT-cut,15.44
+MT-lp,15.672
+IR,17.672

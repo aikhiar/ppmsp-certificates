@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CE-cut-excess against every other method (wins = instances where the control is strictly better)}
+\label{tab:E2_head_to_head_vs_CE-cut-excess}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+CE-conf-comp & CE-cut-excess & 125 & 3.483 & 8.277 & 7.469e-09 & 66 & 43 & 16 & -0.185 & small & 0.593 & 4.481e-08 & yes \\
+CE-conf-excess & CE-cut-excess & 125 & 3.483 & 4.098 & 0.011 & 47 & 52 & 26 & -0.002 & negligible & 0.501 & 0.034 & yes \\
+CE-conf-union & CE-cut-excess & 125 & 3.483 & 4.094 & 0.014 & 47 & 52 & 26 & 4.480e-04 & negligible & 0.500 & 0.034 & yes \\
+CE-cut-comp & CE-cut-excess & 125 & 3.483 & 14.755 & 9.580e-21 & 100 & 25 & 0 & -0.633 & large & 0.817 & 1.150e-19 & yes \\
+CE-cut-union & CE-cut-excess & 125 & 3.483 & 3.476 & 0.426 & 4 & 119 & 2 & -0.002 & negligible & 0.501 & 0.426 & no \\
+CE-lp-comp & CE-cut-excess & 125 & 3.483 & 16.371 & 1.831e-21 & 110 & 13 & 2 & -0.746 & large & 0.873 & 2.746e-20 & yes \\
+CE-lp-excess & CE-cut-excess & 125 & 3.483 & 5.634 & 9.517e-05 & 53 & 48 & 24 & -0.149 & small & 0.574 & 4.759e-04 & yes \\
+CE-lp-union & CE-cut-excess & 125 & 3.483 & 5.600 & 3.731e-04 & 52 & 46 & 27 & -0.135 & negligible & 0.567 & 0.001 & yes \\
+G & CE-cut-excess & 125 & 3.483 & 13.187 & 1.419e-19 & 106 & 12 & 7 & -0.620 & large & 0.810 & 1.419e-18 & yes \\
+HSG & CE-cut-excess & 125 & 3.483 & 9.548 & 1.110e-17 & 95 & 23 & 7 & -0.448 & medium & 0.724 & 9.986e-17 & yes \\
+HSL & CE-cut-excess & 125 & 3.483 & 17.175 & 2.882e-21 & 107 & 17 & 1 & -0.675 & large & 0.838 & 3.746e-20 & yes \\
+HSR & CE-cut-excess & 125 & 3.483 & 8.183 & 1.757e-17 & 94 & 24 & 7 & -0.434 & medium & 0.717 & 1.405e-16 & yes \\
+IR & CE-cut-excess & 125 & 3.483 & 27.520 & 3.538e-22 & 120 & 5 & 0 & -0.925 & large & 0.963 & 6.722e-21 & yes \\
+MT-conf & CE-cut-excess & 125 & 3.483 & 22.182 & 6.126e-16 & 80 & 37 & 8 & -0.409 & medium & 0.704 & 4.288e-15 & yes \\
+MT-cut & CE-cut-excess & 125 & 3.483 & 22.014 & 6.325e-22 & 114 & 11 & 0 & -0.817 & large & 0.909 & 1.047e-20 & yes \\
+MT-lp & CE-cut-excess & 125 & 3.483 & 21.446 & 3.538e-22 & 120 & 5 & 0 & -0.877 & large & 0.938 & 6.722e-21 & yes \\
+RLP & CE-cut-excess & 125 & 3.483 & 17.770 & 6.160e-22 & 116 & 8 & 1 & -0.794 & large & 0.897 & 1.047e-20 & yes \\
+RR & CE-cut-excess & 125 & 3.483 & 9.623 & 1.195e-19 & 108 & 11 & 6 & -0.572 & large & 0.786 & 1.315e-18 & yes \\
+SA & CE-cut-excess & 125 & 3.483 & 20.430 & 2.462e-21 & 108 & 16 & 1 & -0.688 & large & 0.844 & 3.447e-20 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

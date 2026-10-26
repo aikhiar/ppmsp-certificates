@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{All quality measures (means over instances): gap to the best lower bound LB*, to the best known value, to the proven optimum, to our own certified lower bound, to the LP bound, relative difference to the exact solver's incumbent; instances proved optimal by our certificate alone and by the method's own bound}
+\label{tab:E4a_equal_budgets_b10_all_metrics}
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+method & instances & \#with OPT & gap LB* \% & gap BKS \% & gap OPT \% (proven-optimum inst.) & gap own cert. LB \% & gap P\_LP \% & rel. diff. exact ref. \% & \#best & \#= LB* & \#proved by certificate & \#proved by own bound & mean time (s) & primal integral \\
+\midrule
+G-b & 112 & 56 & 4.555 & 4.481 & 4.333 & 4.555 & 9.643 & 4.315 & 16 & 16 & 16 & 0 & 10.007 & 0.042 \\
+RR-b & 112 & 56 & 8.093 & 8.017 & 10.363 & 8.093 & 13.483 & 8.646 & 11 & 11 & 11 & 0 & 10.007 & 0.070 \\
+RLP-b & 112 & 56 & 8.558 & 8.481 & 9.947 & 8.558 & 13.843 & 9.810 & 8 & 8 & 8 & 0 & 10.008 & 0.104 \\
+SA-b & 112 & 56 & 6.574 & 6.498 & 5.062 & 6.574 & 11.654 & 5.624 & 18 & 18 & 18 & 0 & 10.007 & 0.062 \\
+HSC-b & 112 & 56 & 2.022 & 1.950 & 2.053 & 2.022 & 7.063 & 1.810 & 23 & 23 & 23 & 0 & 10.105 & 0.309 \\
+LLS & 112 & 56 & 0.247 & 0.177 & 0.200 & 0.247 & 5.258 & -0.403 & 57 & 38 & 38 & 0 & 10.017 & 0.003 \\
+WLNS & 112 & 56 & 2.777 & 2.704 & 1.790 & 2.777 & 7.806 & 2.392 & 32 & 32 & 32 & 0 & 10.033 & 0.036 \\
+BK & 112 & 56 & 5.838 & 5.763 & 8.048 & 5.838 & 11.156 & 6.508 & 9 & 9 & 9 & 0 & 9.770e-04 & 0.052 \\
+CRI & 112 & 56 & 0.219 & 0.149 & 0.159 & 0.219 & 5.229 & -0.424 & 54 & 41 & 41 & 40 & 7.265 & 0.304 \\
+CRI+C & 112 & 56 & 0.233 & 0.163 & 0.157 & 0.233 & 5.243 & -0.407 & 48 & 42 & 42 & 42 & 7.158 & 0.303 \\
+GUROBI-std & 112 & 56 & 0.672 & 0.602 & 0.376 & 0.672 & 5.684 & 0.110 & 31 & 31 & 31 & 30 & 7.504 & 0.025 \\
+GUROBI-agg & 112 & 56 & 3.516 & 3.444 & 0.754 & 3.516 & 8.530 & 0.628 & 32 & 32 & 32 & 29 & 7.741 & 0.081 \\
+\bottomrule
+\end{tabular}
+\end{table}

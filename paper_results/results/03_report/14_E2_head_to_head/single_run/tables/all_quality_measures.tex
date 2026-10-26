@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{All quality measures (means over instances): gap to the best lower bound LB*, to the best known value, to the proven optimum, to our own certified lower bound, to the LP bound, relative difference to the exact solver's incumbent; instances proved optimal by our certificate alone and by the method's own bound}
+\label{tab:E2_head_to_head_all_metrics}
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+method & instances & \#with OPT & gap LB* \% & gap BKS \% & gap OPT \% (proven-optimum inst.) & gap own cert. LB \% & gap P\_LP \% & rel. diff. exact ref. \% & \#best & \#= LB* & \#proved by certificate & \#proved by own bound & mean time (s) & primal integral \\
+\midrule
+G & 130 & 89 & 12.726 & 12.620 & 14.806 & 12.726 & 26.948 & 12.189 & 31 & 31 & 31 & 0 & 1.442e-04 & n/a \\
+RR & 130 & 89 & 9.296 & 9.190 & 10.311 & 9.296 & 22.878 & 8.768 & 43 & 43 & 43 & 0 & 0.012 & n/a \\
+RLP & 130 & 89 & 17.290 & 17.173 & 17.876 & 17.290 & 31.636 & 16.717 & 21 & 21 & 21 & 0 & 0.043 & n/a \\
+SA & 130 & 89 & 20.606 & 20.483 & 17.627 & 20.606 & 34.648 & 19.979 & 28 & 28 & 28 & 0 & 0.003 & n/a \\
+HSG & 130 & 89 & 9.227 & 9.121 & 9.696 & 9.227 & 22.746 & 8.691 & 38 & 38 & 38 & 0 & 0.003 & n/a \\
+HSR & 130 & 89 & 7.912 & 7.806 & 8.288 & 7.912 & 21.237 & 7.384 & 45 & 45 & 45 & 0 & 0.005 & n/a \\
+HSL & 130 & 89 & 16.769 & 16.650 & 15.757 & 16.769 & 30.720 & 16.178 & 30 & 30 & 30 & 0 & 0.045 & n/a \\
+CE-lp-excess & 130 & 89 & 5.443 & 5.340 & 5.898 & 5.443 & 18.606 & 4.931 & 38 & 38 & 38 & 0 & 0.048 & n/a \\
+CE-lp-union & 130 & 89 & 5.411 & 5.308 & 5.842 & 5.411 & 18.565 & 4.898 & 38 & 38 & 38 & 0 & 0.047 & n/a \\
+CE-lp-comp & 130 & 89 & 15.906 & 15.790 & 16.785 & 15.906 & 30.176 & 15.344 & 12 & 12 & 12 & 0 & 0.047 & n/a \\
+CE-cut-excess & 130 & 89 & 3.374 & 3.272 & 3.332 & 3.374 & 16.297 & 2.866 & 43 & 43 & 43 & 0 & 0.218 & n/a \\
+CE-cut-union & 130 & 89 & 3.368 & 3.266 & 3.321 & 3.368 & 16.290 & 2.860 & 43 & 43 & 43 & 0 & 0.218 & n/a \\
+CE-cut-comp & 130 & 89 & 14.322 & 14.205 & 14.297 & 14.322 & 28.301 & 13.759 & 22 & 22 & 22 & 0 & 0.217 & n/a \\
+CE-conf-excess & 125 & 88 & 4.098 & 3.990 & 3.347 & 4.098 & 17.482 & 3.575 & 53 & 53 & 53 & 0 & 1.922 & n/a \\
+CE-conf-union & 125 & 88 & 4.094 & 3.985 & 3.269 & 4.094 & 17.476 & 3.571 & 53 & 53 & 53 & 0 & 1.920 & n/a \\
+CE-conf-comp & 125 & 88 & 8.277 & 8.162 & 6.047 & 8.277 & 21.744 & 7.721 & 55 & 55 & 55 & 0 & 1.921 & n/a \\
+IR & 130 & 89 & 26.669 & 26.546 & 29.793 & 26.669 & 42.978 & 26.077 & 4 & 4 & 4 & 0 & 0.568 & n/a \\
+MT-lp & 130 & 89 & 20.827 & 20.709 & 23.241 & 20.827 & 36.108 & 20.256 & 8 & 8 & 8 & 0 & 0.065 & n/a \\
+MT-cut & 130 & 89 & 21.346 & 21.225 & 23.275 & 21.346 & 36.501 & 20.769 & 17 & 17 & 17 & 0 & 0.235 & n/a \\
+MT-conf & 125 & 88 & 22.182 & 22.046 & 16.300 & 22.182 & 36.054 & 21.510 & 50 & 50 & 50 & 0 & 1.995 & n/a \\
+\bottomrule
+\end{tabular}
+\end{table}

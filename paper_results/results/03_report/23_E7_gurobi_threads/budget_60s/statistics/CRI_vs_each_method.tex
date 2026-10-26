@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CRI against every other method (wins = instances where the control is strictly better)}
+\label{tab:E7_gurobi_threads_b60_vs_CRI}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+GUROBI-agg-4t & CRI & 18 & 0.141 & 0.438 & 0.005 & 14 & 3 & 1 & -0.481 & large & 0.741 & 0.010 & yes \\
+GUROBI-std-4t & CRI & 18 & 0.141 & 0.246 & 0.008 & 12 & 5 & 1 & -0.228 & small & 0.614 & 0.010 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

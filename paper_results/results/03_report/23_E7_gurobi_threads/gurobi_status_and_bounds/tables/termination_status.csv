@@ -1,0 +1,5 @@
+method,budget,OPTIMAL,TIME_LIMIT
+GUROBI-agg-4t,10.0,3,15
+GUROBI-agg-4t,60.0,3,15
+GUROBI-std-4t,10.0,4,14
+GUROBI-std-4t,60.0,5,13

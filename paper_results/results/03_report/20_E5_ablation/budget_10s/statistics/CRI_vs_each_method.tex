@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CRI against every other method (wins = instances where the control is strictly better)}
+\label{tab:E5_ablation_b10_vs_CRI}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+CRI-CE & CRI & 45 & 0.249 & 0.261 & 0.496 & 5 & 37 & 3 & -0.037 & negligible & 0.518 & 1.000 & no \\
+CRI-G & CRI & 45 & 0.249 & 0.286 & 0.136 & 15 & 21 & 9 & -0.067 & negligible & 0.533 & 0.950 & no \\
+CRI-IR & CRI & 45 & 0.249 & 0.275 & 0.550 & 14 & 20 & 11 & -0.044 & negligible & 0.522 & 1.000 & no \\
+CRI-MT & CRI & 45 & 0.249 & 0.244 & 0.905 & 12 & 22 & 11 & -9.877e-04 & negligible & 0.500 & 1.000 & no \\
+CRI-R & CRI & 45 & 0.249 & 2.613 & 1.227e-08 & 38 & 7 & 0 & -0.703 & large & 0.851 & 1.472e-07 & yes \\
+CRI-R+LLS & CRI & 45 & 0.249 & 0.257 & 0.454 & 5 & 37 & 3 & -0.022 & negligible & 0.511 & 1.000 & no \\
+CRI-R+SA & CRI & 45 & 0.249 & 2.341 & 1.545e-08 & 37 & 8 & 0 & -0.665 & large & 0.833 & 1.699e-07 & yes \\
+CRI-R+WLNS & CRI & 45 & 0.249 & 0.898 & 7.159e-07 & 29 & 15 & 1 & -0.363 & medium & 0.682 & 6.443e-06 & yes \\
+CRI-cut & CRI & 45 & 0.249 & 0.247 & 0.354 & 6 & 29 & 10 & -0.006 & negligible & 0.503 & 1.000 & no \\
+CRI-lp & CRI & 45 & 0.249 & 0.266 & 0.726 & 8 & 30 & 7 & -0.049 & negligible & 0.524 & 1.000 & no \\
+CRI-noconf & CRI & 45 & 0.249 & 0.246 & 0.010 & 4 & 24 & 17 & 0.003 & negligible & 0.498 & 0.080 & no \\
+HSC-b & CRI & 45 & 0.249 & 2.315 & 1.545e-08 & 37 & 8 & 0 & -0.665 & large & 0.833 & 1.699e-07 & yes \\
+HSG-b & CRI & 45 & 0.249 & 4.257 & 8.327e-09 & 40 & 5 & 0 & -0.779 & large & 0.889 & 1.332e-07 & yes \\
+HSL-b & CRI & 45 & 0.249 & 5.891 & 8.327e-09 & 40 & 5 & 0 & -0.797 & large & 0.898 & 1.332e-07 & yes \\
+HSR-b & CRI & 45 & 0.249 & 4.179 & 8.327e-09 & 40 & 5 & 0 & -0.769 & large & 0.884 & 1.332e-07 & yes \\
+SA-b & CRI & 45 & 0.249 & 6.179 & 8.327e-09 & 40 & 5 & 0 & -0.785 & large & 0.892 & 1.332e-07 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+| method | CRI | GUROBI-agg-4t | GUROBI-std-4t |
+|---|---|---|---|
+| CRI | 0 | 14 | 12 |
+| GUROBI-agg-4t | 1 | 0 | 1 |
+| GUROBI-std-4t | 1 | 12 | 0 |

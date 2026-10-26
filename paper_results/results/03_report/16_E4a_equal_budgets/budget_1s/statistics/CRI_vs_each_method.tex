@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CRI against every other method (wins = instances where the control is strictly better)}
+\label{tab:E4a_equal_budgets_b1_vs_CRI}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+BK & CRI & 112 & 0.425 & 5.838 & 1.672e-19 & 101 & 9 & 2 & -0.661 & large & 0.830 & 1.505e-18 & yes \\
+CRI+C & CRI & 112 & 0.425 & 0.441 & 5.248e-10 & 50 & 59 & 3 & -0.020 & negligible & 0.510 & 1.050e-09 & yes \\
+G-b & CRI & 112 & 0.425 & 4.887 & 1.828e-19 & 97 & 15 & 0 & -0.658 & large & 0.829 & 1.505e-18 & yes \\
+GUROBI-agg & CRI & 112 & 0.425 & 24.469 & 5.218e-18 & 85 & 26 & 1 & -0.569 & large & 0.785 & 2.087e-17 & yes \\
+GUROBI-std & CRI & 112 & 0.425 & 4.389 & 7.488e-17 & 82 & 28 & 2 & -0.399 & medium & 0.699 & 2.247e-16 & yes \\
+HSC-b & CRI & 112 & 0.425 & 2.523 & 2.700e-19 & 95 & 17 & 0 & -0.573 & large & 0.786 & 1.890e-18 & yes \\
+LLS & CRI & 112 & 0.425 & 0.411 & 2.025e-05 & 13 & 40 & 59 & 0.020 & negligible & 0.490 & 2.025e-05 & yes \\
+RLP-b & CRI & 112 & 0.425 & 9.396 & 6.528e-20 & 104 & 8 & 0 & -0.865 & large & 0.933 & 6.528e-19 & yes \\
+RR-b & CRI & 112 & 0.425 & 8.093 & 4.989e-20 & 107 & 5 & 0 & -0.830 & large & 0.915 & 5.488e-19 & yes \\
+SA-b & CRI & 112 & 0.425 & 7.125 & 2.700e-19 & 95 & 17 & 0 & -0.733 & large & 0.866 & 1.890e-18 & yes \\
+WLNS & CRI & 112 & 0.425 & 5.143 & 3.330e-19 & 94 & 18 & 0 & -0.616 & large & 0.808 & 1.890e-18 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

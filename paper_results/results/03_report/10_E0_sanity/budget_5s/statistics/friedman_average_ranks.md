@@ -1,0 +1,29 @@
+| method | average rank |
+|---|---|
+| AFSHAR_BB | 9.50 |
+| AN_HYBRID | 9.50 |
+| CE-cut-union | 9.50 |
+| CE-conf-comp | 9.50 |
+| CRI | 9.50 |
+| GUROBI-std | 9.50 |
+| GUROBI-agg | 9.50 |
+| CRI+C | 9.50 |
+| WLNS | 9.50 |
+| ZAIDI_ILS | 9.50 |
+| LLS | 9.50 |
+| CE-lp-excess | 10.75 |
+| RR | 11.92 |
+| HSR | 11.92 |
+| BK | 14.58 |
+| HSG | 15.75 |
+| RLP | 15.75 |
+| ZAIDI_H | 16.50 |
+| NFDH | 16.58 |
+| G | 16.75 |
+| HSL | 17.75 |
+| SA | 17.75 |
+| GNP | 18.33 |
+| MT-lp | 19.33 |
+| HUNSAKER | 20.83 |
+| IR | 22.33 |
+| ASAP | 26.67 |

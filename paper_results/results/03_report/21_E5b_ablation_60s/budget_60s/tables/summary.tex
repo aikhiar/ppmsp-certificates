@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{E5b\_ablation\_60s, budget 60 s: gap\_lb (per-instance mean over seeds)}
+\label{tab:E5b_ablation_60s_b60_summary}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+method & instances & runs & mean gap\_lb & sd & CI95 lo & CI95 hi & median & max & \#hit LB* & \#best & mean time (s) & infeasible/failed \\
+\midrule
+CRI-R+LLS & 45 & 45 & 0.18 & 0.29 & 0.11 & 0.28 & 0.11 & 1.48 & 18 & 22 & 38.78 & 0 \\
+CRI-R+SA & 45 & 45 & 2.09 & 2.14 & 1.54 & 2.74 & 1.36 & 7.29 & 9 & 9 & 48.68 & 0 \\
+CRI-R+WLNS & 45 & 45 & 0.39 & 0.51 & 0.26 & 0.54 & 0.24 & 2.34 & 18 & 18 & 38.90 & 0 \\
+CRI & 45 & 45 & \textbf{0.16} & 0.27 & 0.09 & 0.25 & 0.10 & 1.48 & 19 & 26 & 37.19 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Time to targets (median s; inf = not reached), share of runs reaching each target (\%), mean primal integral (normalized by the budget)}
+\label{tab:E3_long_runs_b600_ttt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+method & median ttt\_0 & median ttt\_0.005 & median ttt\_0.01 & median ttt\_0.05 & reached ttt\_0 & reached ttt\_0.005 & reached ttt\_0.01 & reached ttt\_0.05 & primal\_integral \\
+\midrule
+CRI & 269.422 & 13.688 & 8.859 & 6.828 & 66.667 & 94.444 & 94.444 & 100.000 & 0.027 \\
+CRI+C & 255.242 & 13.695 & 8.859 & 6.844 & 77.778 & 100.000 & 100.000 & 100.000 & 0.027 \\
+GUROBI-agg & $\infty$ & 14.141 & 6.602 & 2.883 & 27.778 & 72.222 & 83.333 & 100.000 & 0.006 \\
+GUROBI-std & $\infty$ & 5.125 & 0.680 & 0.188 & 33.333 & 83.333 & 100.000 & 100.000 & \textbf{0.003} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CRI-R against every other method (wins = instances where the control is strictly better)}
+\label{tab:E2b_head_to_head_budgets_b10_vs_CRI-R}
+\begin{tabular}{llrrrrrrrrlrrr}
+\toprule
+method & control & N & mean\_control & mean\_method & p & wins & ties & losses & cliff\_delta & cliff\_mag & A12 & p\_holm & significant \\
+\midrule
+CE-conf-comp & CRI-R & 85 & 1.973 & 8.514 & 2.810e-10 & 43 & 41 & 1 & -0.249 & small & 0.625 & 1.124e-09 & yes \\
+CE-cut-excess & CRI-R & 85 & 1.973 & 3.236 & 2.625e-07 & 29 & 56 & 0 & -0.190 & small & 0.595 & 5.251e-07 & yes \\
+CE-lp-excess & CRI-R & 85 & 1.973 & 5.914 & 3.838e-10 & 43 & 42 & 0 & -0.336 & medium & 0.668 & 1.151e-09 & yes \\
+G-b & CRI-R & 85 & 1.973 & 3.342 & 0.010 & 29 & 41 & 15 & -0.100 & negligible & 0.550 & 0.010 & yes \\
+IR & CRI-R & 85 & 1.973 & 27.167 & 1.390e-15 & 81 & 4 & 0 & -0.919 & large & 0.960 & 1.251e-14 & yes \\
+MT-cut-b & CRI-R & 85 & 1.973 & 9.831 & 1.019e-13 & 61 & 24 & 0 & -0.555 & large & 0.778 & 5.095e-13 & yes \\
+MT-lp-b & CRI-R & 85 & 1.973 & 13.269 & 3.472e-15 & 74 & 11 & 0 & -0.743 & large & 0.871 & 2.777e-14 & yes \\
+RLP-b & CRI-R & 85 & 1.973 & 10.426 & 2.959e-14 & 65 & 20 & 0 & -0.611 & large & 0.806 & 1.775e-13 & yes \\
+RR-b & CRI-R & 85 & 1.973 & 9.306 & 4.440e-15 & 74 & 10 & 1 & -0.680 & large & 0.840 & 3.108e-14 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}

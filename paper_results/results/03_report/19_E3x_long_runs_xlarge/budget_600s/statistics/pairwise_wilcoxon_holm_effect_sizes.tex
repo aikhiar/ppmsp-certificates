@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Pairwise Wilcoxon signed-rank tests (Holm), sign test, effect sizes (negative delta: A better); 6 pairs in the files, the 0 most significant of the 0 significant ones shown}
+\label{tab:E3x_long_runs_xlarge_b600_pairwise}
+\begin{tabular}{llrrrrrrrrrrlrr}
+\toprule
+A & B & N & mean\_A & mean\_B & win\_A & tie & win\_B & p & p\_holm & p\_sign & cliff\_delta & cliff\_mag & A12 & significant \\
+\midrule
+CRI & CRI+C & 5 & 0.016 & 0.017 & 2 & 2 & 1 & 0.572 & 0.572 & 1.000 & -0.120 & negligible & 0.560 & no \\
+CRI & GUROBI-agg & 5 & 0.016 & 0.080 & 5 & 0 & 0 & 0.062 & 0.375 & 0.062 & -0.680 & large & 0.840 & no \\
+CRI & GUROBI-std & 5 & 0.016 & 0.047 & 5 & 0 & 0 & 0.062 & 0.375 & 0.062 & -0.520 & large & 0.760 & no \\
+CRI+C & GUROBI-agg & 5 & 0.017 & 0.080 & 5 & 0 & 0 & 0.062 & 0.375 & 0.062 & -0.680 & large & 0.840 & no \\
+CRI+C & GUROBI-std & 5 & 0.017 & 0.047 & 5 & 0 & 0 & 0.062 & 0.375 & 0.062 & -0.520 & large & 0.760 & no \\
+GUROBI-agg & GUROBI-std & 5 & 0.080 & 0.047 & 0 & 0 & 5 & 0.062 & 0.375 & 0.062 & 0.280 & small & 0.360 & no \\
+\bottomrule
+\end{tabular}
+\end{table}

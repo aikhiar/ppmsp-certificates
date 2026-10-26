@@ -1,0 +1,20 @@
+| instance | CRI | GUROBI-agg-4t | GUROBI-std-4t |
+|---|---|---|---|
+| large_omega_n1000_T96_000 | 719.90 | 721.20 | 721.00 |
+| large_omega_n2000_T96_000 | 1389.80 | 1391.10 | 1391.20 |
+| large_omega_n500_T96_000 | 376.90 | 378.70 | 378.00 |
+| large_overnight_n1000_T96_000 | 1895.20 | 1904.80 | 1896.20 |
+| large_overnight_n2000_T96_000 | 3747.00 | 3764.20 | 3747.80 |
+| large_overnight_n500_T96_000 | 961.60 | 963.10 | 962.80 |
+| large_staggered_n1000_T96_000 | 359.70 | 360.80 | 360.20 |
+| large_staggered_n2000_T96_000 | 728.50 | 729.00 | 729.00 |
+| large_staggered_n500_T96_000 | 198.30 | 198.80 | 198.30 |
+| medium_omega_n100_T96_000 | 68.10 | 68.50 | 68.10 |
+| medium_omega_n200_T96_000 | 143.60 | 145.20 | 144.70 |
+| medium_omega_n50_T96_000 | 41.20 | 40.60 | 40.60 |
+| medium_overnight_n100_T96_000 | 178.50 | 179.90 | 179.30 |
+| medium_overnight_n200_T96_000 | 369.00 | 370.60 | 369.70 |
+| medium_overnight_n50_T96_000 | 99.10 | 100.50 | 100.10 |
+| medium_staggered_n100_T96_000 | 49.90 | 49.90 | 49.90 |
+| medium_staggered_n200_T96_000 | 91.50 | 91.50 | 91.50 |
+| medium_staggered_n50_T96_000 | 29.20 | 29.20 | 29.20 |

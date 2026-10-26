@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Gurobi per model, budget, family and size: proven optima, MIP gap reported by Gurobi (incumbent vs its own bound), gap to LB*, and its dual bound relative to our certified LB (negative: our certificate is stronger)}
+\label{tab:E6_scalability_gurobi}
+\begin{tabular}{lrlrrlrrrrr}
+\toprule
+method & budget & family & n & runs & proven & mean\_mip\_gap\_pct & max\_mip\_gap\_pct & mean\_gap\_lb & bound\_minus\_certLB\_pct & time \\
+\midrule
+GUROBI-agg & 120.000 & omega & 500 & 1 & no & 0.449 & 0.449 & 0.451 & 0.000 & 120.187 \\
+GUROBI-agg & 120.000 & omega & 1000 & 1 & no & 0.277 & 0.277 & 0.278 & 0.000 & 120.281 \\
+GUROBI-agg & 120.000 & omega & 2000 & 1 & no & 0.122 & 0.122 & 0.122 & 0.000 & 120.453 \\
+GUROBI-agg & 120.000 & omega & 5000 & 1 & no & 0.098 & 0.098 & 0.098 & 0.000 & 121.219 \\
+GUROBI-agg & 120.000 & omega & 10000 & 1 & no & 0.034 & 0.034 & 0.034 & 0.000 & 122.734 \\
+GUROBI-agg & 120.000 & overnight & 500 & 1 & no & 0.290 & 0.290 & 0.291 & 2.365e-14 & 120.562 \\
+GUROBI-agg & 120.000 & overnight & 1000 & 1 & no & 0.090 & 0.090 & 0.090 & 0.000 & 121.109 \\
+GUROBI-agg & 120.000 & overnight & 2000 & 1 & no & 0.139 & 0.139 & 0.139 & 0.000 & 122.250 \\
+GUROBI-agg & 120.000 & overnight & 5000 & 1 & no & 0.105 & 0.105 & 0.105 & 0.000 & 125.859 \\
+GUROBI-agg & 120.000 & staggered & 500 & 1 & no & 0.101 & 0.101 & 0.101 & 0.000 & 120.063 \\
+GUROBI-agg & 120.000 & staggered & 1000 & 1 & no & 0.609 & 0.609 & 0.613 & 0.000 & 120.156 \\
+GUROBI-agg & 120.000 & staggered & 2000 & 1 & no & 0.261 & 0.261 & 0.261 & 0.000 & 120.234 \\
+GUROBI-agg & 120.000 & staggered & 5000 & 1 & no & 28.025 & 28.025 & 38.937 & 0.000 & 121.969 \\
+GUROBI-agg & 120.000 & staggered & 10000 & 1 & no & 26.093 & 26.093 & 35.305 & 0.000 & 125.000 \\
+GUROBI-std & 120.000 & omega & 500 & 1 & no & 0.370 & 0.370 & 0.372 & 0.000 & 120.031 \\
+GUROBI-std & 120.000 & omega & 1000 & 1 & no & 0.208 & 0.208 & 0.208 & 0.000 & 120.078 \\
+GUROBI-std & 120.000 & omega & 2000 & 1 & no & 0.079 & 0.079 & 0.079 & 0.000 & 120.109 \\
+GUROBI-std & 120.000 & omega & 5000 & 1 & no & 0.041 & 0.041 & 0.041 & 0.000 & 120.187 \\
+GUROBI-std & 120.000 & omega & 10000 & 1 & no & 0.021 & 0.021 & 0.021 & 0.000 & 120.359 \\
+GUROBI-std & 120.000 & overnight & 500 & 1 & no & 0.145 & 0.145 & 0.146 & 0.000 & 120.094 \\
+GUROBI-std & 120.000 & overnight & 1000 & 1 & no & 0.063 & 0.063 & 0.063 & 0.000 & 120.187 \\
+GUROBI-std & 120.000 & overnight & 2000 & 1 & no & 0.035 & 0.035 & 0.035 & 0.000 & 120.344 \\
+GUROBI-std & 120.000 & overnight & 5000 & 1 & no & 0.014 & 0.014 & 0.014 & 0.000 & 120.875 \\
+GUROBI-std & 120.000 & staggered & 500 & 1 & no & 0.050 & 0.050 & 0.050 & 2.867e-14 & 120.031 \\
+GUROBI-std & 120.000 & staggered & 1000 & 1 & no & 0.389 & 0.389 & 0.390 & 0.000 & 120.047 \\
+GUROBI-std & 120.000 & staggered & 2000 & 1 & no & 0.233 & 0.233 & 0.234 & 0.000 & 120.047 \\
+GUROBI-std & 120.000 & staggered & 5000 & 1 & no & 0.129 & 0.129 & 0.129 & 0.000 & 120.234 \\
+GUROBI-std & 120.000 & staggered & 10000 & 1 & no & 0.077 & 0.077 & 0.077 & 0.000 & 120.469 \\
+\bottomrule
+\end{tabular}
+\end{table}

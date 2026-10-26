@@ -18,7 +18,7 @@ def _fmt(v, digits=2):
         return f"{int(v)}"
     if isinstance(v, (float, np.floating)):
         if v != v:
-            return "–"
+            return "n/a"
         if np.isinf(v):
             return "∞" if v > 0 else "−∞"
         if v != 0 and (abs(v) < 10 ** -digits or abs(v) >= 1e6):
@@ -49,7 +49,7 @@ def to_markdown(df, digits=2, index=True, bold_min=None):
 def _tex(s):
     s = str(s)
     for a, b in (("\\", r"\textbackslash{}"), ("&", r"\&"), ("%", r"\%"), ("_", r"\_"), ("#", r"\#"),
-                 ("$", r"\$"), ("{", r"\{"), ("}", r"\}"), ("∞", r"$\infty$"), ("–", "--"), ("−", "-"),
+                 ("$", r"\$"), ("{", r"\{"), ("}", r"\}"), ("∞", r"$\infty$"), ("–", "-"), ("−", "-"),
                  ("≤", r"$\le$"), ("≥", r"$\ge$")):
         s = s.replace(a, b)
     return s

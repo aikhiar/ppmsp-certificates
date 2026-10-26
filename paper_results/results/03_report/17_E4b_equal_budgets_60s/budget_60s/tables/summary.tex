@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{E4b\_equal\_budgets\_60s, budget 60 s: gap\_lb (per-instance mean over seeds)}
+\label{tab:E4b_equal_budgets_60s_b60_summary}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+method & instances & runs & mean gap\_lb & sd & CI95 lo & CI95 hi & median & max & \#hit LB* & \#best & mean time (s) & infeasible/failed \\
+\midrule
+RR-b & 72 & 144 & 6.92 & 5.73 & 5.63 & 8.18 & 5.12 & 20.55 & 2 & 2 & 60.01 & 0 \\
+SA-b & 72 & 144 & 6.21 & 3.87 & 5.36 & 7.08 & 5.58 & 14.41 & 9 & 9 & 60.01 & 0 \\
+HSC-b & 72 & 144 & 1.48 & 1.85 & 1.07 & 1.93 & 0.75 & 7.29 & 9 & 9 & 60.22 & 0 \\
+LLS & 72 & 144 & 0.14 & 0.22 & 0.09 & 0.19 & 0.05 & 1.48 & 22 & 45 & 60.02 & 0 \\
+WLNS & 72 & 144 & 1.29 & 1.56 & 0.96 & 1.66 & 0.86 & 7.02 & 20 & 20 & 60.05 & 0 \\
+CRI & 72 & 144 & \textbf{0.09} & 0.14 & 0.06 & 0.12 & 0.06 & 0.74 & 23 & 48 & 44.80 & 0 \\
+CRI+C & 72 & 144 & 0.09 & 0.11 & 0.07 & 0.12 & 0.05 & 0.58 & 24 & 39 & 43.74 & 0 \\
+GUROBI-std & 72 & 72 & 0.36 & 0.37 & 0.29 & 0.45 & 0.23 & 1.26 & 18 & 18 & 48.04 & 0 \\
+GUROBI-agg & 72 & 72 & 1.60 & 7.92 & 0.54 & 3.60 & 0.45 & 67.55 & 16 & 16 & 48.50 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

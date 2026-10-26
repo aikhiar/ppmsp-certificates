@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Win matrix: entry (row, column) = instances where the row method is strictly better than the column method}
+\label{tab:E5_ablation_b10_wins}
+\begin{tabular}{lrrrrrrrrrrrrrrrrr}
+\toprule
+method & CRI & CRI-CE & CRI-G & CRI-IR & CRI-MT & CRI-R & CRI-R+LLS & CRI-R+SA & CRI-R+WLNS & CRI-cut & CRI-lp & CRI-noconf & HSC-b & HSG-b & HSL-b & HSR-b & SA-b \\
+\midrule
+CRI & 0 & 5 & 15 & 14 & 12 & 38 & 5 & 37 & 29 & 6 & 8 & 4 & 37 & 40 & 40 & 40 & 40 \\
+CRI-CE & 3 & 0 & 15 & 13 & 11 & 38 & 8 & 37 & 28 & 4 & 8 & 3 & 37 & 40 & 40 & 40 & 40 \\
+CRI-G & 9 & 12 & 0 & 12 & 12 & 38 & 11 & 37 & 29 & 4 & 11 & 4 & 37 & 40 & 40 & 40 & 40 \\
+CRI-IR & 11 & 12 & 12 & 0 & 8 & 38 & 14 & 37 & 29 & 10 & 13 & 7 & 37 & 40 & 40 & 40 & 40 \\
+CRI-MT & 11 & 13 & 11 & 11 & 0 & 38 & 13 & 37 & 29 & 10 & 16 & 8 & 37 & 40 & 40 & 40 & 40 \\
+CRI-R & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 30 & 34 & 33 & 33 \\
+CRI-R+LLS & 3 & 6 & 15 & 15 & 11 & 38 & 0 & 37 & 29 & 6 & 9 & 5 & 37 & 40 & 40 & 40 & 40 \\
+CRI-R+SA & 0 & 0 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 33 & 37 & 35 & 36 \\
+CRI-R+WLNS & 1 & 3 & 3 & 3 & 2 & 38 & 3 & 37 & 0 & 3 & 3 & 4 & 37 & 40 & 40 & 40 & 40 \\
+CRI-cut & 10 & 12 & 18 & 16 & 17 & 38 & 12 & 37 & 29 & 0 & 15 & 6 & 37 & 40 & 40 & 40 & 40 \\
+CRI-lp & 7 & 7 & 10 & 10 & 8 & 38 & 10 & 37 & 29 & 7 & 0 & 5 & 37 & 40 & 40 & 40 & 40 \\
+CRI-noconf & 17 & 19 & 23 & 17 & 20 & 38 & 20 & 37 & 28 & 15 & 18 & 0 & 37 & 40 & 40 & 40 & 40 \\
+HSC-b & 0 & 0 & 0 & 0 & 0 & 7 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 33 & 37 & 36 & 36 \\
+HSG-b & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 3 & 0 & 0 & 0 & 0 & 3 & 0 & 28 & 15 & 26 \\
+HSL-b & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 6 & 0 & 6 & 16 \\
+HSR-b & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 4 & 0 & 0 & 0 & 0 & 2 & 21 & 29 & 0 & 30 \\
+SA-b & 0 & 0 & 0 & 0 & 0 & 5 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 9 & 19 & 7 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

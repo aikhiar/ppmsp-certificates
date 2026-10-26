@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{E2b\_head\_to\_head\_budgets, budget 10 s: gap\_lb (per-instance mean over seeds)}
+\label{tab:E2b_head_to_head_budgets_b10_summary}
+\begin{tabular}{lrrrrrrrrrrrr}
+\toprule
+method & instances & runs & mean gap\_lb & sd & CI95 lo & CI95 hi & median & max & \#hit LB* & \#best & mean time (s) & infeasible/failed \\
+\midrule
+G-b & 90 & 270 & 3.21 & 4.69 & 2.30 & 4.27 & 1.35 & 22.14 & 37 & 38 & 10.01 & 0 \\
+RR-b & 90 & 270 & 8.85 & 6.63 & 7.48 & 10.26 & 8.71 & 25.00 & 29 & 29 & 10.02 & 0 \\
+RLP-b & 90 & 270 & 10.06 & 8.57 & 8.39 & 11.84 & 9.46 & 43.64 & 21 & 21 & 10.01 & 0 \\
+MT-lp-b & 90 & 270 & 12.73 & 10.14 & 10.76 & 14.88 & 11.39 & 43.64 & 11 & 11 & 10.03 & 0 \\
+MT-cut-b & 90 & 270 & 9.46 & 8.77 & 7.76 & 11.33 & 8.38 & 40.40 & 23 & 23 & 10.02 & 0 \\
+CE-lp-excess & 90 & 90 & 5.62 & 7.29 & 4.26 & 7.16 & 3.49 & 34.97 & 28 & 28 & 0.05 & 0 \\
+CE-cut-excess & 90 & 90 & 3.09 & 3.57 & 2.38 & 3.84 & 2.10 & 19.44 & 32 & 32 & 0.21 & 0 \\
+CE-conf-comp & 85 & 85 & 8.51 & 11.00 & 6.26 & 10.90 & 3.87 & 51.97 & 40 & 40 & 1.91 & 0 \\
+IR & 90 & 90 & 25.96 & 15.96 & 22.76 & 29.48 & 23.47 & 69.79 & 4 & 4 & 0.52 & 0 \\
+CRI-R & 90 & 270 & \textbf{1.90} & 2.42 & 1.43 & 2.41 & 0.66 & 9.25 & 41 & 41 & 1.83 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

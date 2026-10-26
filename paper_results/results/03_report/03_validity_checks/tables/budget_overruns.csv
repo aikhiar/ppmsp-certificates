@@ -1,0 +1,14 @@
+experiment,method,budget,runs,worst,mean,n,improved_after_budget,no_schedule_by_budget,evaluated_at_budget,reason
+E2b_head_to_head_budgets,CE-conf-comp,1.0,24,18.921796560287476,5.903620054324468,50-200,24,24,0,single-shot method: its certificate artifacts alone exceed the budget
+E2b_head_to_head_budgets,CE-conf-comp,10.0,5,1.8921862602233888,1.5546810054779052,100-100,5,5,0,single-shot method: its certificate artifacts alone exceed the budget
+E2b_head_to_head_budgets,IR,1.0,5,1.4687259197235107,1.387523365020752,200-200,5,5,0,single-shot method: its certificate artifacts alone exceed the budget
+E2b_head_to_head_budgets,MT-lp-b,1.0,3,1.4843723773956299,1.4739562670389812,10-10,0,0,0,single-shot method: its certificate artifacts alone exceed the budget
+E4a_equal_budgets,CRI,1.0,2,1.1718082427978516,1.1640304327011108,1000-2000,0,0,2,"2 run(s) improved only after the budget: evaluated at the budget, the later improvements are not counted; the others gained nothing after the budget"
+E4a_equal_budgets,GUROBI-agg,1.0,24,3.0468671321868896,1.6425649623076122,200-2000,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result
+E4a_equal_budgets,GUROBI-agg,10.0,6,1.2343816995620727,1.1611945788065592,1000-2000,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result
+E4a_equal_budgets,GUROBI-std,1.0,6,1.3594307899475098,1.2656402190526326,1000-2000,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result
+E4a_equal_budgets,HSC-b,1.0,9,1.234464168548584,1.2031272517310247,40-200,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result
+E4a_equal_budgets,LLS,1.0,2,1.218743085861206,1.187514066696167,2000-2000,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result
+E4a_equal_budgets,RLP-b,1.0,30,2.8905887603759766,1.9244829734166464,500-2000,30,30,0,"its LP relaxation is solved once before the first rounding trial; on n >= 500 that LP alone takes 1.5-2.9 s, longer than the 1 s budget"
+E4a_equal_budgets,WLNS,1.0,10,1.406254529953003,1.2578328609466554,1000-2000,0,0,2,"2 run(s) improved only after the budget: evaluated at the budget, the later improvements are not counted; the others gained nothing after the budget"
+E7_gurobi_threads,GUROBI-agg-4t,10.0,2,1.1906279087066651,1.1507873654365541,1000-2000,0,0,0,no improvement after the budget (anytime trace): the extra time changed no result

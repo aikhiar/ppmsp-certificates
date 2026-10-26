@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Mean gap\_lb (per-instance mean over seeds) of every method at every budget}
+\label{tab:equal_budgets_1s_to_600s_gap_by_budget}
+\begin{tabular}{lrrrr}
+\toprule
+method & 1 s & 10 s & 60 s & 600 s \\
+\midrule
+CRI & \textbf{0.417} & 0.228 & 0.108 & 0.104 \\
+CRI+C & 0.433 & \textbf{0.204} & \textbf{0.087} & \textbf{0.019} \\
+GUROBI-agg & 33.887 & 0.913 & 0.461 & 0.359 \\
+GUROBI-std & 7.721 & 0.459 & 0.295 & 0.218 \\
+HSC-b & 2.022 & 1.493 & 1.466 & n/a \\
+LLS & 0.447 & 0.288 & 0.191 & n/a \\
+RR-b & 7.693 & 7.693 & 7.246 & n/a \\
+SA-b & 7.760 & 7.220 & 6.896 & n/a \\
+WLNS & 4.682 & 2.043 & 1.162 & n/a \\
+\bottomrule
+\end{tabular}
+\end{table}

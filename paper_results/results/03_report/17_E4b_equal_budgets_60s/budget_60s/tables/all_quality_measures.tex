@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{All quality measures (means over instances): gap to the best lower bound LB*, to the best known value, to the proven optimum, to our own certified lower bound, to the LP bound, relative difference to the exact solver's incumbent; instances proved optimal by our certificate alone and by the method's own bound}
+\label{tab:E4b_equal_budgets_60s_b60_all_metrics}
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+method & instances & \#with OPT & gap LB* \% & gap BKS \% & gap OPT \% (proven-optimum inst.) & gap own cert. LB \% & gap P\_LP \% & rel. diff. exact ref. \% & \#best & \#= LB* & \#proved by certificate & \#proved by own bound & mean time (s) & primal integral \\
+\midrule
+RR-b & 72 & 32 & 6.925 & 6.878 & 9.794 & 6.925 & 9.673 & 7.977 & 2 & 2 & 2 & 0 & 60.012 & 0.061 \\
+SA-b & 72 & 32 & 6.208 & 6.161 & 5.049 & 6.208 & 8.736 & 5.003 & 9 & 9 & 9 & 0 & 60.012 & 0.059 \\
+HSC-b & 72 & 32 & 1.477 & 1.432 & 1.831 & 1.477 & 3.985 & 1.410 & 9 & 9 & 9 & 0 & 60.218 & 0.171 \\
+LLS & 72 & 32 & 0.135 & 0.091 & 0.126 & 0.135 & 2.623 & -0.493 & 45 & 22 & 22 & 0 & 60.025 & 0.001 \\
+WLNS & 72 & 32 & 1.290 & 1.245 & 0.673 & 1.290 & 3.779 & 0.806 & 20 & 20 & 20 & 0 & 60.047 & 0.018 \\
+CRI & 72 & 32 & 0.093 & 0.049 & 0.071 & 0.093 & 2.580 & -0.541 & 48 & 23 & 23 & 23 & 44.802 & 0.160 \\
+CRI+C & 72 & 32 & 0.093 & 0.049 & 0.041 & 0.093 & 2.579 & -0.544 & 39 & 24 & 24 & 24 & 43.735 & 0.160 \\
+GUROBI-std & 72 & 32 & 0.364 & 0.320 & 0.200 & 0.364 & 2.851 & -0.212 & 18 & 18 & 18 & 17 & 48.038 & 0.009 \\
+GUROBI-agg & 72 & 32 & 1.600 & 1.555 & 0.437 & 1.600 & 4.087 & 0.193 & 16 & 16 & 16 & 15 & 48.501 & 0.037 \\
+\bottomrule
+\end{tabular}
+\end{table}

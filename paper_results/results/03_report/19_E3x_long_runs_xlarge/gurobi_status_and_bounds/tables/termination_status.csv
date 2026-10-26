@@ -1,0 +1,3 @@
+method,budget,TIME_LIMIT
+GUROBI-agg,600.0,5
+GUROBI-std,600.0,5
