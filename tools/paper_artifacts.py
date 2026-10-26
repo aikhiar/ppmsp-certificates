@@ -337,8 +337,8 @@ def t_h2h(C, out):
     for A, Bm, A2, B2 in pairs:
         cells = []
         for df, x, y in ((a, A, Bm), (b10, A2, B2)):
-            if x is None:
-                cells.append("\\multicolumn{4}{c}{n/a}")
+            if x is None:                      # pair not run in this block: empty half-row (keeps the rule)
+                cells.append("\\multicolumn{4}{c|}{}" if df is a else "\\multicolumn{4}{c}{}")
                 continue
             r = df[(df.A == x) & (df.B == y)].iloc[0]
             cells.append(f"{NAME.get(x, x)} vs {NAME.get(y, y)} & {fg(r['mean gap_lb A'])} / {fg(r['mean gap_lb B'])} & "
