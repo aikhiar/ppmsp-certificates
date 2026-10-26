@@ -331,7 +331,7 @@ def check_thm411_cor412(pool):
                 continue
             for k, v in cf["bounds"].items():
                 tests += 1; fails += v < P - EPS
-            # Corollary 4.12: published forms dominate the localized ones and are valid
+            # Corollary 4.12: the non-localized forms dominate the localized ones and are valid
             pub = B.old_bounds(inst, al)
             for (ch, rad), key in ((("a", "SG"), "hoeffding_union"), (("a", "B"), "bernstein_union"),
                                    (("c", "SG"), "hoeffding_lll"), (("c", "B"), "bernstein_lll")):

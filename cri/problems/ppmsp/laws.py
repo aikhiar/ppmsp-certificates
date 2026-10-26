@@ -165,7 +165,7 @@ class SlotLaws:
         return total
 
 
-# ── old bounds (as published) ───────────────────────────────────────────────────
+# ── non-localized bounds (Corollary 4.12) ───────────────────────────────────────
 
 def dependency_degree_all(inst):
     d = 0

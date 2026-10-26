@@ -1,5 +1,5 @@
 # =====================================================================================
-# CRI framework - the full experimental campaign of the paper (PPMSP)
+# CRI framework: the full experimental campaign of the paper (PPMSP)
 #
 #   run_all.bat                                     verification, campaign and report (README.md)
 #   python -m cri all config.yaml                   campaign + report
@@ -76,7 +76,7 @@ defaults:
 # Method library (ids used by the experiment blocks)
 # -------------------------------------------------------------------------------------
 methods:
-  # earlier methods, as published (original stopping rules and parameters)
+  # earlier methods in their original form (original stopping rules and parameters)
   - {id: G,   class: G}
   - {id: RR,  class: RR,  params: {N: 10000, stop: iterations}}
   - {id: RLP, class: RLP, params: {trials: 50, stop: trials}}
@@ -193,6 +193,7 @@ experiments:
 
   E0_sanity:
     description: Every method once on a few small instances (feasibility, statuses, timing).
+    addresses: Section 6.1 of the paper (sanity checks of every method)
     sets: [small]
     max_instances: 6
     methods: [G, RR, RLP, SA, HSG, HSR, HSL, CE-lp-excess, CE-cut-union, CE-conf-comp, IR, MT-lp, LLS, WLNS, CRI, CRI+C,
@@ -213,6 +214,7 @@ experiments:
 
   E8a_tuning_faithful:
     description: Faithful tuning of the earlier SA (and, through tuned_as, of its hybrids) with its original grid (243 points, iteration mode), on the separate tuning set (never on evaluation instances).
+    addresses: Section 6.1 of the paper (tuning on the separate tuning set)
     kind: tuning
     sets: [tune]
     methods: [SA]
@@ -225,6 +227,7 @@ experiments:
 
   E8b_tuning_budget:
     description: Tuning of the budget-mode methods (SA-b and the SA-b hybrids, LLS, W-LNS) at 10 s on the separate tuning set; the chosen LLS and W-LNS values become the class defaults (used inside CRI).
+    addresses: Section 6.1 of the paper (tuning on the separate tuning set)
     kind: tuning
     sets: [tune]
     methods: [SA-b, LLS, WLNS]
@@ -239,7 +242,7 @@ experiments:
     analyses: [tuning]
 
   E2_head_to_head:
-    description: Earlier methods against their certified counterparts, as published (each method's own stopping rule) - RR vs MT, RLP vs CE and IR, G vs CE - and SA vs its hybrids.
+    description: Earlier methods in their original form (each method's own stopping rule) against their certified counterparts, namely RR vs MT, RLP vs CE and IR, G vs CE, and SA vs its hybrids.
     addresses: Section 6.3 of the paper (certified roundings and their heuristic counterparts)
     sets: [small, omega_published, medium]
     methods: [G, RR, RLP, SA, HSG, HSR, HSL, CE-lp-excess, CE-lp-union, CE-lp-comp, CE-cut-excess, CE-cut-union, CE-cut-comp,
@@ -252,7 +255,8 @@ experiments:
     analyses: [comparison, head_to_head]
 
   E2b_head_to_head_budgets:
-    description: The same pairs at equal budgets (1 s and 10 s) - the earlier methods use the whole budget (restarts, more trials, more iterations); MT repeats with new seeds.
+    description: The same pairs at equal budgets (1 s and 10 s), where the earlier methods use the whole budget (restarts, more trials, more iterations); MT repeats with new seeds.
+    addresses: Section 6.3 of the paper (the same pairs at equal budgets)
     sets: [small, medium]
     methods: [G-b, RR-b, RLP-b, MT-lp-b, MT-cut-b, CE-lp-excess, CE-cut-excess, CE-conf-comp, IR, CRI-R]
     budgets: [1, 10]
@@ -300,7 +304,7 @@ experiments:
     analyses: [comparison, anytime, gurobi]
 
   E3x_long_runs_xlarge:
-    description: Long runs (600 s) of CRI and Gurobi on the xlarge instances (n = 5,000-10,000, T up to 288), where Gurobi struggles - objective-versus-runtime curves and dual bounds at full length (E6 stops at 120 s). Own block so that its memory need does not reduce the workers of E3.
+    description: Long runs (600 s) of CRI and Gurobi on the xlarge instances (n = 5,000-10,000, T up to 288), where Gurobi struggles, with objective-versus-runtime curves and dual bounds at full length (E6 stops at 120 s). Own block so that its memory need does not reduce the workers of E3.
     addresses: Section 6.5 of the paper (the largest instances; objective-versus-runtime curves)
     sets: [xlarge]
     reps: [0]
@@ -314,7 +318,8 @@ experiments:
     analyses: [comparison, anytime, gurobi]
 
   E5_ablation:
-    description: Contribution of each CRI component - Round only, + LLS, + W-LNS, + SA, both; marginal matrix (LP, cover cuts, configuration LP); rounding family (CE, MT, IR, greedy); SA initialisation (the former hybrids are SA started from G, RR, RLP or the CRI Round stage).
+    description: Contribution of each CRI component (Round only, + LLS, + W-LNS, + SA, both); marginal matrix (LP, cover cuts, configuration LP); rounding family (CE, MT, IR, greedy); SA initialisation (the former hybrids are SA started from G, RR, RLP or the CRI Round stage).
+    addresses: Section 6.7 of the paper (contribution of the stages of CRI)
     sets: [medium]
     methods: [CRI-R, CRI-R+LLS, CRI-R+WLNS, CRI-R+SA, CRI, CRI-lp, CRI-cut, CRI-noconf, CRI-CE, CRI-MT, CRI-IR, CRI-G,
               SA-b, HSG-b, HSR-b, HSL-b, HSC-b]
@@ -325,6 +330,7 @@ experiments:
 
   E5b_ablation_60s:
     description: The improvement-stage ablation at 60 s.
+    addresses: Section 6.7 of the paper (the Improve stage at 60 s)
     sets: [medium]
     methods: [CRI-R+LLS, CRI-R+WLNS, CRI-R+SA, CRI]
     budgets: [60]
@@ -333,7 +339,7 @@ experiments:
     analyses: [comparison]
 
   E6_scalability:
-    description: Scaling up to n = 10,000 vehicles and T = 288 slots - time of the Certify stage and of each method, gap to the certified lower bound. Workers sized automatically from the free RAM (8 GB per worker for these models).
+    description: Scaling up to n = 10,000 vehicles and T = 288 slots, with the time of the Certify stage and of each method and the gap to the certified lower bound. Workers sized automatically from the free RAM (8 GB per worker for these models).
     addresses: Section 6.5 of the paper (scalability)
     sets: [large, xlarge]
     reps: [0]
@@ -395,7 +401,7 @@ experiments:
     analyses: [sota]
 
 report:
-  title: "PPMSP - Certify-Round-Improve: experimental report"
+  title: "Certify-Round-Improve for the PPMSP: experimental report"
   metric: gap_lb
   alpha: 0.05
   targets: [0.0, 0.005, 0.01, 0.05]

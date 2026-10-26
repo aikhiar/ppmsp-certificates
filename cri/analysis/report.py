@@ -892,7 +892,7 @@ class Report:
             return
         self.h(2, "Faithfulness of the re-implemented earlier methods")
         df = pd.read_pickle(p)
-        self.p("Published code (verbatim copy, tests/reference_old) against the Numba re-implementation: Mann-Whitney U "
+        self.p("Original code (verbatim copy, tests/reference_old) against the Numba re-implementation: Mann-Whitney U "
                "on the peaks of R runs per instance and method, Holm-adjusted. RLP-sameLP feeds both with the same LP "
                "solution (isolates the rounding and repair logic from the choice of the optimal LP vertex).")
         summ = df.groupby("method").agg(pairs=("instance", "size"), mean_rel_diff_pct=("rel_diff_pct", "mean"),

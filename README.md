@@ -221,7 +221,7 @@ runs single-threaded, except the `-4t` Gurobi variants.
 | references | exact aggregated model (300 s) on small, omega_published, medium | Sec. 6.1 (LB*) |
 | E0_sanity | every method once on a few small instances | |
 | E1_certificates | every certificate against the optimum or best known peak: validity, tightness, cost, a priori optimality | Sec. 6.2 |
-| E8a / E8b | tuning of SA as published (243-point grid) and of the anytime methods, on a separate tuning set; the chosen values are applied to the later blocks | Sec. 6.1 |
+| E8a / E8b | tuning of SA in its original form (243-point grid) and of the anytime methods, on a separate tuning set; the chosen values are applied to the later blocks | Sec. 6.1 |
 | E2_head_to_head | earlier methods against their certified counterparts with their own rules: RR vs MT, RLP vs CE/IR, G vs CE, SA vs hybrids (10 seeds) | Sec. 6.3 |
 | E2b_head_to_head_budgets | the same pairs at equal budgets of 1 s and 10 s | Sec. 6.3 |
 | E4a / E4b | every method and Gurobi (both models) at 1, 10 and 60 s; anytime curves | Sec. 6.4 |
@@ -415,10 +415,12 @@ It reads the campaign's data and the report's statistics without changing them, 
 
 ## Extending
 
-- **A method from the literature.** Fill in its class in `cri/problems/ppmsp/sota.py`: implement
-  `solve(inst, budget, seed, deadline)` and return the 0/1 matrix, optionally with a trace. Set
-  `implemented = True`. Nothing else changes: the method is already in E10 and in the report.
-  Instance fields:
+- **A method from the literature.** Subclass `SotaMethod` in `cri/problems/ppmsp/sota.py`,
+  decorate it with `@register_method("NAME")` and implement `solve(inst, budget, seed, deadline)`,
+  which returns the 0/1 matrix, optionally with a trace. The wrapper times the run, checks
+  feasibility and records the result. Add its id to the `methods:` library and to the E10 blocks;
+  the report includes it from then on. A class with `implemented = False` is reported as not
+  available, so a method can be listed before its code exists. Instance fields:
   - `inst.s`, `inst.e`: 0-based inclusive windows;
   - `inst.p`: durations;
   - `inst.w`: powers in kW, or `inst.wu` in units of 0.1 kW.
@@ -449,9 +451,9 @@ optimal vertex: CBC in the original code, Gurobi here.
 ## Results of the paper
 
 The results of the paper's campaign (raw runs, aggregated data, the full report and the theory
-verification) are distributed separately from the code, as stated in the paper's data
-availability statement. `run_all.bat` reproduces them on any machine with a Gurobi licence; the
-measured times, and therefore the results at short budgets, depend on the machine.
+verification) are not part of this repository; as the paper's data availability statement says,
+they are available from the corresponding author on request. `run_all.bat` reproduces them on any
+machine with a Gurobi licence; the measured times, and therefore the results at short budgets, depend on the machine.
 
 ## Citation
 

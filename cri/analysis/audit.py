@@ -112,7 +112,7 @@ class Audit:
     def layout(self):
         for kind in (RAW, DATA, REPORT, LOGS):
             d = results_dir(self.out, kind)
-            self.check("layout", f"results folder {os.path.basename(d)}/", os.path.isdir(d), d)
+            self.check("layout", f"results folder {os.path.basename(d)}/", os.path.isdir(d), os.path.relpath(d, self.out))
         self.check("layout", "results README.md", os.path.exists(os.path.join(self.out, "README.md")))
         self.check("layout", "run log", os.path.exists(os.path.join(self.out, LOGS, "run_log.txt")))
         for f in ("report.md", "report.html", "index.md", "README.md"):
@@ -139,7 +139,7 @@ class Audit:
             if rb_all.empty:
                 continue
             block = os.path.join(self.rep, f"{10 + i:02d}_{name}")
-            if not self.check("outputs", f"{name}: block folder", os.path.isdir(block), block):
+            if not self.check("outputs", f"{name}: block folder", os.path.isdir(block), os.path.relpath(block, self.out)):
                 continue
             an = ex.get("analyses", ["comparison"])
             need = []
@@ -311,7 +311,13 @@ class Audit:
         self.statistics()
         df = pd.DataFrame(self.rows)
         os.makedirs(os.path.join(self.out, LOGS), exist_ok=True)
-        lines = [f"# Audit of {self.out}", "", f"{int(df.ok.sum())} of {len(df)} checks pass.", "",
+        cid, p = "", os.path.join(self.out, LOGS, "campaign_id.txt")
+        if os.path.exists(p):
+            with open(p, encoding="utf-8") as f:
+                cid = f.read().strip()
+        # the details name paths relative to the results folder, so the audit can be shared as it is
+        lines = ["# Audit of the results folder" + (f" of campaign {cid}" if cid else ""), "",
+                 f"{int(df.ok.sum())} of {len(df)} checks pass.", "",
                  "| area | check | result | detail |", "|---|---|---|---|"]
         for row in self.rows:
             lines.append(f"| {row['area']} | {row['check']} | {'PASS' if row['ok'] else 'FAIL'} | "

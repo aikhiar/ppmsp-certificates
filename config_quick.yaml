@@ -55,4 +55,4 @@ experiments:
   E10b_state_of_the_art_60s: {budgets: [10]}
 
 report:
-  title: "PPMSP - Certify-Round-Improve: quick check report"
+  title: "Certify-Round-Improve for the PPMSP: quick check report"
